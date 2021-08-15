@@ -1,0 +1,17 @@
+@import "../../Abstract/mixins";
+.Welcome{
+    background-color: $bg-primary-color;
+    height: 500px;
+    margin-top: -70px;
+    
+    .b{
+        background-color: yellowgreen;
+        height: 100px;
+        width: 100px;
+    //    margin-top:200px ;
+     
+    }
+}
+
+
+    
