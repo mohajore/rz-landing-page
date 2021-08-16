@@ -1,10 +1,9 @@
 import { Component } from 'react';
 import '../../Assets/Style/Components/Blocks/_welcome.scss'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
+import { IoIosArrowForward } from 'react-icons/io';
 
 class Welcome extends Component{
   render(){
@@ -12,7 +11,19 @@ class Welcome extends Component{
       <div className="Welcome">
         <Container>
           <div className="Welcome1">
-            <div className="a"></div>
+            <Row>
+              <Col xl={6} lg={6}  md={6} sm={12} >
+                <div className="welcome-titles-container">
+                <h2 className>WELCOM</h2>
+                <h2 className>E TO RZ</h2>
+                <div className="welcome-h5-container"><h5>THE WOLRD OF DISPOSABLE AND PACKAGING</h5></div>
+                <div className="welcome-shop-now-btn-container">
+                  <span className="px-2 py-1" >SHOP NOW </span  ><span className="mx-1 px-2 py-1 "> <IoIosArrowForward  className="IoIosArrowForward"  /></span>
+                </div>
+                </div>
+              </Col>
+              <Col xl={6} lg={6}  md={6} sm={12}>  <div className="welcome-img-container">  <img className="" src="images/building1.jpg" />  </div> </Col>
+            </Row>
           </div>
           </Container>
       </div>

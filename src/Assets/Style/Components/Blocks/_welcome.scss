@@ -1,28 +1,172 @@
 @import "../../Abstract/mixins";
 .Welcome1{
-    background-color: $bg-primary-color;
-    height: 500px;
+    // height: 500px;
     margin-top: -70px;
-    
-    .b{
-        background-color: yellowgreen;
-        height: 100px;
-        width: 100px;
-    //    margin-top:200px ;
-     
+    .welcome-img-container{
+        margin-top: 200px;
+        img{
+            width: 100%;
+            -webkit-box-shadow: 28px -27px 0px 4px #ECECF4; 
+            box-shadow: 28px -27px 0px 4px #ECECF4;
+        }
     }
+    .welcome-titles-container{
+        margin-top: 200px;
+        h2{
+            color: $primary-color;
+            font-weight: bolder;
+            font-size: 60px;
+        }
+        h2:last-of-type {
+            margin-top: -15px;
+          }
+        .welcome-h5-container{
+            margin-top: 20px;
+            width: 70%;
+            h5{
+                font-weight:100;
+                font-size: 30px;
+                color: $secondary-color;  
+            }
+          
+        }
+        .welcome-shop-now-btn-container{
+            margin-top: 65px;
+            span{
+                background-color: $primary-color;
+                color: $white-color;
+                font-size: 30px;
+                font-weight: bold;
+                display: inline-block;
+             }
+        }
+    }
+   
+    
+    
 }
+@include respond(gaming-laptop) {
 
-@include respond(small-laptop){
     .Welcome1{
-        background-color: $bg-primary-color;
+        .welcome-titles-container{
+            h2{font-size: 55px;}
+            .welcome-h5-container{
+                margin-top: 20px;
+                width: 60%;
+                h5{
+                    font-size: 20px;
+                }
+            }
+            .welcome-shop-now-btn-container{
+                margin-top: 62px;
+                span{font-size: 25px;}
+            }
+        }
+}
+}
+@include respond(laptop) {
+
+    .Welcome1{
+        .welcome-titles-container{
+            h2{font-size: 45px;}
+            .welcome-h5-container{
+                margin-top: 20px;
+                width: 70%;
+                h5{
+                    font-size: 20px;
+                }
+            }
+            .welcome-shop-now-btn-container{
+                margin-top: 43px;
+                span{font-size: 22px;
+                .IoIosArrowForward{
+                    font-size: 22px;
+                }
+                }
+                
+            }
+        }
+}
+}
+@include respond(small-laptop) {
+    .Welcome1{
         height: 500px;
         margin-top: -35px;
-      
-         
-        
-    }
-    }
+        .welcome-titles-container{
+            h2{font-size: 35px;}
+            .welcome-h5-container{
+                margin-top: 12px;
+                width: 90%;
+                h5{
+                    font-size: 15px;
+                }
+            }
+            .welcome-shop-now-btn-container{
+                margin-top: 21px;
+                span{font-size: 18px;
+                .IoIosArrowForward{
+                    font-size: 18px;
+                }
+                }
+                
+            }
+        }
+}
+}
+@include respond(tablet) {
+    .Welcome1{
+        .welcome-img-container{
+            margin-top: 50px;
+        }
 
-
+.welcome-titles-container{
+    h2{
+        color: $primary-color;
+        font-weight: bolder;
+        font-size: 72px;
+    }
+    h2:last-of-type {
+        margin-top: -15px;
+      }
+    .welcome-h5-container{
+        margin-top: 20px;
+        width: 100%;
+        h5{
+            font-weight:100;
+            font-size: 30px;  
+        }
+    }
+    .welcome-shop-now-btn-container{
+        margin-top: 50px;
+        span{
+            font-size: 30px;
+            font-weight: bold;
+         }
+    }
+}
+}}
+@include respond(large-phone) {
+    .Welcome1{
+       .welcome-titles-container{
     
+    h2{
+        // 
+        font-size: 66px;
+    }
+    .welcome-h5-container{
+        margin-top: 20px;
+        width: 100%;
+        h5{
+            font-weight:100;
+            font-size: 30px;
+            color: $secondary-color;  
+        }
+      
+    }
+    .welcome-shop-now-btn-container{
+        margin-top: 50px;
+        span{font-size: 26px;}
+    }
+}
+}}
+
