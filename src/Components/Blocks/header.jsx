@@ -16,15 +16,15 @@ class Example extends Component {
   render () {
 
     return (
-     
-
-
-     
-      <Menu>
-        <a id="home" className="menu-item" href="/">Home</a>
-        <a id="about" className="menu-item" href="/about">About</a>
-        <a id="contact" className="menu-item" href="/contact">Contact</a>
-        <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
+      <Menu   width={ 300 } >
+        <a id="home" className="menu-item mt-4" href="/">Home</a>
+        <a id="about" className="menu-item" href="/About">About</a>
+        <a id="contact" className="menu-item" href="/TEAM">TEAM</a>
+        <a id="contact" className="menu-item" href="/Career">Career</a>
+        <a id="contact" className="menu-item" href="/GALLERY">GALLERY</a>
+        <a id="contact" className="menu-item" href="/CONTACT-US">CONTACT US</a>
+        <a id="contact" className="menu-item" href="/TEAM">TEAM</a>
+        <a onClick={ this.showSettings } className="menu-item" href="SHOP-NOW">SHOP NOW</a>
       </Menu>
      
 
@@ -35,29 +35,30 @@ class Example extends Component {
 class Header extends Component{
   render(){
     return(
-     <div>
+     
         <div className="Header">
         <Container>
-         <div className="header-container">
-            <Col className="logo-img" ><img src="images/logo.png" /></Col>
+           <div className="header-container">
+           
             <Col  ><ul>
-                <li ><div className="li-same-tag"></div><a className="a-same-tag" href="#">Home</a></li>
-                <li ><div className="li-same-tag"></div><a className="a-same-tag" href="#">About</a></li>
-                <li ><div className="li-same-tag"></div><a className="a-same-tag" href="#">TEAM</a></li>
-                <li ><div className="li-same-tag"></div><a className="a-same-tag" href="#">Career</a></li>
-                <li ><div className="li-same-tag"></div><a className="a-same-tag" href="#">GALLERY</a></li>
-                <li ><div className="li-same-tag"></div><a className="a-same-tag" href="#">CONTACT US</a></li>
+                <li ><div className="li-same-tag"></div><a className="a-same-tag" href="/">Home</a></li>
+                <li ><div className="li-same-tag"></div><a className="a-same-tag" href="About">About</a></li>
+                <li ><div className="li-same-tag"></div><a className="a-same-tag" href="TEAM">TEAM</a></li>
+                <li ><div className="li-same-tag"></div><a className="a-same-tag" href="Career">Career</a></li>
+                <li ><div className="li-same-tag"></div><a className="a-same-tag" href="GALLERY">GALLERY</a></li>
+                <li ><div className="li-same-tag"></div><a className="a-same-tag" href="CONTACT US">CONTACT US</a></li>
                 <li className="shop-now"><a  className="a-shop-now-tag"  href="#">SHOP NOW</a></li>
-              </ul></Col>
-            
+              </ul>
+            </Col>
+            <Col className="logo-img" ><img src="images/logo.png" /></Col>
           </div>
-          </Container>
           
+     
+          </Container>
+          <div className="burger-menu"> <Example className=""/> </div>
       </div>
-      <Container>
-      <Example className="burger-menu"/>
-      </Container>
-     </div>
+     
+     
     )}
 }
 

@@ -11,8 +11,8 @@ class Welcome extends Component{
     return(
       <div className="Welcome">
         <Container>
-          <div className="a">
-            <div className="b"></div>
+          <div className="Welcome1">
+            <div className="a"></div>
           </div>
           </Container>
       </div>

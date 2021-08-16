@@ -1,5 +1,5 @@
 @import "../../Abstract/mixins";
-.Welcome{
+.Welcome1{
     background-color: $bg-primary-color;
     height: 500px;
     margin-top: -70px;
@@ -12,6 +12,17 @@
      
     }
 }
+
+@include respond(small-laptop){
+    .Welcome1{
+        background-color: $bg-primary-color;
+        height: 500px;
+        margin-top: -35px;
+      
+         
+        
+    }
+    }
 
 
     
