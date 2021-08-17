@@ -36,7 +36,7 @@
             @content;
         }
     }
-    @if $breakpoint==gaming-laptop {
+    @if $breakpoint==large-laptop {
         @media (max-width: 1400px) {
             @content;
         }

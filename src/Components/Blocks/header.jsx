@@ -1,7 +1,5 @@
 import { Component } from 'react';
 import '../../Assets/Style/Components/Blocks/_header.scss'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
@@ -55,7 +53,9 @@ class Header extends Component{
           
      
           </Container>
+          
           <div className="burger-menu"> <Example className=""/> </div>
+          <div className="logo-img1" ><img src="images/logo.png" /></div>
       </div>
      
      

@@ -1,1 +1,12 @@
 @import "../../Abstract/mixins";
+
+.two-lists{ 
+    margin-top: 100px;
+    ul{
+        li{
+            font-size: 16.5px;
+            list-style-type: "\22C6"; // thumbs up sign
+            margin-left: -25px;
+        }
+    }
+}

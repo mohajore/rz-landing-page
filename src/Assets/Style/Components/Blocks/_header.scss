@@ -58,6 +58,7 @@
       
     }
     .logo-img{text-align: right;}
+    .logo-img1{display: none; text-align: right;}
 }
 @include respond(laptop){
     .header-container{
@@ -120,6 +121,10 @@
   .Header{
       .header-container{display: none;}
       .burger-menu{display: block;}
+      .logo-img1{
+        display: block;
+      }
+
     }
   }
     
@@ -128,11 +133,11 @@
 //// side bar menu style start 
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: fixed;
+  position: absolute;
   width: 36px;
   height: 30px;
   left: 36px;
-  top: 36px;
+  top: 30px;
 }
 
 /* Color/shape of burger icon bars */
@@ -195,7 +200,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 .menu-item{
   color: $white-color;
-
+  display: inline-block;
+  padding: 10px 0;
+  border-bottom: 1px solid silver;
+  font-size: 15px;
+  margin-left: -30px;
   &:hover{
     color: $tertiary-color;
   }
