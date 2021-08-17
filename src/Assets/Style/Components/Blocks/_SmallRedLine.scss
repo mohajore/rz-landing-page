@@ -1,7 +1,6 @@
 @import "../../Abstract/mixins";
 
 .SmallRedLine{
-    // background-color: purple;
     .SmallRedLine1{
         div{
             display: flex;
@@ -9,7 +8,7 @@
             h5{
                 display: inline;
                 color: $primary-color;
-                font-size: 28px;
+                font-size: 25px;
                 font-weight: bold;
                 text-transform: uppercase;
             }
@@ -32,4 +31,60 @@
     .SmallRedLine2{
         margin-top: -10px;
     }
+}
+@include respond(laptop) {
+    .SmallRedLine{
+        .SmallRedLine1{
+            div{
+                h5{ 
+                    font-size: 20px; // used only
+                }
+                h6{
+                    display: inline;
+                    background-color: $tertiary-color;
+                    width: 3%;
+                    height: 5px;
+                }
+                h4{
+                    display: inline;
+                    background-color: $white-color;
+                    width: 3%;
+                    height: 5px;
+                }
+                p{font-size: 16.5px; line-height: 1.56; color: $secondary-color;}
+            }
+            
+        }
+        .SmallRedLine2{
+            margin-top: -10px;
+        }
+}
+}
+@include respond(small-laptop) {
+    .SmallRedLine{
+        .SmallRedLine1{
+            div{
+                h5{ 
+                    font-size: 18px; // used only
+                }
+                h6{
+                    display: inline;
+                    background-color: $tertiary-color;
+                    width: 3%;
+                    height: 5px;
+                }
+                h4{
+                    display: inline;
+                    background-color: $white-color;
+                    width: 3%;
+                    height: 5px;
+                }
+                p{font-size: 16.5px; line-height: 1.56; color: $secondary-color;}
+            }
+            
+        }
+        .SmallRedLine2{
+            margin-top: -10px;
+        }
+}
 }

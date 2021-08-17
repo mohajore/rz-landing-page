@@ -29,35 +29,6 @@
 
 @include respond(small-laptop) {
     .OurVMCP{
-        h5{
-            font-size: 18px;
-           
-        }
-       .OurVMCP-p-parent{
-          
-           p{
-               font-size: 11px;
-           }
-       }
-    }
-}
-
-@include respond(small-laptop) {
-    .OurVMCP{
-        h5{
-            font-size: 18px;
-           
-        }
-       .OurVMCP-p-parent{
-          
-           p{
-            font-size: 15px;
-           }
-       }
-    }
-}
-@include respond(small-laptop) {
-    .OurVMCP{
         text-align: left;
         h5{
             font-size: 28px;

@@ -20,7 +20,7 @@ class About extends Component{
               </Col>
               <Col xl={6} lg={6}  md={6} sm={12} >
                 <div className="About-text-container">
-                  <div><h6></h6><h5>	&nbsp; ABOUT US</h5>          </div>
+                  <div><h6></h6><h5>	&nbsp; ABOUT US</h5></div>
                 <div>
                    <p>
                     In the heart of Amman, Jordan, you will find Alhadaf International Company. We are considered to be one of the top manufacturers of food packaging and disposables for households and the foodservice industry in the region. We pride ourselves on delivering high-quality products at very competitive prices. Our leaders challenge us everyday to go beyond what we have promised our customers, the best quality products and service at competitive prices. This commitment is combined with our passion to ensure that our customers, both local and global, have a seamless journey from start to finish and hence keep coming back to us again and again.
