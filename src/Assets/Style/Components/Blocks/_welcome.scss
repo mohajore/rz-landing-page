@@ -136,6 +136,9 @@
         font-weight: bolder;
         font-size: 50px;
     }
+    h2:first-of-type {
+        margin-top: 70px;
+      }
     h2:last-of-type {
         margin-top: -15px;
       }
@@ -158,27 +161,23 @@
     }
 }}
 @include respond(large-phone) {
+    .Welcome{
     .Welcome1{
        .welcome-titles-container{
     
     h2{
         // 
-        font-size: 66px;
+        font-size: 40px;
     }
-    .welcome-h5-container{
-        margin-top: 20px;
-        width: 100%;
-        h5{
-            font-weight:100;
-            font-size: 30px;
-            color: $secondary-color;  
-        }
-      
-    }
-    .welcome-shop-now-btn-container{
-        margin-top: 50px;
-        span{font-size: 26px;}
+    h2:first-of-type {
+        margin-top: 70px;
+      }
+      .welcome-shop-now-btn-container{
+        span{
+            font-size: 17px;
+         }
     }
 }
 }}
+}
 

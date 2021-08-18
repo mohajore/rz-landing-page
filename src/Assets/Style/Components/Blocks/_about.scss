@@ -129,14 +129,16 @@
             }
     
             .About-image-container{
-                margin: 65px 0px 0px -65px;
-                height: 420px;
+                margin: 65px 0px 0px 40px;
+                // margin: 0px;
+                height: 330px;
+                width: 80%;
                 .white-div{
                    margin-top:0px;
-                    height: 370px;
+                    height: 280px;
                     img{
-                        margin-left: 30px;
-                        margin-top: 10px;
+                        margin-left: 25px;
+                        margin-top: 0px;
                     }
                 }
              }
@@ -196,7 +198,7 @@
     .About{
     .About1{
         .About-image-container{
-            margin: 50px auto 0 auto;
+            margin: 50px auto 0 15px;
             height: 210px;
             width: 280px;
             .white-div{

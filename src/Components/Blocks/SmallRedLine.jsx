@@ -11,11 +11,11 @@ class SmallRedLine extends Component{
       <div className="SmallRedLine">
         <Container>
         <div className="SmallRedLine1">
-            <div><h6></h6><h5>	&nbsp;Our portfolio of products contains over 1800 products.
+            <div><h6></h6><h5>Our portfolio of products contains over 1800 products.
            </h5></div>
         </div>
         <div className="SmallRedLine1 SmallRedLine2">
-            <div><h4></h4><h5>&nbsp;Our main core products vary between different groups, are:</h5></div> 
+            <div><h4></h4><h5>Our main core products vary between different groups, are:</h5></div> 
         </div>
         </Container>
       </div>

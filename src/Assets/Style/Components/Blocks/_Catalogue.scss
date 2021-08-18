@@ -1,0 +1,84 @@
+@import "../../Abstract/mixins";
+
+.Catalogue{
+  
+    .block{
+        background-color: $-bg-primary-color2;
+        height: 160px;
+        border-bottom: 6px $primary-color solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        margin-top: 24px;
+      .block-title-container{
+        // background-color: green;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        h5{
+             // background-color: goldenrod;
+            color: $secondary-color;
+            font-weight: bolder;
+            font-size: 22px;
+            text-align: center;
+           
+         
+        }
+      }  
+    }
+    .block{
+         transition: .4s ease-in-out ;
+        &:hover{ 
+            background-color: $primary-color;
+            border-bottom: 5px $tertiary-color solid;
+            .block-title-container{    
+                h5{  
+                    color: $white-color;
+                    .HiOutlineChevronDoubleRight{
+                       transform: translateX(10px);
+                       transition:  all.4s ease-in-out;
+                       }
+                }
+              }  
+        }
+       
+}
+}
+@include respond(laptop) {
+.Catalogue{
+  
+    .block{
+        height: 140px; //
+        border-bottom: 5px $primary-color solid;
+      .block-title-container{
+        h5{
+            font-size: 18px; //   
+        }
+      }
+    }
+}
+}
+@include respond(large-phone) {
+    .Catalogue{
+        .block{
+          .block-title-container{
+            h5{
+                font-size: 19px; 
+            }
+          }
+        }
+    }
+    }
+    @include respond(small-laptop) {
+        .Catalogue{
+            .block{
+              .block-title-container{
+                h5{
+                    font-size: 19px; 
+                }
+              }
+            }
+        }
+        }
+        
