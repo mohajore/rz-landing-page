@@ -1,0 +1,42 @@
+@import "../../Abstract/mixins";
+.CompanyNews {
+  background-color: orange;
+  position: relative;
+  .labourDay-imgDiv {
+    position: absolute;
+    right: 3.95%;
+    top: 0%;
+    img {
+      width: 108%;
+    }
+  }
+  .row {
+    padding: 0px;
+    .col-md-5,
+    .col-md-7 {
+      padding: 0px;
+    }
+    .labourDay {
+      background-color: $-bg-primary-color2;
+      margin-top: 305px;
+      margin-left: 0px;
+      .labourDay1 {
+        padding: 20px;
+        h4 {
+          color: $primary-color;
+          font-weight: bold;
+          font-size: 40px;
+        }
+        div {
+          p {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+    .Company-news {
+      background-color: $primary-color;
+      height: 790px;
+    }
+  }
+}

@@ -10,6 +10,9 @@ import SmallRedLine from './Components/Blocks/SmallRedLine';
 import Catalogue from './Components/Blocks/Catalogue';
 import Cataloguebtn from './Components/Blocks/Cataloguebtn';
 import Facts from './Components/Blocks/Facts';
+import CompanyNews from './Components/Blocks/CompanyNews';
+import TEA from './Components/Blocks/TEA';
+
 class App extends Component{
   render(){
     return(
@@ -23,6 +26,9 @@ class App extends Component{
         <Catalogue/>
         <Cataloguebtn/>
         <Facts/>
+        {/* <CompanyNews/> */}
+        <TEA/>
+        
       </div>
     )}
 }

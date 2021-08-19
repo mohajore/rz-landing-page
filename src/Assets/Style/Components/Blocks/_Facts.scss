@@ -1,128 +1,129 @@
 @import "../../Abstract/mixins";
-.Facts{
+.Facts {
   background-image: url(../../../../images/factsbackground.png);
   background-size: cover;
+  background-color: orangered;
   background-repeat: no-repeat;
   background-position: center;
-  .Facts1{
+
+  .Facts1 {
     padding-top: 50px;
     text-align: center;
-   
     color: $white-color;
-    .fact-word{
+    .fact-word {
       padding-bottom: 40px;
       font-size: 40px;
       text-transform: uppercase;
       font-weight: bold;
       text-align: center;
     }
-    .grid-container{
+    .grid-container {
       display: grid;
       grid-template-columns: 20% 20% 20% 20% 20%;
       grid-gap: 0px;
-      .Facts-num{
-        h2{
+      .Facts-num {
+        h2 {
           font-size: 60px;
           font-weight: bold;
           margin-bottom: -10px;
         }
-        h6{
+        h6 {
           display: inline-block;
           text-align: center;
           background-color: $tertiary-color;
           width: 40px;
           height: 5px;
-      }
-      p{
-        font-size: 20px;
-      }
+        }
+        p {
+          font-size: 20px;
+        }
       }
     }
   }
 }
 @include respond(laptop) {
-  .Facts{
-    .Facts1{
-      .fact-word{
+  .Facts {
+    .Facts1 {
+      .fact-word {
         font-size: 35px;
       }
-      .grid-container{
-        .Facts-num{
-          h2{
+      .grid-container {
+        .Facts-num {
+          h2 {
             font-size: 50px;
           }
-          h6{
+          h6 {
             display: inline-block;
             text-align: center;
             background-color: $tertiary-color;
             width: 40px;
             height: 5px;
-        }
-        p{
-          font-size: 15px;
-        }
+          }
+          p {
+            font-size: 15px;
+          }
         }
       }
     }
   }
-  }
-  @include respond(small-laptop) {
-    .Facts{
-      .Facts1{
-        .fact-word{
-          font-size: 35px;
-        }
-        .grid-container{
-          .Facts-num{
-            h2{
-              font-size: 40px;
-              margin-bottom: -5px;
-            }
-            h6{
-              width: 40px;
-              height: 5px;
+}
+@include respond(small-laptop) {
+  .Facts {
+    .Facts1 {
+      .fact-word {
+        font-size: 35px;
+      }
+      .grid-container {
+        .Facts-num {
+          h2 {
+            font-size: 40px;
+            margin-bottom: -5px;
           }
-          p{
+          h6 {
+            width: 40px;
+            height: 5px;
+          }
+          p {
             font-size: 14px;
           }
+        }
+      }
+    }
+  }
+}
+@include respond(tablet) {
+  .Facts {
+    .Facts1 {
+      text-align: center;
+      .grid-container {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-gap: 20px;
+        padding: 10px;
+      }
+    }
+  }
+}
+@include respond(phone) {
+  .Facts {
+    .Facts1 {
+      text-align: center;
+      .grid-container {
+        grid-gap: 20px;
+        padding: 10px;
+        .Facts-num {
+          h2 {
+            font-size: 30px;
+          }
+          h6 {
+            width: 20px;
+            height: 5px;
+          }
+          p {
+            font-size: 10px;
           }
         }
       }
     }
-    }
-@include respond(tablet) {
-  .Facts{
-    .Facts1{
-      text-align: center;
-      .grid-container{
-        display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-gap: 20px;
-    padding: 10px;
-      }
-    }
   }
-  }
-@include respond(phone) {
-    .Facts{
-      .Facts1{
-        text-align: center;
-        .grid-container{
-      grid-gap: 20px;
-      padding: 10px;
-      .Facts-num{
-        h2{
-          font-size: 30px;
-        }
-        h6{
-          width: 20px;
-          height: 5px;
-      }
-      p{
-        font-size: 10px;
-      }
-      }
-        }
-      }
-    }
-    }
+}

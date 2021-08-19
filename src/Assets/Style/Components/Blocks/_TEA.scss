@@ -1,0 +1,40 @@
+@import "../../Abstract/mixins";
+.TEA {
+  .Carousel {
+    // background-color: orangered;
+    margin-left: 300px;
+    div {
+      position: relative;
+      img {
+        width: 90%;
+      }
+      .name-job-title {
+        background-color: $primary-color;
+      }
+    }
+    .CarouselItem {
+      //   background-image: url(../../../../../src/images/tea1.png);
+    }
+  }
+  .About-text-container {
+    margin-top: 50px;
+    div {
+      display: flex;
+      align-items: center;
+      h6 {
+        display: inline;
+        color: $primary-color;
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+      span {
+        display: inline;
+        background-color: $tertiary-color;
+        width: 45px;
+        height: 5px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
