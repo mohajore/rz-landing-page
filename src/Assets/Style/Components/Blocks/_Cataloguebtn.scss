@@ -1,12 +1,12 @@
 @import "../../Abstract/mixins";
 .Cataloguebtn {
-  margin: 50px 0px;
-
+  margin: 0px 0px;
+  height: 100px;
   .Cataloguebtn1 {
     cursor: pointer;
+    margin: 50px 0px;
     .Cataloguebtn-name {
       background-color: $primary-color;
-      // height: 200px;
       color: $white-color;
       padding: 15px 25px;
       font-size: 25px;

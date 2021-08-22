@@ -1,0 +1,239 @@
+@import "../../Abstract/mixins";
+.SustainablePackaging {
+  margin-bottom: 50px;
+  .SustainablePackaging-text-container {
+    margin-top: 50px;
+    div {
+      display: flex;
+      align-items: center;
+      h5 {
+        margin-top: 10px;
+        display: inline;
+        color: $primary-color;
+        font-size: 40px;
+        font-weight: bold;
+      }
+      span {
+        display: inline-block;
+        background-color: $tertiary-color;
+        width: 45px;
+        height: 5px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      p {
+        font-size: 16.5px;
+        line-height: 1.56;
+        color: $secondary-color;
+      }
+    }
+  }
+  .SustainablePackaginTwologos {
+    display: flex;
+    justify-content: center;
+    .Twologos {
+      display: flex;
+      flex-direction: row;
+      column-gap: 50px;
+      justify-content: space-around;
+      .Twologos1 {
+        border: 2px solid $-bg-primary-color3;
+        padding: 10px 40px;
+      }
+    }
+  }
+  .SustainablePackaginFivelogosTitle {
+    h5 {
+      margin-top: 10px;
+      display: inline;
+      color: $primary-color;
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+  .SustainablePackaginFivelogos {
+    .Fivelogos {
+      display: grid;
+      grid-template-columns: 18% 18% 18% 18% 18%;
+      grid-gap: 0px;
+      column-gap: 2.5%;
+      .Fivelogos1 {
+        border: 2px solid $-bg-primary-color3;
+        padding: 10px 0px;
+        text-align: center;
+        color: $primary-color;
+        img {
+          width: 80px;
+          height: 90px;
+          margin-bottom: 20px;
+        }
+        div {
+          h5 {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.2;
+            width: 70%;
+            margin: 0px auto;
+          }
+        }
+      }
+    }
+  }
+}
+// @include respond(desktop) {
+//   .SustainablePackaging {
+//   }
+// }
+@include respond(large-laptop) {
+  .SustainablePackaging {
+    .SustainablePackaging-text-container {
+      margin-top: 50px;
+      div {
+        display: flex;
+        align-items: center;
+        h5 {
+          margin-top: 10px;
+          display: inline;
+          color: $primary-color;
+          font-size: 34px;
+          font-weight: bold;
+        }
+
+        p {
+          font-size: 15px;
+          line-height: 1.56;
+        }
+      }
+    }
+    .SustainablePackaginFivelogosTitle {
+      h5 {
+        font-size: 34px;
+      }
+    }
+  }
+}
+@include respond(laptop) {
+  .SustainablePackaging {
+    .SustainablePackaging-text-container {
+      div {
+        h5 {
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 13.3px;
+          line-height: 1.3;
+        }
+      }
+    }
+    .SustainablePackaginFivelogosTitle {
+      h5 {
+        font-size: 30px;
+      }
+    }
+    .SustainablePackaginFivelogos {
+      .Fivelogos {
+        .Fivelogos1 {
+          h5 {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+@include respond(small-laptop) {
+  .SustainablePackaging {
+    .SustainablePackaging-text-container {
+      div {
+        h5 {
+          font-size: 25px;
+        }
+
+        p {
+          font-size: 11px;
+          line-height: 1.2;
+        }
+      }
+    }
+    .SustainablePackaginFivelogosTitle {
+      h5 {
+        font-size: 25px;
+      }
+    }
+    .SustainablePackaginFivelogos {
+      .Fivelogos {
+        .Fivelogos1 {
+          div {
+            h5 {
+              width: 100%;
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond(tablet) {
+  .SustainablePackaging {
+    .SustainablePackaging-text-container {
+      div {
+        h5 {
+          font-size: 35px;
+        }
+        span {
+          margin-top: -35px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 1.2;
+        }
+      }
+    }
+    .SustainablePackaginTwologos {
+      .Twologos {
+        column-gap: 10px;
+      }
+    }
+    .SustainablePackaginFivelogosTitle {
+      h5 {
+        font-size: 35px;
+      }
+    }
+    .SustainablePackaginFivelogos {
+      .Fivelogos {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        column-gap: 20px;
+        row-gap: 20px;
+        .Fivelogos1 {
+          div {
+            h5 {
+              width: 100%;
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond(large-phone) {
+  .SustainablePackaging {
+    .SustainablePackaginTwologos {
+      .Twologos {
+        flex-direction: column;
+        row-gap: 15px;
+        .Twologos1 {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+@include respond(phone) {
+}

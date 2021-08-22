@@ -1,0 +1,151 @@
+@import "../../Abstract/mixins";
+.CustomizedFoodPackaging {
+  background-image: url(../../../../../src/images/background1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .UnderContainerCustomizedFoodPackaging {
+    .CustomizedFoodPackagingTitle {
+      padding: 50px 0px;
+      span {
+        display: inline-block;
+        background-color: $tertiary-color;
+        width: 45px;
+        height: 5px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      h5 {
+        margin-top: 10px;
+        display: inline;
+        color: $white-color;
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 15px;
+      }
+    }
+    .CustomizedFoodPackagingTwoTitles {
+      padding: 30px 0px;
+      display: flex;
+      justify-content: center;
+      .TwoTitles {
+        display: flex;
+        column-gap: 50px;
+        .title {
+          color: $white-color;
+          border: 3px solid $white-color;
+          display: flex;
+          justify-content: center;
+          h5 {
+            padding: 20px 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@include respond(large-laptop) {
+  .CustomizedFoodPackaging {
+    .UnderContainerCustomizedFoodPackaging {
+      .CustomizedFoodPackagingTitle {
+        h5 {
+          font-size: 34px;
+        }
+      }
+    }
+  }
+}
+@include respond(laptop) {
+  .CustomizedFoodPackaging {
+    .UnderContainerCustomizedFoodPackaging {
+      .CustomizedFoodPackagingTitle {
+        h5 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+@include respond(small-laptop) {
+  .CustomizedFoodPackaging {
+    .UnderContainerCustomizedFoodPackaging {
+      .CustomizedFoodPackagingTitle {
+        h5 {
+          font-size: 25px;
+        }
+      }
+    }
+    .CustomizedFoodPackagingTwoTitles {
+      .TwoTitles {
+        // background-color: rgb(51, 70, 153);
+        .title {
+          h5 {
+            padding: 10px 10px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+@include respond(tablet) {
+  .CustomizedFoodPackaging {
+    .UnderContainerCustomizedFoodPackaging {
+      .CustomizedFoodPackagingTitle {
+        h5 {
+          font-size: 35px;
+        }
+      }
+    }
+    .CustomizedFoodPackagingTwoTitles {
+      .TwoTitles {
+        // background-color: red;
+        .title {
+          h5 {
+            padding: 15px 20px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@include respond(large-phone) {
+  .CustomizedFoodPackaging {
+    .UnderContainerCustomizedFoodPackaging {
+      .CustomizedFoodPackagingTitle {
+        h5 {
+          font-size: 35px;
+        }
+      }
+      .CustomizedFoodPackagingTwoTitles {
+        padding: 10px 0px;
+        .TwoTitles {
+          // background-color: rgb(146, 153, 51);
+          .title {
+            h5 {
+              padding: 10px 10px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include respond(phone) {
+  .CustomizedFoodPackaging {
+    .UnderContainerCustomizedFoodPackaging {
+      .CustomizedFoodPackagingTwoTitles {
+        .TwoTitles {
+          // background-color: rgb(54, 153, 51);
+          .title {
+            h5 {
+              padding: 10px 10px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

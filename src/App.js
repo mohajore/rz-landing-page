@@ -10,8 +10,10 @@ import SmallRedLine from './Components/Blocks/SmallRedLine';
 import Catalogue from './Components/Blocks/Catalogue';
 import Cataloguebtn from './Components/Blocks/Cataloguebtn';
 import Facts from './Components/Blocks/Facts';
-import CompanyNews from './Components/Blocks/CompanyNews';
+// import CompanyNews from './ Components/Blocks/CompanyNews';
 import TEA from './Components/Blocks/TEA';
+import SustainablePackaging from './Components/Blocks/SustainablePackaging';
+import CustomizedFoodPackaging from './Components/Blocks/CustomizedFoodPackaging';
 
 class App extends Component{
   render(){
@@ -28,7 +30,8 @@ class App extends Component{
         <Facts/>
         {/* <CompanyNews/> */}
         <TEA/>
-        
+        <SustainablePackaging/>
+        <CustomizedFoodPackaging/>
       </div>
     )}
 }

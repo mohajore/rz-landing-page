@@ -13,14 +13,15 @@ const responsive = {
     items: 5,
     slidesToSlide: 1, // optional, default to 1.
   },
+
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 2,
-    slidesToSlide: 2, // optional, default to 1.
+    items: 4,
+    slidesToSlide: 1, // optional, default to 1.
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
-    items: 1,
+    items: 2,
     slidesToSlide: 1, // optional, default to 1.
   },
 };
@@ -37,7 +38,7 @@ class TEA extends Component {
     return (
       <div className="TEA">
         <Container>
-          <div className="About-text-container">
+          <div className="TEA-text-container">
             <div>
               <span></span>
               <h6>TEA</h6>
@@ -56,33 +57,71 @@ class TEA extends Component {
               {" "}
               <img className="CarouselItem" src="images/tea1.png" />
               <div className="name-job-title">
+                <span></span>
                 <h4>Mohammad Dokh</h4>
                 <h6>President - CEO</h6>
+                <h6 className="h6-email">sales@alhadaf-int.com</h6>
               </div>
             </div>
             <div>
               {" "}
               <img className="" src="images/tea6.png" />
+              <div className="name-job-title">
+                <span></span>
+                <h4>Mohammad Dokh</h4>
+                <h6>President - CEO</h6>
+                <h6 className="h6-email">sales@alhadaf-int.com</h6>
+              </div>
             </div>
             <div>
               {" "}
               <img className="" src="images/tea3.png" />
+              <div className="name-job-title">
+                <span></span>
+                <h4>Mohammad Dokh</h4>
+                <h6>President - CEO</h6>
+                <h6 className="h6-email">sales@alhadaf-int.com</h6>
+              </div>
             </div>
             <div>
               {" "}
               <img className="" src="images/tea4.png" />
+              <div className="name-job-title">
+                <span></span>
+                <h4>Mohammad Dokh</h4>
+                <h6>President - CEO</h6>
+                <h6 className="h6-email">sales@alhadaf-int.com</h6>
+              </div>
             </div>
             <div>
               {" "}
               <img className="" src="images/tea5.png" />
+              <div className="name-job-title">
+                <span></span>
+                <h4>Mohammad Dokh</h4>
+                <h6>President - CEO</h6>
+                <h6 className="h6-email">sales@alhadaf-int.com</h6>
+              </div>
             </div>
             <div>
               {" "}
               <img className="" src="images/tea4.png" />
+              <div className="name-job-title">
+                <span></span>
+                <h4>Mohammad Dokh</h4>
+                <h6>President - CEO</h6>
+                <h6 className="h6-email">sales@alhadaf-int.com</h6>
+              </div>
             </div>
             <div>
               {" "}
               <img className="" src="images/tea5.png" />
+              <div className="name-job-title">
+                <span></span>
+                <h4>Mohammad Dokh</h4>
+                <h6>President - CEO</h6>
+                <h6 className="h6-email">sales@alhadaf-int.com</h6>
+              </div>
             </div>
           </Carousel>
         </div>
