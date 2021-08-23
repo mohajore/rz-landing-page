@@ -1,0 +1,8 @@
+@import "../../Abstract/mixins";
+.Footer {
+  .Footer1 {
+    .CoppyRights {
+      color: $secondary-color;
+    }
+  }
+}

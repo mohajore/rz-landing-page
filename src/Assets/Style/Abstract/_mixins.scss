@@ -22,7 +22,11 @@
       @content;
     }
   }
-
+  @if $breakpoint==small-phone {
+    @media (min-width: 320px) and (max-width: 342px) {
+      @content;
+    }
+  }
   @if $breakpoint==phone {
     @media (max-width: 425px) {
       @content;

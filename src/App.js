@@ -14,7 +14,9 @@ import Facts from './Components/Blocks/Facts';
 import TEA from './Components/Blocks/TEA';
 import SustainablePackaging from './Components/Blocks/SustainablePackaging';
 import CustomizedFoodPackaging from './Components/Blocks/CustomizedFoodPackaging';
-
+import Contact from './Components/Blocks/Contact';
+import Gallary from './Components/Blocks/Gallary';
+import Footer from './Components/Blocks/Footer';
 class App extends Component{
   render(){
     return(
@@ -32,6 +34,9 @@ class App extends Component{
         <TEA/>
         <SustainablePackaging/>
         <CustomizedFoodPackaging/>
+        <Contact/>
+        <Gallary/>
+        <Footer/>
       </div>
     )}
 }

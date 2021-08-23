@@ -1,0 +1,172 @@
+@import "../../Abstract/mixins";
+.Contact {
+  padding: 0px;
+  background-color: $primary-color;
+  overflow: hidden;
+  position: relative;
+  //   .LocationPickerExample {
+  //   }
+  .ContactContainerAll {
+    padding: 20px 0px 0px 20px;
+    .ContactContainer {
+      h5 {
+        display: inline;
+        color: $white-color;
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 10px;
+        text-transform: uppercase;
+      }
+      span {
+        display: inline-block;
+        background-color: $tertiary-color;
+        width: 45px;
+        height: 5px;
+        margin-bottom: 10px;
+      }
+    }
+    .ContactForm {
+      .form-control {
+        border: none;
+        border-bottom: 3px solid $border-color;
+        background-color: $primary-color;
+        color: $white-color;
+      }
+    }
+    .ContactInfo {
+      color: $white-color;
+      .ContactInfoIconAndTextContainer {
+        display: flex;
+        padding: 10px;
+        .ContactInfoIcon {
+          display: inline-block;
+        }
+        h5 {
+          margin-left: 5px;
+          font-size: 15px;
+        }
+      }
+      .ContactInfoSendAndSocialIcons {
+        display: flex;
+        flex-direction: column;
+        .sendbtnContainer {
+          display: flex;
+          justify-content: flex-end;
+          .sendbtn {
+            border: 2px solid $white-color;
+            padding: 10px 60px;
+            font-size: 30px;
+            font-weight: bold;
+            background-color: $white-color;
+            color: $primary-color;
+            text-transform: uppercase;
+          }
+        }
+        .SocialIcons {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 20px;
+          column-gap: 3px;
+          .SocialIcon {
+            border: 2px $border-color solid;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond(laptop) {
+  .Contact {
+    .ContactContainerAll {
+      padding: 20px 0px 0px 20px;
+      .ContactContainer {
+        h5 {
+          font-size: 30px;
+        }
+        span {
+          height: 4px;
+        }
+      }
+    }
+  }
+}
+@include respond(small-laptop) {
+  .Contact {
+    .ContactContainerAll {
+      .ContactContainer {
+        h5 {
+          font-size: 25px;
+        }
+        span {
+          height: 3px;
+          margin-bottom: 7px;
+        }
+      }
+      .ContactInfo {
+        .ContactInfoIconAndTextContainer {
+          .ContactInfoIcon {
+          }
+          h5 {
+            margin-left: 5px;
+            font-size: 12px;
+            margin-top: 5px;
+          }
+        }
+        .ContactInfoSendAndSocialIcons {
+          .sendbtnContainer {
+            .sendbtn {
+              padding: 10px 50px;
+              font-size: 15px;
+            }
+          }
+          .SocialIcons {
+            column-gap: 4px;
+
+            .SocialIcon {
+              padding: 5px;
+              svg {
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include respond(tablet) {
+  .row1 {
+    flex-direction: column-reverse;
+  }
+}
+@include respond(large-phone) {
+  .Contact {
+    .ContactContainerAll {
+      .ContactContainer {
+        h5 {
+          font-size: 20px;
+        }
+        span {
+          width: 20px;
+          margin-bottom: 6px;
+        }
+      }
+    }
+  }
+}
+@include respond(small-phone) {
+  .Contact {
+    .ContactContainerAll {
+      .ContactInfo {
+        .ContactInfoIconAndTextContainer {
+          h5 {
+            font-size: 9px;
+          }
+        }
+      }
+    }
+  }
+}

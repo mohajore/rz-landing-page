@@ -58,8 +58,11 @@
   .CustomizedFoodPackaging {
     .UnderContainerCustomizedFoodPackaging {
       .CustomizedFoodPackagingTitle {
+        span {
+          margin-bottom: 7px;
+        }
         h5 {
-          font-size: 30px;
+          font-size: 28px;
         }
       }
     }
@@ -69,8 +72,12 @@
   .CustomizedFoodPackaging {
     .UnderContainerCustomizedFoodPackaging {
       .CustomizedFoodPackagingTitle {
+        span {
+          height: 4px;
+          margin-bottom: 6px;
+        }
         h5 {
-          font-size: 25px;
+          font-size: 21px;
         }
       }
     }
@@ -91,8 +98,12 @@
   .CustomizedFoodPackaging {
     .UnderContainerCustomizedFoodPackaging {
       .CustomizedFoodPackagingTitle {
+        span {
+          width: 30px;
+          margin-bottom: 5px;
+        }
         h5 {
-          font-size: 35px;
+          font-size: 16px;
         }
       }
     }
@@ -113,8 +124,14 @@
   .CustomizedFoodPackaging {
     .UnderContainerCustomizedFoodPackaging {
       .CustomizedFoodPackagingTitle {
+        span {
+          width: 20px;
+          height: 3px;
+          margin-bottom: 4px;
+        }
         h5 {
-          font-size: 35px;
+          font-size: 13px;
+          margin-left: 10px;
         }
       }
       .CustomizedFoodPackagingTwoTitles {
@@ -140,7 +157,6 @@
           // background-color: rgb(54, 153, 51);
           .title {
             h5 {
-              padding: 10px 10px;
               font-size: 12px;
             }
           }
