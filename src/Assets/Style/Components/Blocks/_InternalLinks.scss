@@ -1,0 +1,120 @@
+@import "../../Abstract/mixins";
+.InternalLinks {
+  margin-top: 40px;
+  background-color: $secondary-color;
+  .InternalLink {
+    color: $white-color;
+    h4 {
+      font-size: 18px;
+      line-height: 20px;
+      margin-top: 15px;
+      text-transform: uppercase;
+      margin-bottom: -20px;
+    }
+    span {
+      display: inline-block;
+      background-color: $tertiary-color;
+      width: 25px;
+      height: 2px;
+      margin-bottom: -5px;
+    }
+    h6 {
+      margin: 15px 0px;
+      font-size: 14px;
+      a {
+        text-decoration: none;
+        color: $white-color;
+      }
+    }
+  }
+  .InternalLinkLast {
+    background-color: $white-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    div {
+      margin: 0 auto;
+    }
+    .header-icons-div {
+      font-size: 20px;
+      text-align: center;
+      color: $border-color;
+      margin-top: 20px;
+      svg {
+        font-size: 25px;
+      }
+    }
+  }
+  .InternalLinkLast1 {
+    display: none;
+  }
+}
+@include respond(laptop) {
+  .InternalLinks {
+    .InternalLinkBlank {
+      display: none;
+    }
+    .InternalLinkLast {
+      div {
+        img {
+          width: 90%; //
+        }
+      }
+      .header-icons-div {
+        margin-top: 30px;
+        svg {
+          font-size: 30px; //
+        }
+      }
+    }
+  }
+}
+@include respond(small-laptop) {
+  .InternalLinks {
+    .InternalLink {
+      h4 {
+        font-size: 14px;
+      }
+      h6 {
+        font-size: 12px;
+      }
+    }
+  }
+}
+@include respond(tablet) {
+  .InternalLinks {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    .InternalLinkLast {
+      display: none;
+    }
+    .InternalLinkLast1 {
+      background-color: $white-color;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      div {
+        margin: 0 auto;
+      }
+      .header-icons-div {
+        font-size: 20px;
+        text-align: center;
+        color: $border-color;
+        margin: 10px 0px;
+        svg {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+@include respond(large-phone) {
+  .InternalLinks {
+    .InternalLinkLast {
+      display: none;
+    }
+  }
+}

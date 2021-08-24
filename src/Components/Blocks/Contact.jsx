@@ -45,11 +45,40 @@ class Contact extends Component {
               <div className="LocationPickerExample">
                 <LocationPicker
                   containerElement={<div style={{ height: "100%" }} />}
-                  mapElement={<div style={{ height: "450px" }} />}
+                  mapElement={<div style={{ height: "470px" }} />}
                   onChange={this.handleLocationChange}
                   defaultPosition={defaultPosition}
                   circleOptions={{ visible: false }}
                 />
+                <div className="BranchLocations">
+                  <div className="BranchLocation">
+                    <div className="BranchLocationIcons">
+                      <CgPin />
+                    </div>
+                    <div className="BranchLocationTitle">
+                      <span></span>
+                      <h4>Byader</h4>
+                    </div>
+                  </div>
+                  <div className="BranchLocation">
+                    <div className="BranchLocationIcons">
+                      <CgPin />
+                    </div>
+                    <div className="BranchLocationTitle">
+                      <span></span>
+                      <h4> Khalda</h4>
+                    </div>
+                  </div>
+                  <div className="BranchLocation">
+                    <div className="BranchLocationIcons">
+                      <CgPin />
+                    </div>
+                    <div className="BranchLocationTitle">
+                      <span></span>
+                      <h4>Tabrbour</h4>
+                    </div>
+                  </div>
+                </div>
               </div>
             </Col>
             <Col md={6}>

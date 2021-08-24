@@ -1,42 +1,214 @@
 @import "../../Abstract/mixins";
-.CompanyNews {
+.CompanyNewsComponent {
   background-color: orange;
   position: relative;
-  .labourDay-imgDiv {
-    position: absolute;
-    right: 3.95%;
-    top: 0%;
-    img {
-      width: 108%;
-    }
-  }
-  .row {
-    padding: 0px;
-    .col-md-5,
-    .col-md-7 {
-      padding: 0px;
-    }
-    .labourDay {
-      background-color: $-bg-primary-color2;
-      margin-top: 305px;
-      margin-left: 0px;
-      .labourDay1 {
-        padding: 20px;
-        h4 {
-          color: $primary-color;
-          font-weight: bold;
-          font-size: 40px;
+  .container {
+    .row {
+      .Company-news {
+        background-color: $primary-color;
+        height: 100%;
+        .CompanyNewsTitleContainer {
+          padding-top: 20px;
+          h5 {
+            display: inline;
+            color: $white-color;
+            font-size: 40px;
+            font-weight: bold;
+            margin-left: 10px;
+            text-transform: uppercase;
+          }
+          span {
+            display: inline-block;
+            background-color: $tertiary-color;
+            width: 45px;
+            height: 5px;
+            margin-bottom: 10px;
+          }
         }
-        div {
-          p {
-            color: $secondary-color;
+        .rec-carousel {
+          position: relative;
+          span:nth-child(1) {
+            // background-color: saddlebrown;
+            // position: absolute;
+            margin-bottom: 60px;
+            z-index: 1;
+          }
+          span:nth-last-child(1) {
+            // background-color: goldenrod;
+            position: absolute;
+            bottom: 0%;
+          }
+          span {
+            // background-color: goldenrod;
+            display: flex;
+            flex-direction: column-reverse;
+            // background-color: skyblue;
+
+            .MyArrow {
+              margin-top: 100px;
+              // padding: 10px;
+              color: $white-color;
+              border: solid 1px $white-color;
+            }
+          }
+        }
+
+        .Company-news-Item {
+          color: $white-color;
+          padding: 0px 20px;
+          border-left: 10px solid $tertiary-color;
+          margin: 25px 0;
+          transition: border 0.4s ease-in-out;
+          // background-color: skyblue;
+          h3 {
+            font-size: 25px;
+          }
+          h6 {
+            margin-top: 30px;
+            font-size: 18px;
+          }
+          &:hover {
+            border-left: 10px solid $white-color;
+          }
+          .Company-news-Item-icon {
+            display: flex;
+            justify-content: flex-end;
+
+            svg {
+              font-size: 50px;
+              border: solid 1px $white-color;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .Symmtric {
+        padding: 0;
+      }
+      .Labour-Day {
+        position: relative;
+
+        .labourDay-imgDiv {
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          img {
+            width: 100%;
+          }
+        }
+        .labourDayTitleParagraph {
+          background-color: $-bg-primary-color2;
+          margin-top: 225px;
+          margin-left: 0px;
+          .labourDayTitle {
+            padding: 20px;
+            h4 {
+              color: $primary-color;
+              font-weight: bold;
+              font-size: 40px;
+            }
+            div {
+              p {
+                color: $secondary-color;
+              }
+            }
           }
         }
       }
     }
-    .Company-news {
-      background-color: $primary-color;
-      height: 790px;
+  }
+}
+@include respond(large-laptop) {
+  .CompanyNewsComponent {
+    .container {
+      .row {
+        .Labour-Day {
+          .labourDayTitleParagraph {
+            margin-top: 195px;
+            .labourDayTitle {
+              h4 {
+                font-size: 30px;
+              }
+            }
+            .labourDayParagraph {
+              p {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include respond(laptop) {
+  .CompanyNewsComponent {
+    .container {
+      .row {
+        .Labour-Day {
+          .labourDayTitleParagraph {
+            margin-top: 160px;
+            .labourDayTitle {
+              h4 {
+                font-size: 25px;
+              }
+            }
+            .labourDayParagraph {
+              p {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include respond(small-laptop) {
+  .CompanyNewsComponent {
+    .container {
+      .row {
+        .Labour-Day {
+          .labourDayTitleParagraph {
+            margin-top: 120px;
+            .labourDayTitle {
+              h4 {
+                font-size: 20px;
+              }
+            }
+            .labourDayParagraph {
+              p {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include respond(tablet) {
+  .CompanyNewsComponent {
+    .container {
+      .row {
+        flex-direction: column-reverse;
+        .Labour-Day {
+          .labourDayTitleParagraph {
+            margin-top: 155px;
+            .labourDayTitle {
+              h4 {
+                font-size: 20px;
+              }
+            }
+            .labourDayParagraph {
+              p {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

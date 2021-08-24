@@ -4,8 +4,52 @@
   background-color: $primary-color;
   overflow: hidden;
   position: relative;
+  margin-top: 40px;
   //   .LocationPickerExample {
   //   }
+  .LocationPickerExample {
+    position: relative;
+    .gmnoprint {
+      background-color: rgb(116, 47, 255);
+      margin: -40px -50px -50px -0px;
+    }
+    .BranchLocations {
+      position: absolute;
+      bottom: 0%;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      background-color: #575e998f;
+      .BranchLocation {
+        display: flex;
+        cursor: pointer;
+        .BranchLocationTitle {
+          margin-left: 5px;
+          margin-top: -10px;
+          span {
+            display: inline-block;
+            background-color: $white-color;
+            width: 25px;
+            height: 2px;
+            margin-bottom: -35px;
+          }
+          h4 {
+            font-size: 20px;
+            color: $secondary-color;
+          }
+        }
+        .BranchLocationIcons {
+          color: $white-color;
+          margin-top: 15px;
+          svg {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
   .ContactContainerAll {
     padding: 20px 0px 0px 20px;
     .ContactContainer {
@@ -28,9 +72,12 @@
     .ContactForm {
       .form-control {
         border: none;
-        border-bottom: 3px solid $border-color;
+        border-bottom: 3px solid $white-color;
         background-color: $primary-color;
         color: $white-color;
+        &::placeholder {
+          color: $white-color;
+        }
       }
     }
     .ContactInfo {
@@ -68,7 +115,7 @@
           margin-top: 20px;
           column-gap: 3px;
           .SocialIcon {
-            border: 2px $border-color solid;
+            border: 2px $white-color solid;
             padding: 10px;
           }
         }
@@ -140,6 +187,9 @@
 @include respond(tablet) {
   .row1 {
     flex-direction: column-reverse;
+  }
+  .LocationPickerExample {
+    margin-bottom: 50px;
   }
 }
 @include respond(large-phone) {

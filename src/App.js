@@ -10,13 +10,15 @@ import SmallRedLine from './Components/Blocks/SmallRedLine';
 import Catalogue from './Components/Blocks/Catalogue';
 import Cataloguebtn from './Components/Blocks/Cataloguebtn';
 import Facts from './Components/Blocks/Facts';
-// import CompanyNews from './ Components/Blocks/CompanyNews';
+import CompanyNews from './Components/Blocks/CompanyNews';
 import TEA from './Components/Blocks/TEA';
 import SustainablePackaging from './Components/Blocks/SustainablePackaging';
 import CustomizedFoodPackaging from './Components/Blocks/CustomizedFoodPackaging';
 import Contact from './Components/Blocks/Contact';
 import Gallary from './Components/Blocks/Gallary';
+import InternalLinks from './Components/Blocks/InternalLinks';
 import Footer from './Components/Blocks/Footer';
+
 class App extends Component{
   render(){
     return(
@@ -30,12 +32,13 @@ class App extends Component{
         <Catalogue/>
         <Cataloguebtn/>
         <Facts/>
-        {/* <CompanyNews/> */}
+        <CompanyNews/>
         <TEA/>
         <SustainablePackaging/>
         <CustomizedFoodPackaging/>
-        <Contact/>
         <Gallary/>
+        <Contact/>
+        <InternalLinks/>
         <Footer/>
       </div>
     )}
