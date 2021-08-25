@@ -1,19 +1,28 @@
 @import "../../Abstract/mixins";
 .TEA {
   .Carousel {
-    margin-left: 170px;
-    margin-top: -120px;
+    margin-top: -30px;
+
     .react-multiple-carousel__arrow {
       position: absolute;
-      margin-bottom: 10px;
       border-radius: 0%;
-      margin-top: -300px;
+      border: 1px solid $primary-color;
+      top: 0;
       color: $primary-color;
-    }
-    .react-multiple-carousel__arrow--right {
+      background-color: $white-color;
+      &:before {
+        color: $primary-color;
+      }
+      &:hover {
+        background-color: $primary-color;
+        &:before {
+          color: $white-color;
+        }
+      }
     }
     .react-multiple-carousel__arrow--left {
-      margin-left: 84%;
+      right: 110px;
+      left: auto;
     }
     div {
       margin-top: 70px;
@@ -53,7 +62,7 @@
     }
   }
   .TEA-text-container {
-    margin-top: 50px;
+    position: absolute;
     div {
       display: flex;
       align-items: center;
@@ -75,94 +84,98 @@
     }
   }
 }
-@include respond(F1700-T1900) {
-  .TEA {
-    .Carousel {
-      margin-left: 15px;
-      // background-color: rgb(6, 82, 140);
-      .react-multiple-carousel__arrow {
-        margin-top: -350px;
-      }
-      .react-multiple-carousel__arrow--left {
-        margin-left: 86%;
-      }
-      margin-left: 300px;
-    }
-  }
-}
-@include respond(F1632-T1700) {
-  .TEA {
-    .Carousel {
-      margin-left: 15px;
-      // background-color: rgb(6, 82, 140);
-      .react-multiple-carousel__arrow {
-        margin-top: -350px;
-      }
-      .react-multiple-carousel__arrow--left {
-        margin-left: 86%;
-      }
-      margin-left: 15px;
-    }
-  }
-}
+// @include respond(F1700-T1900) {
+//   .TEA {
+//     .Carousel {
+//       margin-left: 15px;
+//       .react-multiple-carousel__arrow {
+//         margin-top: -350px;
+//       }
+//       .react-multiple-carousel__arrow--left {
+//         margin-left: 86%;
+//       }
+//       margin-left: 300px;
+//     }
+//   }
+// }
+// @include respond(F1632-T1700) {
+//   .TEA {
+//     .Carousel {
+//       margin-left: 15px;
+//       .react-multiple-carousel__arrow {
+//         margin-top: -350px;
+//       }
+//       .react-multiple-carousel__arrow--left {
+//         margin-left: 86%;
+//       }
+//       margin-left: 15px;
+//     }
+//   }
+// }
+// @include respond(desktop) {
+//   .TEA {
+//     .Carousel {
+//       margin-left: 80px;
+//       div {
+//         img {
+//         }
+//         .name-job-title {
+//           padding: 5px 20px;
+//           position: absolute;
+//           bottom: 4%;
+//           right: 10%;
+//           width: 220px;
+//         }
+//         .name-job-title {
+//           padding: 0px 10px; //
+//           height: 70px;
+//           span {
+//           }
+//           h4 {
+//             font-size: 16px;
+//           }
+//           h6 {
+//             font-size: 12px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// @include respond(large-laptop) {
+//   .TEA {
+//     .Carousel {
+//       // background-color: crimson;
+//       margin-left: 85px;
+//       margin-top: -120px;
+//       .react-multiple-carousel__arrow {
+//         margin-top: -250px;
+//       }
+//       .react-multiple-carousel__arrow--left {
+//         margin-left: 83%;
+//       }
+//       div {
+//         .name-job-title {
+//           padding: 0px 10px; //
+//           height: 60px;
+//           width: 80%;
+
+//           h4 {
+//             font-size: 11px;
+//           }
+//           h6 {
+//             font-size: 9px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 @include respond(desktop) {
   .TEA {
     .Carousel {
-      margin-left: 80px;
-      div {
-        img {
-        }
-        .name-job-title {
-          padding: 5px 20px;
-          position: absolute;
-          bottom: 4%;
-          right: 10%;
-          width: 220px;
-        }
-        .name-job-title {
-          padding: 0px 10px; //
-          height: 70px;
-          span {
-          }
-          h4 {
-            font-size: 16px;
-          }
-          h6 {
-            font-size: 12px;
-          }
-        }
-      }
-    }
-  }
-}
-@include respond(large-laptop) {
-  .TEA {
-    .Carousel {
-      // background-color: crimson;
-      margin-left: 85px;
-      margin-top: -120px;
-      .react-multiple-carousel__arrow {
-        margin-top: -250px;
-      }
       .react-multiple-carousel__arrow--left {
-        margin-left: 83%;
-      }
-      div {
-        img {
-        }
-        .name-job-title {
-          padding: 0px 10px; //
-          height: 60px;
-          width: 80%;
-          span {
-          }
-          h4 {
-            font-size: 11px;
-          }
-          h6 {
-            font-size: 9px;
-          }
-        }
+        right: 100px;
       }
     }
   }
@@ -170,30 +183,8 @@
 @include respond(laptop) {
   .TEA {
     .Carousel {
-      // background-color: rgb(50, 20, 220);
-      margin-left: 115px;
-      .react-multiple-carousel__arrow {
-        margin-top: -210px;
-      }
       .react-multiple-carousel__arrow--left {
-        margin-left: 81%;
-      }
-      div {
-        img {
-        }
-        .name-job-title {
-          padding: 0px 10px; //
-          height: 60px;
-          width: 80%;
-          span {
-          }
-          h4 {
-            font-size: 10px;
-          }
-          h6 {
-            font-size: 8px;
-          }
-        }
+        right: 90px;
       }
     }
   }
@@ -201,29 +192,27 @@
 @include respond(small-laptop) {
   .TEA {
     .Carousel {
-      // background-color: goldenrod;
-      margin-left: 130px;
-      .react-multiple-carousel__arrow {
-        margin-top: -195px;
-      }
-      .react-multiple-carousel__arrow--left {
-        margin-left: 78%;
-      }
       div {
-        img {
-        }
         .name-job-title {
-          padding: 0px 10px; //
-          height: 65px;
-          width: 80%;
-          span {
-          }
           h4 {
             font-size: 12px;
           }
           h6 {
             font-size: 10px;
           }
+        }
+      }
+    }
+    .TEA-text-container {
+      margin-top: 10px;
+      div {
+        h6 {
+          font-size: 30px;
+        }
+        span {
+          width: 30px;
+          height: 4px;
+          margin-bottom: 12px;
         }
       }
     }
@@ -232,120 +221,93 @@
 @include respond(tablet) {
   .TEA {
     .Carousel {
-      // background-color: rgb(218, 85, 32);
-      margin-left: 115px;
-      .react-multiple-carousel__arrow {
-        margin-top: -140px;
-      }
       .react-multiple-carousel__arrow--left {
-        margin-left: 72%;
-      }
-      div {
-        width: 100%;
-
-        img {
-        }
-        .name-job-title {
-          padding: 0px 10px; //
-          height: 60px;
-          width: 80%;
-          span {
-          }
-          h4 {
-            font-size: 10px;
-          }
-          h6 {
-            font-size: 8px;
-          }
-        }
+        right: 80px;
       }
     }
   }
 }
-@include respond(large-phone) {
-  .TEA {
-    .Carousel {
-      // background-color: rgb(218, 32, 218);
-      margin-left: 15px;
-      .react-multiple-carousel__arrow {
-        margin-top: -200px;
-      }
-      .react-multiple-carousel__arrow--left {
-        margin-left: 69%;
-      }
-      div {
-        img {
-        }
-        .name-job-title {
-          span {
-          }
-          h4 {
-            font-size: 10px;
-          }
-          h6 {
-            font-size: 8px;
-          }
-        }
-      }
-    }
-  }
-}
-@include respond(F466-T585) {
-  .TEA {
-    .Carousel {
-      margin-left: 15px;
-      // background-color: rgb(51, 33, 51);
-      .react-multiple-carousel__arrow {
-        margin-top: -130px;
-      }
-      .react-multiple-carousel__arrow--left {
-        margin-left: 70%;
-      }
-      margin-left: 15px;
-      div {
-        img {
-        }
-        .name-job-title {
-          span {
-          }
-          h4 {
-            font-size: 10px;
-          }
-          h6 {
-            font-size: 8px;
-          }
-        }
-      }
-    }
-  }
-}
-
 @include respond(phone) {
   .TEA {
     .Carousel {
-      // background-color: rgb(175, 218, 32);
-      margin-left: 15px;
-      .react-multiple-carousel__arrow {
-        margin-top: -200px;
-      }
       .react-multiple-carousel__arrow--left {
-        margin-left: 62%;
-      }
-      margin-left: 15px;
-      div {
-        img {
-        }
-        .name-job-title {
-          span {
-          }
-          h4 {
-            font-size: 13px;
-          }
-          h6 {
-            font-size: 8px;
-          }
-        }
+        right: 70px;
       }
     }
   }
 }
+// @include respond(large-phone) {
+//   .TEA {
+//     .Carousel {
+//       // background-color: rgb(218, 32, 218);
+//       margin-left: 15px;
+//       .react-multiple-carousel__arrow {
+//         margin-top: -200px;
+//       }
+//       .react-multiple-carousel__arrow--left {
+//         margin-left: 69%;
+//       }
+//       div {
+//         .name-job-title {
+//           h4 {
+//             font-size: 10px;
+//           }
+//           h6 {
+//             font-size: 8px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// @include respond(F466-T585) {
+//   .TEA {
+//     .Carousel {
+//       margin-left: 15px;
+//       // background-color: rgb(51, 33, 51);
+//       .react-multiple-carousel__arrow {
+//         margin-top: -130px;
+//       }
+//       .react-multiple-carousel__arrow--left {
+//         margin-left: 70%;
+//       }
+//       margin-left: 15px;
+//       div {
+//         .name-job-title {
+//           h4 {
+//             font-size: 10px;
+//           }
+//           h6 {
+//             font-size: 8px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @include respond(phone) {
+//   .TEA {
+//     .Carousel {
+//       // background-color: rgb(175, 218, 32);
+//       margin-left: 15px;
+//       .react-multiple-carousel__arrow {
+//         margin-top: -200px;
+//       }
+//       .react-multiple-carousel__arrow--left {
+//         margin-left: 62%;
+//       }
+//       margin-left: 15px;
+//       div {
+//         .name-job-title {
+//           h4 {
+//             font-size: 13px;
+//           }
+//           h6 {
+//             font-size: 8px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

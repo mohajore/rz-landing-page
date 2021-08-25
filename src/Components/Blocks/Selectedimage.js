@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { BiPhone } from "react-icons/bi";
-
+import { AiOutlineEye, AiOutlineDoubleRight } from "react-icons/ai";
 const imgStyle = {
   transition: "transform .135s cubic-bezier(0.0,0.0,0.2,1),opacity linear .15s"
 };
@@ -64,10 +63,10 @@ const SelectedImage = ({
           </h3>
           <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry.
               </p>
-              <button>
-              <BiPhone size={25} />
-
-              </button>
+              <div className="MoreDetailsAndEyeIcon">
+              <div><AiOutlineEye size={30} /></div>
+              <div>More Details <AiOutlineDoubleRight size={30} /></div>
+              </div>
              
               
 

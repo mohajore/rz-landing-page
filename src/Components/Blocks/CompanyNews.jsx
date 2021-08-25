@@ -11,6 +11,14 @@ import {
 import Carousel, { consts } from "react-elastic-carousel";
 
 class CompanyNews extends Component {
+  constructor(props) {
+    super(props);
+    this.breakPoints = [
+      { width: 1, itemsToShow: 3 },
+      { width: 250, itemsToShow: 4 },
+      { width: 329, itemsToShow: 3 },
+    ];
+  }
   myArrow({ type, onClick, isEdge }) {
     const pointer =
       type === consts.PREV ? (
@@ -38,6 +46,7 @@ class CompanyNews extends Component {
                 </div>
                 <Carousel
                   renderArrow={this.myArrow}
+                  breakPoints={this.breakPoints}
                   verticalMode
                   itemsToShow={3}
                   renderPagination={({ pages, activePage, onClick }) => {

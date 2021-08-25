@@ -1,27 +1,148 @@
 @import "../../Abstract/mixins";
 .Gallary {
-  .gallery-single-img {
-    position: relative;
-    opacity: 1;
-    .gallery-single-img-title {
-      position: absolute;
-      background-color: #575e998f;
-      opacity: 0;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      padding: 20px;
-      color: $white-color;
-      transition: 0.3s;
-      h3 {
-        font-size: 25px;
+  margin: 50px 0;
+  .Gallary1 {
+    .GallaryTitle {
+      display: flex;
+      justify-content: space-between;
+      .GallaryList {
+        .GallaryListUlOne {
+          display: inline-block;
+        }
+        .GallaryListUlTwo {
+          display: none;
+        }
+        ul {
+          li {
+            padding: 5px 7px;
+            display: inline-block;
+            cursor: pointer;
+            transition: ease-in-out 0.4s all;
+            border-bottom: 2px solid $white-color;
+            &:hover {
+              border-bottom: 2px solid $tertiary-color;
+            }
+          }
+        }
       }
-      p {
-        line-height: 1.3;
+      .GallaryTitleWord {
+        h5 {
+          display: inline;
+          color: $primary-color;
+          font-size: 30px;
+          font-weight: bold;
+          margin-left: 10px;
+          text-transform: uppercase;
+        }
+        span {
+          display: inline-block;
+          background-color: $tertiary-color;
+          width: 45px;
+          height: 5px;
+          margin-bottom: 10px;
+        }
       }
-      &:hover {
-        opacity: 1;
+    }
+    .gallery-single-img {
+      position: relative;
+      opacity: 1;
+      .gallery-single-img-title {
+        position: absolute;
+        background-color: #575e998f;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 20px;
+        color: $white-color;
+        transition: 0.3s;
+        h3 {
+          font-size: 25px;
+        }
+        p {
+          line-height: 1.3;
+        }
+        &:hover {
+          opacity: 1;
+        }
+        .MoreDetailsAndEyeIcon {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          display: flex;
+          justify-content: space-between;
+          div {
+            border: 1px solid $white-color;
+            padding: 10px;
+            font-size: 25px;
+            transition: all ease-in-out 0.4s;
+            &:hover {
+              background-color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include respond(small-laptop) {
+  .Gallary {
+    .Gallary1 {
+      .GallaryTitle {
+        .GallaryList {
+          ul {
+            li {
+              font-size: 13px;
+            }
+          }
+        }
+        .GallaryTitleWord {
+          h5 {
+            display: inline;
+            font-size: 25px; //
+          }
+          span {
+            width: 30px;
+            height: 4px;
+            margin-bottom: 7px;
+          }
+        }
+      }
+    }
+  }
+}
+@include respond(tablet) {
+  .Gallary {
+    .Gallary1 {
+      .GallaryTitle {
+        // background-color: goldenrod;
+        .GallaryList {
+          // background-color: green;
+          .GallaryListUlOne {
+            display: none;
+          }
+          .GallaryListUlTwo {
+            display: inline-block;
+          }
+          ul {
+            li {
+              font-size: 13px;
+              padding: 5px 7px;
+            }
+            .LiDropDownMenu {
+              .dropdown-toggle {
+                background-color: $white-color;
+                border: none;
+                color: $secondary-color;
+                &::after {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

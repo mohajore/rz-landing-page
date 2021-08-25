@@ -25,21 +25,24 @@ class App extends Component{
       <div id="app">
         <Header/>
         <Welcome/>
-        <About/>
-        <Draft/>
-        <OurVMCP/>
-        <SmallRedLine/>
-        <Catalogue/>
-        <Cataloguebtn/>
-        <Facts/>
+      <About/>
+      <Draft/>
+          <OurVMCP/>
+     <SmallRedLine/>
+          <Catalogue/>
+       <Cataloguebtn/>
+          <Facts/>  
+          {/* Note fact change background */}
         <CompanyNews/>
         <TEA/>
-        <SustainablePackaging/>
-        <CustomizedFoodPackaging/>
-        <Gallary/>
+         <SustainablePackaging/>
+         {/* SustainablePackaging maybe has issue */}
+      <CustomizedFoodPackaging/>
+       <Gallary/>
         <Contact/>
-        <InternalLinks/>
-        <Footer/>
+          <InternalLinks/> 
+          {/* InternalLinks solved with overflow hidden */}
+        <Footer/>  
       </div>
     )}
 }

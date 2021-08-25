@@ -1,174 +1,109 @@
 @import "../../Abstract/mixins";
 
-.SmallRedLine{
-    .SmallRedLine1{
-        div{
-            display: flex;
-            align-items: center;
-            h5{
-                display: inline;
-                color: $primary-color;
-                font-size: 25px;
-                font-weight: bold;
-                text-transform: uppercase;
-                margin-left: 15px;
-            }
-            h6{
-                display: inline;
-                background-color: $tertiary-color;
-                width: 3%;
-                height: 5px;
-            }
-            h4{
-                display: inline;
-                background-color: $white-color;
-                width: 3%;
-                height: 5px;
-            }
-            p{font-size: 16.5px; line-height: 1.56; color: $secondary-color;}
-        }
-        
+.SmallRedLine {
+  margin-top: 20px;
+  .SmallRedLine1 {
+    div {
+      display: flex;
+      align-items: center;
+      h5 {
+        display: inline;
+        color: $primary-color;
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-left: 15px;
+      }
+      span {
+        display: inline;
+        background-color: $tertiary-color;
+        width: 30px;
+        height: 4px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 16.5px;
+        line-height: 1.56;
+        color: $secondary-color;
+      }
     }
-    .SmallRedLine2{
-        margin-top: -10px;
-    }
+  }
 }
 @include respond(laptop) {
-    .SmallRedLine{
-        .SmallRedLine1{
-            div{
-                h5{ 
-                    font-size: 20px; 
-                    
-                }
-                h6{
-                    display: inline;
-                    background-color: $tertiary-color;
-                    width: 3%;
-                    height: 5px;
-                }
-                h4{
-                    display: inline;
-                    background-color: $white-color;
-                    width: 3%;
-                    height: 5px;
-                }
-                p{font-size: 16.5px; line-height: 1.56; color: $secondary-color;}
-            }
-            
+  .SmallRedLine {
+    .SmallRedLine1 {
+      div {
+        h5 {
+          font-size: 20px;
         }
-        .SmallRedLine2{
-            margin-top: -10px;
+        p {
+          font-size: 16.5px;
+          line-height: 1.56;
+          color: $secondary-color;
         }
-}
+      }
+    }
+  }
 }
 @include respond(small-laptop) {
-    .SmallRedLine{
-        .SmallRedLine1{
-            div{ 
-                h5{ 
-                    font-size: 28px;
-                }
-                h6{
-                   
-                   margin-top: -40px;
-                    width: 7%;
-                    height: 4px;
-                }
-                h4{
-                    width: 7%;
-                    height: 4px;
-                }
-               
-                p{font-size: 16.5px; line-height: 1.56; color: $secondary-color;}
-            }
-            
+  .SmallRedLine {
+    .SmallRedLine1 {
+      div {
+        h5 {
+          font-size: 18px;
         }
-        .SmallRedLine2{
-            margin-top: -10px;
+        span {
+          margin-bottom: 12px;
         }
-}
+        p {
+          font-size: 16.5px;
+          line-height: 1.56;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
 }
 @include respond(tablet) {
-    .SmallRedLine{
-        .SmallRedLine1{
-            div{ 
-                h5{ 
-                    font-size: 28px;
-                }
-                h6{
-                   
-                   margin-top: -40px;
-                    width: 13%;
-                    height: 4px;
-                }
-                h4{
-                    width: 13%;
-                    height: 4px;
-                }
-               
-                p{font-size: 16.5px; line-height: 1.56; color: $secondary-color;}
-            }
-            
+  .SmallRedLine {
+    .SmallRedLine1 {
+      div {
+        h5 {
+          font-size: 20px;
         }
-        .SmallRedLine2{
-            margin-top: -10px;
+        span {
+          margin-bottom: 35px;
+          width: 40px;
         }
-}
-
+        p {
+          font-size: 16.5px;
+          line-height: 1.56;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
 }
 @include respond(large-phone) {
-    .SmallRedLine{
-        .SmallRedLine1{
-            div{ 
-                h5{ 
-                    font-size: 28px;
-                }
-                h6{
-                   
-                   margin-top: -40px;
-                    width: 13%;
-                    height: 4px;
-                }
-                h4{
-                    width: 13%;
-                    height: 4px;
-                }
-               
-                p{font-size: 16.5px; line-height: 1.56; color: $secondary-color;}
-            }
-            
+  .SmallRedLine {
+    .SmallRedLine1 {
+      div {
+        h5 {
+          font-size: 16px;
         }
-        .SmallRedLine2{
-            margin-top: -10px;
+        span {
+          width: 30px;
+          margin-bottom: 30px;
+          height: 3px;
         }
-}
+        p {
+          font-size: 16.5px;
+          line-height: 1.56;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
 }
 @include respond(phone) {
-    .SmallRedLine{
-        .SmallRedLine1{
-            div{ 
-                h5{ 
-                    font-size: 28px;
-                }
-                h6{
-                   
-                   margin-top: -70px;
-                    width: 20%;
-                    height: 4px;
-                }
-                h4{
-                    width: 20%;
-                    height: 4px;
-                }
-               
-                p{font-size: 16.5px; line-height: 1.56; color: $secondary-color;}
-            }
-            
-        }
-        .SmallRedLine2{
-            margin-top: 5px;
-        }
-}
-
 }

@@ -9,14 +9,14 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 const responsive = {
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 5,
+    breakpoint: { max: 3000, min: 1200 },
+    items: 4,
     slidesToSlide: 1, // optional, default to 1.
   },
 
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 4,
+    breakpoint: { max: 1200, min: 992 },
+    items: 3,
     slidesToSlide: 1, // optional, default to 1.
   },
   mobile: {
@@ -44,87 +44,87 @@ class TEA extends Component {
               <h6>TEA</h6>
             </div>
           </div>
+          <div className="Carousel">
+            <Carousel
+              showDots={false}
+              responsive={responsive}
+              infinite={true}
+              autoPlay={true}
+              autoPlaySpeed={3000}
+            >
+              <div>
+                {" "}
+                <img className="CarouselItem" src="images/tea1.png" />
+                {/* <div className="name-job-title">
+                  <span></span>
+                  <h4>Mohammad Dokh</h4>
+                  <h6>President - CEO</h6>
+                  <h6 className="h6-email">sales@alhadaf-int.com</h6>
+                </div> */}
+              </div>
+              <div>
+                {" "}
+                <img className="" src="images/tea6.png" />
+                {/* <div className="name-job-title">
+                  <span></span>
+                  <h4>Mohammad Dokh</h4>
+                  <h6>President - CEO</h6>
+                  <h6 className="h6-email">sales@alhadaf-int.com</h6>
+                </div> */}
+              </div>
+              <div>
+                {" "}
+                <img className="" src="images/tea3.png" />
+                {/* <div className="name-job-title">
+                  <span></span>
+                  <h4>Mohammad Dokh</h4>
+                  <h6>President - CEO</h6>
+                  <h6 className="h6-email">sales@alhadaf-int.com</h6>
+                </div> */}
+              </div>
+              <div>
+                {" "}
+                <img className="" src="images/tea4.png" />
+                {/* <div className="name-job-title">
+                  <span></span>
+                  <h4>Mohammad Dokh</h4>
+                  <h6>President - CEO</h6>
+                  <h6 className="h6-email">sales@alhadaf-int.com</h6>
+                </div> */}
+              </div>
+              <div>
+                {" "}
+                <img className="" src="images/tea5.png" />
+                {/* <div className="name-job-title">
+                  <span></span>
+                  <h4>Mohammad Dokh</h4>
+                  <h6>President - CEO</h6>
+                  <h6 className="h6-email">sales@alhadaf-int.com</h6>
+                </div> */}
+              </div>
+              <div>
+                {" "}
+                <img className="" src="images/tea4.png" />
+                {/* <div className="name-job-title">
+                  <span></span>
+                  <h4>Mohammad Dokh</h4>
+                  <h6>President - CEO</h6>
+                  <h6 className="h6-email">sales@alhadaf-int.com</h6>
+                </div> */}
+              </div>
+              <div>
+                {" "}
+                <img className="" src="images/tea5.png" />
+                {/* <div className="name-job-title">
+                  <span></span>
+                  <h4>Mohammad Dokh</h4>
+                  <h6>President - CEO</h6>
+                  <h6 className="h6-email">sales@alhadaf-int.com</h6>
+                </div> */}
+              </div>
+            </Carousel>
+          </div>
         </Container>
-        <div className="Carousel">
-          <Carousel
-            showDots={false}
-            responsive={responsive}
-            infinite={true}
-            autoPlay={true}
-            autoPlaySpeed={3000}
-          >
-            <div>
-              {" "}
-              <img className="CarouselItem" src="images/tea1.png" />
-              <div className="name-job-title">
-                <span></span>
-                <h4>Mohammad Dokh</h4>
-                <h6>President - CEO</h6>
-                <h6 className="h6-email">sales@alhadaf-int.com</h6>
-              </div>
-            </div>
-            <div>
-              {" "}
-              <img className="" src="images/tea6.png" />
-              <div className="name-job-title">
-                <span></span>
-                <h4>Mohammad Dokh</h4>
-                <h6>President - CEO</h6>
-                <h6 className="h6-email">sales@alhadaf-int.com</h6>
-              </div>
-            </div>
-            <div>
-              {" "}
-              <img className="" src="images/tea3.png" />
-              <div className="name-job-title">
-                <span></span>
-                <h4>Mohammad Dokh</h4>
-                <h6>President - CEO</h6>
-                <h6 className="h6-email">sales@alhadaf-int.com</h6>
-              </div>
-            </div>
-            <div>
-              {" "}
-              <img className="" src="images/tea4.png" />
-              <div className="name-job-title">
-                <span></span>
-                <h4>Mohammad Dokh</h4>
-                <h6>President - CEO</h6>
-                <h6 className="h6-email">sales@alhadaf-int.com</h6>
-              </div>
-            </div>
-            <div>
-              {" "}
-              <img className="" src="images/tea5.png" />
-              <div className="name-job-title">
-                <span></span>
-                <h4>Mohammad Dokh</h4>
-                <h6>President - CEO</h6>
-                <h6 className="h6-email">sales@alhadaf-int.com</h6>
-              </div>
-            </div>
-            <div>
-              {" "}
-              <img className="" src="images/tea4.png" />
-              <div className="name-job-title">
-                <span></span>
-                <h4>Mohammad Dokh</h4>
-                <h6>President - CEO</h6>
-                <h6 className="h6-email">sales@alhadaf-int.com</h6>
-              </div>
-            </div>
-            <div>
-              {" "}
-              <img className="" src="images/tea5.png" />
-              <div className="name-job-title">
-                <span></span>
-                <h4>Mohammad Dokh</h4>
-                <h6>President - CEO</h6>
-                <h6 className="h6-email">sales@alhadaf-int.com</h6>
-              </div>
-            </div>
-          </Carousel>
-        </div>
       </div>
     );
   }

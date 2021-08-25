@@ -1,6 +1,7 @@
 @import "../../Abstract/mixins";
 .SustainablePackaging {
   margin-bottom: 50px;
+  overflow: hidden;
   .SustainablePackaging-text-container {
     margin-top: 50px;
     div {
@@ -12,6 +13,7 @@
         color: $primary-color;
         font-size: 40px;
         font-weight: bold;
+        margin-left: 10px;
       }
       span {
         display: inline-block;
@@ -43,6 +45,7 @@
     }
   }
   .SustainablePackaginFivelogosTitle {
+    margin: 20px 0;
     h5 {
       margin-top: 10px;
       display: inline;
@@ -80,10 +83,6 @@
     }
   }
 }
-// @include respond(desktop) {
-//   .SustainablePackaging {
-//   }
-// }
 @include respond(large-laptop) {
   .SustainablePackaging {
     .SustainablePackaging-text-container {
@@ -137,6 +136,11 @@
           h5 {
             font-size: 14px;
           }
+          div {
+            h5 {
+              font-size: 14px;
+            }
+          }
         }
       }
     }
@@ -144,10 +148,32 @@
 }
 @include respond(small-laptop) {
   .SustainablePackaging {
+    .SustainablePackaginFivelogos {
+      .Fivelogos {
+        grid-template-columns: auto auto auto;
+        column-gap: 2.5%;
+        row-gap: 20px;
+        .Fivelogos1 {
+          h5 {
+            font-size: 14px;
+          }
+          div {
+            h5 {
+              width: 90%;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
     .SustainablePackaging-text-container {
       div {
         h5 {
           font-size: 25px;
+        }
+        span {
+          width: 30px;
+          height: 4px;
         }
 
         p {
@@ -161,18 +187,6 @@
         font-size: 25px;
       }
     }
-    .SustainablePackaginFivelogos {
-      .Fivelogos {
-        .Fivelogos1 {
-          div {
-            h5 {
-              width: 100%;
-              font-size: 11px;
-            }
-          }
-        }
-      }
-    }
   }
 }
 
@@ -181,10 +195,11 @@
     .SustainablePackaging-text-container {
       div {
         h5 {
-          font-size: 35px;
+          font-size: 20px;
         }
         span {
-          margin-top: -35px;
+          margin-top: 10px;
+          height: 3px;
         }
         p {
           font-size: 15px;
@@ -199,19 +214,17 @@
     }
     .SustainablePackaginFivelogosTitle {
       h5 {
-        font-size: 35px;
+        font-size: 25px;
       }
     }
     .SustainablePackaginFivelogos {
       .Fivelogos {
-        display: grid;
         grid-template-columns: 30% 30% 30%;
         column-gap: 20px;
         row-gap: 20px;
         .Fivelogos1 {
           div {
             h5 {
-              width: 100%;
               font-size: 11px;
             }
           }
@@ -220,9 +233,22 @@
     }
   }
 }
-
 @include respond(large-phone) {
   .SustainablePackaging {
+    .SustainablePackaginFivelogos {
+      .Fivelogos {
+        grid-template-columns: auto auto;
+        column-gap: 20px;
+        row-gap: 20px;
+        .Fivelogos1 {
+          div {
+            h5 {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
     .SustainablePackaginTwologos {
       .Twologos {
         flex-direction: column;
@@ -236,4 +262,34 @@
   }
 }
 @include respond(phone) {
+  .SustainablePackaging {
+    .SustainablePackaging-text-container {
+      div {
+        h5 {
+          font-size: 18px;
+        }
+        span {
+          height: 3px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 1.4;
+        }
+      }
+    }
+    .SustainablePackaginFivelogos {
+      .Fivelogos {
+        grid-template-columns: auto;
+        column-gap: 20px;
+        row-gap: 20px;
+        .Fivelogos1 {
+          div {
+            h5 {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

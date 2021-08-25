@@ -84,6 +84,7 @@
 }
 @include respond(tablet) {
   .InternalLinks {
+    overflow: hidden;
     margin-top: 0px;
     display: flex;
     flex-direction: column-reverse;

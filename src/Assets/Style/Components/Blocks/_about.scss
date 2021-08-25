@@ -1,5 +1,6 @@
 @import "../../Abstract/mixins";
 .About {
+  overflow: hidden;
   .About1 {
     .About-image-container {
       margin-top: 50px;
@@ -131,10 +132,8 @@
       .About-img-container {
         margin-top: 50px;
       }
-
       .About-image-container {
         margin: 65px 0px 0px 40px;
-        // margin: 0px;
         height: 330px;
         width: 80%;
         .white-div {
@@ -150,7 +149,11 @@
         margin-top: 100px;
         div {
           h5 {
-            font-size: 35px;
+            font-size: 30px;
+          }
+          span {
+            width: 30px;
+            height: 4px;
           }
           p {
             font-size: 15px;
@@ -179,22 +182,13 @@
         }
       }
       .About-text-container {
-        h2 {
-          font-size: 66px;
-        }
-        .About-h5-container {
-          margin-top: 20px;
-          width: 100%;
+        margin-top: 100px;
+        div {
           h5 {
-            font-weight: 100;
-            font-size: 30px;
-            color: $secondary-color;
+            font-size: 25px;
           }
-        }
-        .About-shop-now-btn-container {
-          margin-top: 50px;
           span {
-            font-size: 26px;
+            width: 25px;
           }
         }
       }
@@ -215,26 +209,6 @@
           img {
             margin-left: 20px;
             margin-top: 0px;
-          }
-        }
-      }
-      .About-text-container {
-        h2 {
-          font-size: 66px;
-        }
-        .About-h5-container {
-          margin-top: 20px;
-          width: 100%;
-          h5 {
-            font-weight: 100;
-            font-size: 30px;
-            color: $secondary-color;
-          }
-        }
-        .About-shop-now-btn-container {
-          margin-top: 50px;
-          span {
-            font-size: 26px;
           }
         }
       }

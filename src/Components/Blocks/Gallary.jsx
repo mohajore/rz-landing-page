@@ -5,35 +5,38 @@ import Row from "react-bootstrap/Row";
 import Gallery from "react-photo-gallery";
 import "../../Assets/Style/Components/Blocks/_Gallary.scss";
 import SelectedImage from "./Selectedimage";
-// import { AiOutlineEye, AiOutlineDoubleRight } from "AiOutlineEye/ai";
+import ListGroup from "react-bootstrap/ListGroup";
+import { BsThreeDotsVertical } from "react-icons/bs";
+import Dropdown from "react-bootstrap/Dropdown";
+import DropdownButton from "react-bootstrap/DropdownButton";
 const photos = [
   {
-    src: "/images/tea5.png",
+    src: "/images/gallery5.png",
     width: 4,
     height: 2,
   },
   {
-    src: "/images/tea1.png",
+    src: "/images/gallery1.png",
     width: 4,
     height: 2,
   },
   {
-    src: "/images/tea4.png",
+    src: "/images/gallery4.png",
     width: 2,
     height: 2,
   },
   {
-    src: "/images/tea3.png",
+    src: "/images/gallery7.png",
     width: 3,
     height: 2,
   },
   {
-    src: "/images/tea3.png",
+    src: "/images/gallery2.png",
     width: 3,
     height: 2,
   },
   {
-    src: "/images/background1.png",
+    src: "/images/gallery3.png",
     width: 3,
     height: 2,
   },
@@ -72,7 +75,49 @@ class Gallary extends Component {
     return (
       <div className="Gallary">
         <Container>
-          <div className="Gallary">
+          <div className="Gallary1">
+            <div className="GallaryTitle">
+              <div className="GallaryTitleWord">
+                <span></span>
+                <h5>Gallery</h5>
+              </div>
+              <div className="GallaryList">
+                <ul className="GallaryListUlOne">
+                  <li>All</li>
+                  <li>Showrooms</li>
+                  <li>Social Responsibliity</li>
+                  <li>Events </li>
+                  <li>Company </li>
+                  <li>Videos </li>
+                </ul>
+                <ul className="GallaryListUlTwo">
+                  <li>All</li>
+                  <li className="LiDropDownMenu">
+                    {" "}
+                    <DropdownButton
+                      id="dropdown-basic-button"
+                      title={<BsThreeDotsVertical />}
+                    >
+                      <Dropdown.Item href="#/action-1">
+                        <li>Showrooms </li>
+                      </Dropdown.Item>
+                      <Dropdown.Item href="#/action-1">
+                        <li>Social Responsibliity</li>
+                      </Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">
+                        <li>Events</li>
+                      </Dropdown.Item>
+                      <Dropdown.Item href="#/action-3">
+                        <li>Company</li>
+                      </Dropdown.Item>
+                      <Dropdown.Item href="#/action-3">
+                        <li>Videos</li>
+                      </Dropdown.Item>
+                    </DropdownButton>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <Row>
               <Gallery photos={photos} renderImage={imageRenderer} />
             </Row>

@@ -1,183 +1,187 @@
 @import "../../Abstract/mixins";
-.Welcome{
-    background-color: $bg-primary-color;
+.Welcome {
+  background-color: $bg-primary-color;
 
-.Welcome1{
+  .Welcome1 {
     margin-top: -70px;
-    .welcome-img-container{
-        margin-top: 120px;
-        margin-bottom: 50px;
-        img{
-            width: 100%;
-            -webkit-box-shadow: 28px -27px 0px 4px #D8D8E9; 
-            box-shadow: 28px -27px 0px 4px #D8D8E9;
-        }
+    .welcome-img-container {
+      margin-top: 120px;
+      margin-bottom: 50px;
+      img {
+        width: 100%;
+        -webkit-box-shadow: 28px -27px 0px 4px #d8d8e9;
+        box-shadow: 28px -27px 0px 4px #d8d8e9;
+      }
     }
-    .welcome-titles-container{
-        margin-top: 120px;
-        h2{
-            color: $primary-color;
-            font-weight: bolder;
-            font-size: 60px;
-        }
-        h2:last-of-type {
-            margin-top: -15px;
-          }
-        .welcome-h5-container{
-            margin-top: 20px;
-            width: 70%;
-            h5{
-                font-weight:100;
-                font-size: 30px;
-                color: $secondary-color;  
-            }
-          
-        }
-        .welcome-shop-now-btn-container{
-            margin-top: 65px;
-            span{
-                background-color: $primary-color;
-                color: $white-color;
-                font-size: 22px;
-                font-weight: bold;
-                display: inline-block;
-             }
-        }
-    }
-   
-}   
-    
-}
-@include respond(large-laptop) {
-    .Welcome{
-    .Welcome1{
-        .welcome-titles-container{
-            h2{font-size: 50px;}
-            .welcome-h5-container{
-                margin-top: 20px;
-                width: 60%;
-                h5{
-                    font-size: 20px;
-                }
-            }
-            .welcome-shop-now-btn-container{
-                margin-top: 75px;
-                span{font-size: 20px;}
-            }
-        }
-}
-}
-}
-@include respond(laptop) {
-    .Welcome{
-    .Welcome1{
-        .welcome-titles-container{
-            h2{font-size: 40px;}
-            .welcome-h5-container{
-                margin-top: 20px;
-                width: 70%;
-                h5{
-                    font-size: 20px;
-                }
-            }
-            .welcome-shop-now-btn-container{
-                margin-top: 43px;
-                span{font-size: 18px;
-                
-                }
-                
-            }
-        }
-    }
-}
-}
-@include respond(small-laptop) {
-    .Welcome{
-    .Welcome1{
-        margin-top: -35px;
-        .welcome-img-container{
-            margin-bottom: 25px;
-        }
-        .welcome-titles-container{
-           
-            h2{font-size: 35px;}
-            .welcome-h5-container{
-                margin-top: 12px;
-                width: 70%;
-                h5{
-                    font-size: 15px;
-                }
-            }
-            .welcome-shop-now-btn-container{
-                margin-top: 21px;
-                span{font-size: 14px;
-                .IoIosArrowForward{
-                    font-size: 18px;
-                }
-                }
-                
-            }
-        }
-}
-    }
-}
-@include respond(tablet) {
-    .Welcome{
-    .Welcome1{
-        margin-top: -75px;
-        .welcome-img-container{
-            margin-top: 50px;
-        }
-
-.welcome-titles-container{
-    margin-top: 50px;
-    h2{
+    .welcome-titles-container {
+      margin-top: 120px;
+      h2 {
         color: $primary-color;
         font-weight: bolder;
-        font-size: 50px;
-    }
-    h2:first-of-type {
-        margin-top: 70px;
+        font-size: 60px;
       }
-    h2:last-of-type {
+      h2:last-of-type {
         margin-top: -15px;
       }
-    .welcome-h5-container{
+      .welcome-h5-container {
         margin-top: 20px;
-        width: 100%;
-        h5{
-            font-weight:100;
-            font-size: 24px;  
+        width: 70%;
+        h5 {
+          font-weight: 100;
+          font-size: 30px;
+          color: $secondary-color;
         }
+      }
+      .welcome-shop-now-btn-container {
+        margin-top: 65px;
+        span {
+          background-color: $primary-color;
+          color: $white-color;
+          font-size: 22px;
+          font-weight: bold;
+          display: inline-block;
+        }
+      }
     }
-    .welcome-shop-now-btn-container{
+  }
+}
+@include respond(large-laptop) {
+  .Welcome {
+    .Welcome1 {
+      .welcome-titles-container {
+        h2 {
+          font-size: 50px;
+        }
+        .welcome-h5-container {
+          margin-top: 20px;
+          width: 60%;
+          h5 {
+            font-size: 20px;
+          }
+        }
+        .welcome-shop-now-btn-container {
+          margin-top: 75px;
+          span {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@include respond(laptop) {
+  .Welcome {
+    .Welcome1 {
+      .welcome-titles-container {
+        h2 {
+          font-size: 40px;
+        }
+        .welcome-h5-container {
+          margin-top: 20px;
+          width: 70%;
+          h5 {
+            font-size: 20px;
+          }
+        }
+        .welcome-shop-now-btn-container {
+          margin-top: 43px;
+          span {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+@include respond(small-laptop) {
+  .Welcome {
+    .Welcome1 {
+      margin-top: -35px;
+      .welcome-img-container {
+        margin-bottom: 25px;
+      }
+      .welcome-titles-container {
+        h2 {
+          font-size: 35px;
+        }
+        .welcome-h5-container {
+          margin-top: 12px;
+          width: 70%;
+          h5 {
+            font-size: 15px;
+          }
+        }
+        .welcome-shop-now-btn-container {
+          margin-top: 21px;
+          span {
+            font-size: 14px;
+            .IoIosArrowForward {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include respond(tablet) {
+  .Welcome {
+    .Welcome1 {
+      //   background-color: goldenrod;
+      margin-top: -75px;
+      .welcome-img-container {
         margin-top: 50px;
-        span{
+      }
+
+      .welcome-titles-container {
+        margin-top: 50px;
+        h2 {
+          color: $primary-color;
+          font-weight: bolder;
+          font-size: 50px;
+        }
+        h2:first-of-type {
+          margin-top: 70px;
+        }
+        h2:last-of-type {
+          margin-top: -15px;
+        }
+        .welcome-h5-container {
+          margin-top: 20px;
+          width: 100%;
+          h5 {
+            font-weight: 100;
+            font-size: 24px;
+          }
+        }
+        .welcome-shop-now-btn-container {
+          margin-top: 50px;
+          span {
             font-size: 20px;
             font-weight: bold;
-         }
-    }
-}
-    }
-}}
-@include respond(large-phone) {
-    .Welcome{
-    .Welcome1{
-       .welcome-titles-container{
-    
-    h2{
-        // 
-        font-size: 40px;
-    }
-    h2:first-of-type {
-        margin-top: 70px;
+          }
+        }
       }
-      .welcome-shop-now-btn-container{
-        span{
-            font-size: 17px;
-         }
     }
+  }
 }
-}}
+@include respond(large-phone) {
+  .Welcome {
+    .Welcome1 {
+      .welcome-titles-container {
+        h2 {
+          //
+          font-size: 40px;
+        }
+        h2:first-of-type {
+          margin-top: 70px;
+        }
+        .welcome-shop-now-btn-container {
+          span {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
 }
-
