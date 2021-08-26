@@ -45,7 +45,7 @@ class Contact extends Component {
               <div className="LocationPickerExample">
                 <LocationPicker
                   containerElement={<div style={{ height: "100%" }} />}
-                  mapElement={<div style={{ height: "470px" }} />}
+                  mapElement={<div className="CustomMapView" />}
                   onChange={this.handleLocationChange}
                   defaultPosition={defaultPosition}
                   circleOptions={{ visible: false }}
@@ -112,11 +112,11 @@ class Contact extends Component {
                     <Col>
                       <div className="ContactInfoIconAndTextContainer">
                         {" "}
-                        <div className="ContactInfoIcon">
+                        <div className="ContactInfoIcon ">
                           {" "}
                           <BiPhone size={25} />
                         </div>
-                        <h5> +962798089000</h5>
+                        <h5 className="UnderlineClass "> +962798089000</h5>
                       </div>
 
                       <div className="ContactInfoIconAndTextContainer">
@@ -125,7 +125,7 @@ class Contact extends Component {
                           {" "}
                           <HiOutlineMail size={25} />
                         </div>
-                        <h5>info@alhadaf-int.com</h5>
+                        <h5 className="UnderlineClass">info@alhadaf-int.com</h5>
                       </div>
 
                       <div className="ContactInfoIconAndTextContainer">
@@ -148,19 +148,19 @@ class Contact extends Component {
                         <div className="SocialIcons">
                           <div className="SocialIcon">
                             {" "}
-                            <FaInstagram size={25} />
+                            <FaInstagram size={20} />
                           </div>{" "}
                           <div className="SocialIcon">
                             {" "}
-                            <FaFacebookF size={25} />
+                            <FaFacebookF size={20} />
                           </div>
                           <div className="SocialIcon">
                             {" "}
-                            <FaTwitter size={25} />
+                            <FaTwitter size={20} />
                           </div>
                           <div className="SocialIcon">
                             {" "}
-                            <FaLinkedinIn size={25} />
+                            <FaLinkedinIn size={20} />
                           </div>
                         </div>
                       </div>

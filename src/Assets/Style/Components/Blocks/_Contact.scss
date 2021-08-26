@@ -5,14 +5,12 @@
   overflow: hidden;
   position: relative;
   margin-top: 40px;
-  //   .LocationPickerExample {
-  //   }
   .LocationPickerExample {
     position: relative;
-    .gmnoprint {
-      background-color: rgb(116, 47, 255);
-      margin: -40px -50px -50px -0px;
+    .CustomMapView {
+      height: 550px;
     }
+
     .BranchLocations {
       position: absolute;
       bottom: 0%;
@@ -72,19 +70,22 @@
     .ContactForm {
       .form-control {
         border: none;
-        border-bottom: 3px solid $white-color;
+        margin-top: 20px;
+        border-bottom: 1px solid $border-color2;
         background-color: $primary-color;
         color: $white-color;
         &::placeholder {
-          color: $white-color;
+          color: $border-color2;
         }
       }
     }
     .ContactInfo {
+      padding-bottom: 50px;
       color: $white-color;
       .ContactInfoIconAndTextContainer {
         display: flex;
-        padding: 10px;
+        padding: 5px;
+
         .ContactInfoIcon {
           display: inline-block;
         }
@@ -100,23 +101,30 @@
           display: flex;
           justify-content: flex-end;
           .sendbtn {
-            border: 2px solid $white-color;
             padding: 10px 60px;
             font-size: 30px;
             font-weight: bold;
             background-color: $white-color;
             color: $primary-color;
             text-transform: uppercase;
+            &:hover {
+              background-color: $border-color2;
+            }
           }
         }
         .SocialIcons {
           display: flex;
           justify-content: flex-end;
           margin-top: 20px;
-          column-gap: 3px;
+          column-gap: 5px;
           .SocialIcon {
-            border: 2px $white-color solid;
+            border: 3px $border-color solid;
             padding: 10px;
+            transition: all 0.4s ease-in-out;
+            cursor: pointer;
+            &:hover {
+              background-color: $border-color2;
+            }
           }
         }
       }

@@ -1,136 +1,150 @@
 @import "../../Abstract/mixins";
-.burger-menu{display: none;}
-.Header{
-    .header-container{
-        display: flex;
-        ul{
-            display: flex;
-            flex-direction: row;
-            column-gap: 0px;
-            height: 50%;
-            align-self: center;
-           
-            li{
-                display: flex;
-                column-gap: 10px;
-                height: 100%;
-               align-items: center;
-               clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
-               position: relative;
-
-               
-               .li-same-tag{
-                width: 70px;
-                height: 130%;
-                transform: rotate(7deg);
-                position: absolute;
-                left: calc(50% - 35px);
-                opacity: 0;
-                clip-path: polygon(40% 0, 74% 0, 51% 100%, 13% 100%);
-                transition:  ease-in-out 0.5s;
-            }
-         
-                a{
-                    text-decoration: none; 
-                    
-                    font-weight: bolder; 
-                    // background-color: chocolate;
-                   padding:0px 15px;
-                   width: 100%;
-                   white-space: nowrap;
-                   z-index: 9999;
-                   }
-                .a-same-tag{color: $secondary-color; background-color: white;}
-                .a-shop-now-tag{color: $white-color;}
-                &:hover{
-
-                        .li-same-tag{
-                            background-color: $tertiary-color;
-                            transition:  ease-in-out 0.5s;
-                            opacity: 1;
-                        }
-                }
-            }
-            .shop-now{
-                background-color: $primary-color;
-            }
-        }
-      
-    }
-    .logo-img{text-align: right;}
-    .logo-img1{display: none; text-align: right;}
+.burger-menu {
+  display: none;
 }
-@include respond(laptop){
-    .header-container{
-        ul{
-            display: flex;
-            flex-direction: row-reverse;
-            height: 50%;
-            align-self: center;
-
-            li{
-                
-                a{
-                    font-size: 13px;
-                    font-weight: bolder; 
-                
-                   }
-            }
-        }
-    
-    }
-}
-@include respond(small-laptop){
-  .header-container{
+.Header {
+  .header-container {
     display: flex;
-    
-    img{
+    ul {
+      display: flex;
+      flex-direction: row;
+      column-gap: 0px;
+      height: 50%;
+      align-self: center;
+
+      li {
+        display: flex;
+        column-gap: 10px;
+        height: 100%;
+        align-items: center;
+        clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
+        position: relative;
+
+        .li-same-tag {
+          width: 70px;
+          height: 130%;
+          transform: rotate(7deg);
+          position: absolute;
+          left: calc(50% - 35px);
+          opacity: 0;
+          clip-path: polygon(40% 0, 74% 0, 51% 100%, 13% 100%);
+          transition: ease-in-out 0.5s;
+        }
+
+        a {
+          text-decoration: none;
+          font-weight: bolder;
+          // background-color: chocolate;
+          padding: 0px 15px;
+          width: 100%;
+          white-space: nowrap;
+          z-index: 9999;
+          margin-top: 13px;
+        }
+        .a-same-tag {
+          color: $secondary-color;
+          background-color: white;
+          // background-color: red;
+          margin-top: 13px;
+        }
+        .a-shop-now-tag {
+          color: $white-color;
+        }
+        &:hover {
+          .li-same-tag {
+            background-color: $tertiary-color;
+            transition: ease-in-out 0.5s;
+            opacity: 1;
+          }
+        }
+      }
+      .shop-now {
+        background-color: $primary-color;
+      }
+    }
+  }
+  .logo-img {
+    text-align: right;
+    img {
+      width: 120px;
+    }
+  }
+  .logo-img1 {
+    display: none;
+    text-align: right;
+    img {
+      width: 130px;
+    }
+  }
+}
+@include respond(laptop) {
+  .header-container {
+    ul {
+      display: flex;
+      flex-direction: row-reverse;
+      height: 50%;
+      align-self: center;
+
+      li {
+        a {
+          font-size: 13px;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}
+@include respond(small-laptop) {
+  .header-container {
+    display: flex;
+
+    img {
       width: 70px;
       height: 100%;
     }
-    ul{
-        display: flex;
-        flex-direction: row-reverse;
-        width: 300px;
-        height: 50%;
-        align-self: center;
-        justify-content:center;
-        margin-left: 60px;
-       
-        li{
-            display: flex;
-            column-gap: 1px;
-            height: 90%;
-            width: 30%;
-          
-        .li-same-tag{
-          clip-path: polygon(50% 0, 73% 0, 45% 100%, 20% 100%);
-      }
-           
-            a{ 
-                font-size: 9px;
-               padding:0px;
-               width: 100%;
-             
-               }
-           
-        }
-}
-  }}
-@include respond(tablet) {
-  .Header{
-      .header-container{display: none;}
-      .burger-menu{display: block;}
-      .logo-img1{
-        display: block;
-      }
+    ul {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 300px;
+      height: 50%;
+      align-self: center;
+      justify-content: center;
+      margin-left: 60px;
 
+      li {
+        display: flex;
+        column-gap: 1px;
+        height: 90%;
+        width: 30%;
+
+        .li-same-tag {
+          clip-path: polygon(50% 0, 73% 0, 45% 100%, 20% 100%);
+        }
+
+        a {
+          font-size: 9px;
+          padding: 0px;
+          width: 100%;
+        }
+      }
     }
   }
-    
-  
+}
+@include respond(tablet) {
+  .Header {
+    .header-container {
+      display: none;
+    }
+    .burger-menu {
+      display: block;
+    }
+    .logo-img1 {
+      display: block;
+    }
+  }
+}
 
-//// side bar menu style start 
+//// side bar menu style start
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: absolute;
@@ -198,14 +212,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-overlay {
   background: rgba(236, 236, 244, 1);
 }
-.menu-item{
+.menu-item {
   color: $white-color;
   display: inline-block;
   padding: 10px 0;
   border-bottom: 1px solid silver;
   font-size: 15px;
   margin-left: -30px;
-  &:hover{
+  &:hover {
     color: $tertiary-color;
   }
 }
@@ -215,4 +229,4 @@ Note: Beware of modifying this element as it can break the animations - you shou
   //// side bar menu style start
 
   //// side bar menu end
-  }
+}

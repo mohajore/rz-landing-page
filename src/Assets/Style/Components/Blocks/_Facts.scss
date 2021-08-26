@@ -1,11 +1,10 @@
 @import "../../Abstract/mixins";
 .Facts {
-  // background-image: url(../../../../images/factsbackground.png);
+  background-image: url(../../../../images/factsbackground.png);
   background-size: cover;
-  background-color: rgb(165, 44, 0);
   background-repeat: no-repeat;
   background-position: center;
-
+  height: 370px;
   .Facts1 {
     padding-top: 50px;
     text-align: center;
@@ -43,6 +42,7 @@
 }
 @include respond(laptop) {
   .Facts {
+    height: 330px;
     .Facts1 {
       .fact-word {
         font-size: 35px;
@@ -84,7 +84,7 @@
             height: 5px;
           }
           p {
-            font-size: 14px;
+            font-size: 13px;
           }
         }
       }
@@ -93,6 +93,7 @@
 }
 @include respond(tablet) {
   .Facts {
+    height: auto;
     .Facts1 {
       text-align: center;
       .grid-container {

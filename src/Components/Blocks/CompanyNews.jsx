@@ -9,14 +9,13 @@ import {
   IoIosArrowForward,
 } from "react-icons/io";
 import Carousel, { consts } from "react-elastic-carousel";
-
 class CompanyNews extends Component {
   constructor(props) {
     super(props);
     this.breakPoints = [
       { width: 1, itemsToShow: 3 },
       { width: 250, itemsToShow: 4 },
-      { width: 329, itemsToShow: 3 },
+      { width: 329, itemsToShow: 4 },
     ];
   }
   myArrow({ type, onClick, isEdge }) {
@@ -32,13 +31,12 @@ class CompanyNews extends Component {
       </span>
     );
   }
-
   render() {
     return (
       <div className="CompanyNewsComponent">
         <Container>
           <Row>
-            <Col className="Symmtric" md={5}>
+            <Col className="Symmtric" md={6}>
               <div className="Company-news">
                 <div className="CompanyNewsTitleContainer">
                   <span></span>
@@ -54,13 +52,7 @@ class CompanyNews extends Component {
                       <div direction="row">
                         {pages.map((page) => {
                           const isActivePage = activePage === page;
-                          return (
-                            <div>
-                              {/* key={page} */}
-                              {/* onClick={() => onClick(page)} */}
-                              {/* active={isActivePage} */}
-                            </div>
-                          );
+                          return <div></div>;
                         })}
                       </div>
                     );
@@ -139,7 +131,7 @@ class CompanyNews extends Component {
                 </Carousel>
               </div>
             </Col>
-            <Col className="Labour-Day Symmtric" md={7}>
+            <Col className="Labour-Day Symmtric" md={6}>
               <div className="labourDay-imgDiv">
                 <img src="../../images/labourDay.png" />
               </div>

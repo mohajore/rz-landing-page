@@ -94,7 +94,7 @@ class Header extends Component {
               </ul>
             </Col>
             <Col className="logo-img">
-              <img src="images/logo.png" />
+              <img src="images/logo1.png" />
             </Col>
           </div>
         </Container>
@@ -104,7 +104,7 @@ class Header extends Component {
           <Example className="" />{" "}
         </div>
         <div className="logo-img1">
-          <img src="images/logo.png" />
+          <img src="images/logo1.png" />
         </div>
       </div>
     );

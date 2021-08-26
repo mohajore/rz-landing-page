@@ -5,7 +5,7 @@
   background-size: cover;
   .UnderContainerCustomizedFoodPackaging {
     .CustomizedFoodPackagingTitle {
-      padding: 50px 0px;
+      padding: 40px 0px;
       span {
         display: inline-block;
         background-color: $tertiary-color;
@@ -24,13 +24,14 @@
       }
     }
     .CustomizedFoodPackagingTwoTitles {
-      padding: 30px 0px;
+      padding: 30px 0px 40px;
       display: flex;
       justify-content: center;
       .TwoTitles {
         display: flex;
         column-gap: 50px;
         .title {
+          cursor: pointer;
           color: $white-color;
           border: 3px solid $white-color;
           display: flex;
@@ -135,9 +136,8 @@
         }
       }
       .CustomizedFoodPackagingTwoTitles {
-        padding: 10px 0px;
+        padding: 10px 0px 30px;
         .TwoTitles {
-          // background-color: rgb(146, 153, 51);
           .title {
             h5 {
               padding: 10px 10px;
@@ -152,12 +152,21 @@
 @include respond(phone) {
   .CustomizedFoodPackaging {
     .UnderContainerCustomizedFoodPackaging {
+      .CustomizedFoodPackagingTitle {
+        span {
+          width: 15px;
+          height: 2px;
+        }
+        h5 {
+          margin-left: 5px;
+        }
+      }
       .CustomizedFoodPackagingTwoTitles {
         .TwoTitles {
-          // background-color: rgb(54, 153, 51);
+          margin-top: 0px;
           .title {
             h5 {
-              font-size: 12px;
+              font-size: 9px;
             }
           }
         }

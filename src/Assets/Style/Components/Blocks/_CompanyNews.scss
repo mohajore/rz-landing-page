@@ -1,11 +1,18 @@
 @import "../../Abstract/mixins";
 .CompanyNewsComponent {
-  background-color: $primary-color;
+  // background: rgb(50, 53, 138);
+  background: linear-gradient(
+    90deg,
+    rgba(50, 53, 138, 1) 50%,
+    rgba(216, 216, 233, 1) 50%
+  );
   position: relative;
+  overflow: hidden;
   .container {
     .row {
       .Company-news {
         background-color: $primary-color;
+        margin: 20px;
         height: 100%;
         .CompanyNewsTitleContainer {
           padding: 20px 0px;
@@ -44,7 +51,6 @@
             flex-direction: column-reverse;
             cursor: pointer;
             // background-color: yellow;
-
             .MyArrow {
               margin-top: 100px;
               color: $white-color;
@@ -52,7 +58,6 @@
             }
           }
         }
-
         .Company-news-Item {
           color: $white-color;
           border-left: 10px solid $tertiary-color;
@@ -74,7 +79,6 @@
           .Company-news-Item-icon {
             display: flex;
             justify-content: flex-end;
-
             svg {
               font-size: 40px;
               border: solid 1px $white-color;
@@ -94,14 +98,13 @@
           right: 0;
           left: 0;
           img {
-            width: 100%;
+            width: 145%;
           }
         }
         .labourDayTitleParagraph {
           background-color: $-bg-primary-color2;
-          margin-top: 225px;
+          margin-top: 280px;
           margin-left: 0px;
-          // height: calc(100% - 195px);
           .labourDayTitle {
             padding: 20px;
             h4 {
@@ -109,7 +112,7 @@
               font-weight: bold;
               font-size: 40px;
             }
-            div {
+            .labourDayParagraph {
               p {
                 line-height: 1.7;
                 color: $secondary-color;
@@ -126,8 +129,7 @@
     .container {
       .row {
         .Company-news {
-          background-color: $primary-color;
-          height: 100%;
+          margin: 20px;
           .CompanyNewsTitleContainer {
             padding: 20px 0px;
             h5 {
@@ -137,7 +139,7 @@
         }
         .Labour-Day {
           .labourDayTitleParagraph {
-            margin-top: 195px;
+            margin-top: 220px;
             .labourDayTitle {
               h4 {
                 font-size: 35px;
@@ -145,8 +147,14 @@
             }
             .labourDayParagraph {
               p {
-                font-size: 15px;
+                font-size: 17px;
+                line-height: 1.9;
               }
+            }
+          }
+          .labourDay-imgDiv {
+            img {
+              width: 120%;
             }
           }
         }
@@ -160,7 +168,7 @@
       .row {
         .Labour-Day {
           .labourDayTitleParagraph {
-            margin-top: 160px;
+            margin-top: 190px;
             .labourDayTitle {
               h4 {
                 font-size: 25px;
@@ -168,8 +176,13 @@
             }
             .labourDayParagraph {
               p {
-                font-size: 15px;
+                font-size: 17px;
               }
+            }
+          }
+          .labourDay-imgDiv {
+            img {
+              width: 125%;
             }
           }
         }
@@ -225,12 +238,11 @@
               padding: 0px 20px;
             }
             &:hover {
-              border-left: 10px solid $white-color;
+              border-left: 5px solid $white-color;
             }
             .Company-news-Item-icon {
               display: flex;
               justify-content: flex-end;
-
               svg {
                 font-size: 30px;
                 border: solid 1px $white-color;
@@ -239,6 +251,96 @@
             }
           }
         }
+        .Labour-Day {
+          .labourDayTitleParagraph {
+            margin-top: 140px;
+            .labourDayTitle {
+              h4 {
+                font-size: 20px;
+              }
+            }
+            .labourDayParagraph {
+              p {
+                font-size: 12px;
+              }
+            }
+          }
+          .labourDay-imgDiv {
+            img {
+              width: 138%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include respond(tablet) {
+  .CompanyNewsComponent {
+    background: none;
+    background-color: $primary-color;
+    .container {
+      .row {
+        flex-direction: column-reverse;
+        .Labour-Day {
+          background-color: $-bg-primary-color2;
+          .labourDayTitleParagraph {
+            margin-top: 155px;
+            .labourDayTitle {
+              h4 {
+                font-size: 20px;
+              }
+            }
+            .labourDayParagraph {
+              p {
+                font-size: 13px;
+              }
+            }
+          }
+          .labourDay-imgDiv {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include respond(large-phone) {
+  .CompanyNewsComponent {
+    .container {
+      .row {
+        flex-direction: column-reverse;
+        .Labour-Day {
+          .labourDayTitleParagraph {
+            margin-top: 170px;
+            .labourDayTitle {
+              h4 {
+                font-size: 20px;
+              }
+            }
+            .labourDayParagraph {
+              p {
+                font-size: 13px;
+              }
+            }
+          }
+          .labourDay-imgDiv {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include respond(phone) {
+  .CompanyNewsComponent {
+    .container {
+      .row {
+        flex-direction: column-reverse;
         .Labour-Day {
           .labourDayTitleParagraph {
             margin-top: 120px;
@@ -253,28 +355,9 @@
               }
             }
           }
-        }
-      }
-    }
-  }
-}
-@include respond(tablet) {
-  .CompanyNewsComponent {
-    .container {
-      .row {
-        flex-direction: column-reverse;
-        .Labour-Day {
-          .labourDayTitleParagraph {
-            margin-top: 155px;
-            .labourDayTitle {
-              h4 {
-                font-size: 20px;
-              }
-            }
-            .labourDayParagraph {
-              p {
-                font-size: 13px;
-              }
+          .labourDay-imgDiv {
+            img {
+              width: 100%;
             }
           }
         }

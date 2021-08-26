@@ -1,34 +1,46 @@
-import { Component } from 'react';
-import '../../Assets/Style/Components/Blocks/_welcome.scss'
-import Container from 'react-bootstrap/Container'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
-import { IoIosArrowForward } from 'react-icons/io';
+import { Component } from "react";
+import "../../Assets/Style/Components/Blocks/_welcome.scss";
+import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import { IoIosArrowForward } from "react-icons/io";
 
-class Welcome extends Component{
-  render(){
-    return(
+class Welcome extends Component {
+  render() {
+    return (
       <div className="Welcome">
         <Container>
           <div className="Welcome1">
             <Row>
-              <Col xl={6} lg={6}  md={6} sm={12} >
+              <Col xl={6} lg={6} md={6} sm={12}>
                 <div className="welcome-titles-container">
-                <h2 className>WELCOM</h2>
-                <h2 className>E TO RZ</h2>
-                <div className="welcome-h5-container"><h5>THE WOLRD OF DISPOSABLE AND PACKAGING</h5></div>
-                <div className="welcome-shop-now-btn-container">
-                  <span className="px-2 py-1" >SHOP NOW </span  ><span className="mx-1 px-2 py-1 "> <IoIosArrowForward  className="IoIosArrowForward"  /></span>
-                </div>
+                  <h2 className="">WELCOME</h2>
+                  <h2 className="">TO RZ</h2>
+                  <div className="welcome-h5-container">
+                    <h5>THE WOLRD OF DISPOSABLE AND PACKAGING</h5>
+                  </div>
+                  <div className="welcome-shop-now-btn-container">
+                    <span className="px-2 py-1">SHOP NOW </span>
+                    <span className="mx-1 px-2 py-1 ">
+                      {" "}
+                      <IoIosArrowForward className="IoIosArrowForward" />
+                    </span>
+                  </div>
                 </div>
               </Col>
-              <Col xl={6} lg={6}  md={6} sm={12}>  <div className="welcome-img-container">  <img className="" src="images/building1.jpg" />  </div> </Col>
+              <Col xl={6} lg={6} md={6} sm={12}>
+                {" "}
+                <div className="welcome-img-container">
+                  {" "}
+                  <img className="" src="images/building1.jpg" />{" "}
+                </div>{" "}
+              </Col>
             </Row>
           </div>
-          </Container>
+        </Container>
       </div>
-    )}
+    );
+  }
 }
-
 
 export default Welcome;
