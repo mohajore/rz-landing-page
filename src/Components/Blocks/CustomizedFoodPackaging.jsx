@@ -16,10 +16,10 @@ class CustomizedFoodPackaging extends Component {
             </div>
             <div className="CustomizedFoodPackagingTwoTitles">
               <div className="TwoTitles">
-                <div className="title btn">
+                <div className="title">
                   <h5>CONTACT VIA WHATSAPP</h5>
                 </div>
-                <div className="title btn ">
+                <div className="title ">
                   <h5>CALL US</h5>
                 </div>
               </div>

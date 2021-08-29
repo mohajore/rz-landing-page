@@ -1,11 +1,8 @@
 @import "../../Abstract/mixins";
-
 .OurVMCP {
-  margin-top: 50px;
   h5 {
     color: $primary-color;
     font-size: 25px;
-    font-weight: bold;
   }
   .OurVMCP-p-parent {
     width: 82%;
@@ -15,7 +12,6 @@
   .OurVMCP {
     h5 {
       font-size: 20px;
-      font-weight: bold;
     }
     .OurVMCP-p-parent {
       width: 90%;

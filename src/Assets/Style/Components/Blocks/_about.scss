@@ -3,20 +3,11 @@
   overflow: hidden;
   .About1 {
     .About-image-container {
-      margin-top: 50px;
-      background-color: $-bg-primary-color2;
-      height: 450px;
-      margin: 65px 100px 0 -65px;
-      .white-div {
-        background-color: $white-color;
-        height: 400px;
-        width: 90%;
-        margin: auto;
-        display: block;
+      // margin-top: 50px;
 
+      .white-div {
         img {
-          width: 110%;
-          margin-left: 30px;
+          width: 100%;
         }
       }
     }
@@ -29,7 +20,6 @@
           display: inline;
           color: $primary-color;
           font-size: 40px;
-          font-weight: bold;
           margin-left: 10px;
         }
         span {
@@ -40,8 +30,8 @@
           margin-bottom: 10px;
         }
         p {
-          font-size: 16.5px;
-          line-height: 1.56;
+          font-size: 17px;
+          line-height: 1.6;
           color: $secondary-color;
         }
       }
@@ -52,10 +42,6 @@
   .About {
     .About1 {
       .About-image-container {
-        height: 380px;
-        .white-div {
-          height: 330px;
-        }
       }
       .About-text-container {
         div {
@@ -65,8 +51,7 @@
             font-size: 34px;
           }
           p {
-            font-size: 15px;
-            line-height: 1.4;
+            line-height: 1.2;
           }
         }
       }
@@ -77,10 +62,6 @@
   .About {
     .About1 {
       .About-image-container {
-        height: 320px;
-        .white-div {
-          height: 270px;
-        }
       }
       .About-text-container {
         div {
@@ -90,7 +71,7 @@
             font-size: 30px;
           }
           p {
-            font-size: 13.2px;
+            font-size: 14px;
             line-height: 1.3;
           }
         }
@@ -102,19 +83,15 @@
   .About {
     .About1 {
       .About-image-container {
-        height: 230px;
-        .white-div {
-          margin-top: -10px;
-          height: 200px;
-          img {
-            margin-left: 25px;
-          }
-        }
       }
       .About-text-container {
         div {
           h5 {
-            font-size: 25px;
+            font-size: 20px;
+          }
+          span {
+            width: 25px;
+            height: 3px;
           }
           p {
             font-size: 11px;
@@ -128,25 +105,7 @@
 @include respond(tablet) {
   .About {
     .About1 {
-      margin-top: 0px;
-      .About-img-container {
-        margin-top: 50px;
-      }
-      .About-image-container {
-        margin: 65px 0px 0px 40px;
-        height: 330px;
-        width: 80%;
-        .white-div {
-          margin-top: 0px;
-          height: 280px;
-          img {
-            margin-left: 25px;
-            margin-top: 0px;
-          }
-        }
-      }
       .About-text-container {
-        margin-top: 100px;
         div {
           h5 {
             font-size: 30px;
@@ -167,22 +126,7 @@
 @include respond(large-phone) {
   .About {
     .About1 {
-      .About-image-container {
-        margin: 50px auto 0 auto;
-
-        height: 260px;
-        width: 370px;
-        .white-div {
-          margin-top: 0px;
-          height: 220px;
-          img {
-            margin-left: 20px;
-            margin-top: 0px;
-          }
-        }
-      }
       .About-text-container {
-        margin-top: 100px;
         div {
           h5 {
             font-size: 25px;
@@ -200,17 +144,6 @@
   .About {
     .About1 {
       .About-image-container {
-        margin: 50px auto 0 15px;
-        height: 210px;
-        width: 280px;
-        .white-div {
-          margin-top: 0px;
-          height: 170px;
-          img {
-            margin-left: 20px;
-            margin-top: 0px;
-          }
-        }
       }
     }
   }

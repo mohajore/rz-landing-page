@@ -12,7 +12,7 @@ class Draft extends Component {
           <div className="two-lists">
             <ul>
               <li>
-                &nbsp; in Alhadaf, are focused on sustainability from our raw
+                &nbsp;in Alhadaf, are focused on sustainability from our raw
                 materials to our manufacturing to our logistics.
               </li>
               <li>

@@ -64,8 +64,8 @@ const SelectedImage = ({
           <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry.
               </p>
               <div className="MoreDetailsAndEyeIcon">
-              <div><AiOutlineEye size={30} /></div>
-              <div>More Details <AiOutlineDoubleRight size={30} /></div>
+              <div className="EyeIcon"><AiOutlineEye size={35} /></div>
+              <div className="MoreDetails">More Details <AiOutlineDoubleRight size={30} /></div>
               </div>
              
               

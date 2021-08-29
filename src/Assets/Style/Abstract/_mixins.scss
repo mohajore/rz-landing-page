@@ -1,5 +1,4 @@
 @import "variables";
-
 @mixin respond($breakpoint, $min: 0, $max: 100vw) {
   @if $breakpoint==custom-media {
     @media (min-width: $min) and (max-width: $max) {

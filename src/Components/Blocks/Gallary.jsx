@@ -44,20 +44,6 @@ const photos = [
 const imageRenderer = ({ index, left, top, key, photo }) => {
   console.log({ index, left, top, key, photo });
   return (
-    // <div
-    //   className="gallery-single-img"
-    //   style={{
-    //     background: `url(${photo.src})`,
-    //     backgroundPosition: "center",
-    //     backgroundSize: "cover",
-    //     backgroundRepeat: "no-repeat",
-    //     // height: "100px",
-    //   }}
-    // >
-    //   <div>helli</div>
-    //   <div></div>
-    // </div>
-
     <SelectedImage
       // selected={selectAll ? true : false}
       key={key}

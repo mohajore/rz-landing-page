@@ -44,7 +44,7 @@ class TEA extends Component {
           <div className="TEA-text-container">
             <div>
               <span></span>
-              <h6>TEA</h6>
+              <h6>TEAM</h6>
             </div>
           </div>
           <div className="Carousel">

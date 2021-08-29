@@ -19,6 +19,9 @@
             cursor: pointer;
             transition: ease-in-out 0.4s all;
             border-bottom: 2px solid $white-color;
+            color: $primary-color;
+            font-size: 18px;
+            font-weight: lighter;
             &:hover {
               border-bottom: 2px solid $tertiary-color;
             }
@@ -74,13 +77,18 @@
           display: flex;
           justify-content: space-between;
           div {
-            border: 1px solid $white-color;
-            padding: 10px;
-            font-size: 25px;
+            padding: 10px 20px;
+            font-size: 18px;
             transition: all ease-in-out 0.4s;
+
+            .MoreDetails {
+            }
             &:hover {
               background-color: $primary-color;
             }
+          }
+          .EyeIcon {
+            padding: 10px;
           }
         }
       }
@@ -117,9 +125,7 @@
   .Gallary {
     .Gallary1 {
       .GallaryTitle {
-        // background-color: goldenrod;
         .GallaryList {
-          // background-color: green;
           .GallaryListUlOne {
             display: none;
           }

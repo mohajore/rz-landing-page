@@ -31,12 +31,24 @@ class SustainablePackaging extends Component {
                 environment, safe for the human health and good choice for
                 plastic products bans. Our innovative products made for a
                 healthy & safe planet, to ensure they are easy to recycle at
-                end-of-life. RZ Eco-Friendly products: *Food grade certified by
-                international standards. *SAFE: Made from high quality
-                ingredients and sterile from harmful compounds. *Quality: Made
-                under the supervision and approval of high-standards quality
-                conditions.
+                end-of-life.
               </p>
+            </div>
+            <div className="EcoFriendlyProductsTitle">
+              <h6>RZ Eco-Friendly products:</h6>
+            </div>
+            <div className="EcoFriendlyProductsParagraph">
+              <Row>
+                <p>*Food grade certified by international standards.</p>
+                <p className="EcoFriendlyProductsParagraphmargin">
+                  *SAFE: Made from high quality ingredients and sterile from
+                  harmful compounds.
+                </p>
+                <p className="EcoFriendlyProductsParagraphmargin">
+                  *Quality: Made under the supervision and approval of
+                  high-standards quality conditions.
+                </p>
+              </Row>
             </div>
           </div>
           <div className="SustainablePackaginTwologos">
@@ -51,7 +63,7 @@ class SustainablePackaging extends Component {
           </div>
           <div className="SustainablePackaging-text-container">
             <div>
-              <h5> Quality Assurance:</h5>
+              <h6>Quality Assurance:</h6>
             </div>
             <div>
               <p>

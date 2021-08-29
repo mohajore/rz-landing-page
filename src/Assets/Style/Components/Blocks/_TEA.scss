@@ -5,18 +5,19 @@
     .react-multiple-carousel__arrow {
       position: absolute;
       border-radius: 0%;
-      border: 1px solid $primary-color;
+      border: 3px solid $border-color4;
       top: 0;
-      color: $primary-color;
       background-color: $white-color;
       &:before {
-        color: $primary-color;
+        color: $border-color4;
+        font-size: 23px;
+        transition: all ease-in-out 0.4s;
       }
       &:hover {
-        background-color: $primary-color;
         &:before {
-          color: $white-color;
+          color: $primary-color;
         }
+        border: 3px solid $-bg-primary-color3;
       }
     }
     .react-multiple-carousel__arrow--left {
@@ -26,7 +27,7 @@
     .CarouselItemContainer {
       margin-top: 70px;
       position: relative;
-      border-left: 5px solid $white-color;
+      border-left: 8px solid $white-color;
       transition: all 0.4s ease-in-out;
       img {
         width: 90%;
@@ -39,41 +40,57 @@
         bottom: 4%;
         right: 10%;
         width: 250px;
+
         span {
-          display: inline;
+          display: inline-block;
           background-color: $tertiary-color;
-          width: 10px;
-          height: 50px;
-          margin-bottom: 10px;
+          width: 15px;
+          height: 2px;
+          margin-bottom: -17px;
+          transition: all ease-in-out 0.4s;
         }
         h4 {
           font-size: 16px;
           font-weight: bold;
           color: $white-color;
-          margin-top: 10px;
+          margin-left: 20px;
         }
         h6 {
           font-size: 12px;
           color: $white-color;
+          transition: font-size 0.4s ease-in-out;
+          margin-left: 21px;
         }
         .h6-email {
           margin-top: -5px;
+          cursor: pointer;
         }
         transition: all 0.4s ease-in-out;
       }
       &:hover {
-        border-left: 5px solid $tertiary-color;
+        border-left: 8px solid $tertiary-color;
         .name-job-title {
           width: 90%;
           height: 40%;
           bottom: 0%;
           border-left: none;
           h4 {
+            font-size: 25px;
+          }
+          h6 {
             font-size: 20px;
           }
-
+          .h6-email {
+            text-decoration: underline;
+          }
+          span {
+            height: 3px;
+            width: 33px;
+            margin-left: -20px;
+            margin-bottom: -20px;
+          }
           backdrop-filter: blur(8px);
-          background-color: #6c6f9a8f;
+          background-color: #696da08f;
         }
       }
     }
@@ -105,9 +122,10 @@
     .Carousel {
       .CarouselItemContainer {
         .name-job-title {
-          padding: 0px 10px; //
+          padding: 0px 10px;
           height: 80px;
           width: 80%;
+
           h4 {
             font-size: 14px;
           }
@@ -115,15 +133,17 @@
             font-size: 12px;
           }
         }
-      }
-    }
-  }
-}
-@include respond(desktop) {
-  .TEA {
-    .Carousel {
-      .react-multiple-carousel__arrow--left {
-        right: 100px;
+
+        &:hover {
+          .name-job-title {
+            span {
+              height: 3px;
+              width: 30px;
+              margin-left: -15px;
+              margin-bottom: -22px;
+            }
+          }
+        }
       }
     }
   }
@@ -133,6 +153,20 @@
     .Carousel {
       .react-multiple-carousel__arrow--left {
         right: 90px;
+      }
+      .CarouselItemContainer {
+        &:hover {
+          border-left: 8px solid $tertiary-color;
+          .name-job-title {
+            height: 50%; //
+            h4 {
+              font-size: 20px; //
+            }
+            h6 {
+              font-size: 16px;
+            }
+          }
+        }
       }
     }
   }
@@ -148,6 +182,22 @@
           }
           h6 {
             font-size: 9px;
+          }
+        }
+        &:hover {
+          border-left: 8px solid $tertiary-color;
+          .name-job-title {
+            height: 50%;
+            h4 {
+              font-size: 14px;
+            }
+            h6 {
+              font-size: 10px;
+            }
+            span {
+              margin-bottom: -15px;
+              height: 2px;
+            }
           }
         }
       }
@@ -175,7 +225,37 @@
       }
       .CarouselItemContainer {
         .name-job-title {
-          height: 60px;
+          padding: 0;
+          height: 45%;
+          h4 {
+            font-size: 10px;
+          }
+          h6 {
+            font-size: 9px;
+          }
+          span {
+            width: 10px;
+            margin-bottom: -15px;
+            margin-left: 3px;
+          }
+        }
+        &:hover {
+          border-left: 8px solid $tertiary-color;
+          .name-job-title {
+            height: 50%;
+            h4 {
+              font-size: 14px;
+            }
+            h6 {
+              font-size: 10px;
+            }
+            span {
+              margin-bottom: -15px;
+              height: 2px;
+              margin-left: 0px;
+              width: 15px;
+            }
+          }
         }
       }
     }

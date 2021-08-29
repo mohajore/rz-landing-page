@@ -15,7 +15,7 @@ class SmallRedLine extends Component {
               <h5>Our portfolio of products contains over 1800 products.</h5>
             </div>
           </div>
-          <div className="SmallRedLine1 SmallRedLine2">
+          <div className="SmallRedLine1 WhiteLine1">
             <div>
               <span></span>
               <h5>

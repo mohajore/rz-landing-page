@@ -18,7 +18,7 @@ class About extends Component {
                     &nbsp;{" "}
                     <div>
                       {" "}
-                      <img src="images/building2.jpg" />
+                      <img src="images/Group 892.png" />
                     </div>
                   </div>
                 </div>
