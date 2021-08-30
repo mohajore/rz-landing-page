@@ -1,6 +1,6 @@
 @import "../../Abstract/mixins";
 .SustainablePackaging {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   overflow: hidden;
   .SustainablePackaging-text-container {
     margin-top: 50px;
@@ -10,7 +10,7 @@
       h5 {
         display: inline;
         color: $primary-color;
-        font-size: 25px;
+        font-size: 40px;
         margin-left: 10px;
       }
       span {
@@ -77,7 +77,7 @@
       grid-gap: 0px;
       column-gap: 2.5%;
       .Fivelogos1 {
-        border: 2px solid $-bg-primary-color3;
+        border: 3px solid $-bg-primary-color3;
         padding: 10px 0px;
         text-align: center;
         color: $primary-color;

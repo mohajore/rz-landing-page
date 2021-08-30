@@ -12,7 +12,7 @@
     .row {
       .Company-news {
         background-color: $primary-color;
-        margin: 20px;
+        margin: 20px 0px;
         height: 100%;
         .CompanyNewsTitleContainer {
           padding: 20px 0px;
@@ -95,7 +95,7 @@
         }
       }
       .Symmtric {
-        padding: 0;
+        // padding: 0;
       }
       .Labour-Day {
         position: relative;
@@ -116,7 +116,6 @@
             padding: 20px;
             h4 {
               color: $primary-color;
-              font-weight: bold;
               font-size: 40px;
             }
             .labourDayParagraph {

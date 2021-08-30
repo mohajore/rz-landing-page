@@ -33,8 +33,13 @@
           width: 40px;
           height: 5px;
         }
-        p {
-          font-size: 20px;
+        .FactsParagraphContainer {
+          display: flex;
+          justify-content: center;
+          p {
+            font-size: 20px;
+            width: 195px;
+          }
         }
       }
     }
@@ -59,8 +64,10 @@
             width: 40px;
             height: 5px;
           }
-          p {
-            font-size: 15px;
+          .FactsParagraphContainer {
+            p {
+              font-size: 15px;
+            }
           }
         }
       }
@@ -83,8 +90,10 @@
             width: 40px;
             height: 5px;
           }
-          p {
-            font-size: 13px;
+          .FactsParagraphContainer {
+            p {
+              font-size: 13px;
+            }
           }
         }
       }
@@ -120,8 +129,10 @@
             width: 20px;
             height: 5px;
           }
-          p {
-            font-size: 10px;
+          .FactsParagraphContainer {
+            p {
+              font-size: 10px;
+            }
           }
         }
       }

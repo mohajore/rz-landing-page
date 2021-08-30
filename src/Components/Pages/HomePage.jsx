@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 
 import Welcome from "../Blocks/Welcome";
 import About from "../Blocks/About";
-import Draft from "../Blocks/draft";
+import TwoStarLists from "../Blocks/TwoStarLists";
 import OurVMCP from "../Blocks/Ourvmcp";
 import SmallRedLine from "../Blocks/SmallRedLine";
 import Catalogue from "../Blocks/Catalogue";
@@ -25,7 +25,7 @@ class HomePage extends Component {
       <div className="HomePage">
         <Welcome />
         <About />
-        <Draft />
+        <TwoStarLists />
         <OurVMCP />
         <SmallRedLine />
         <Catalogue />

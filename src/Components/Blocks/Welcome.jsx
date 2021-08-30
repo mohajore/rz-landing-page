@@ -20,8 +20,8 @@ class Welcome extends Component {
                     <h5>THE WOLRD OF DISPOSABLE AND PACKAGING</h5>
                   </div>
                   <div className="welcome-shop-now-btn-container">
-                    <span className="px-2 py-1">SHOP NOW </span>
-                    <span className="mx-1 px-2 py-1 ">
+                    <span className="BtnName">SHOP NOW </span>
+                    <span className="BtnIcon">
                       {" "}
                       <IoIosArrowForward className="IoIosArrowForward" />
                     </span>

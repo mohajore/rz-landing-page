@@ -3,7 +3,6 @@ import "../../Assets/Style/Components/Blocks/_about.scss";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-
 class About extends Component {
   render() {
     return (
@@ -18,7 +17,7 @@ class About extends Component {
                     &nbsp;{" "}
                     <div>
                       {" "}
-                      <img src="images/Group 892.png" />
+                      <img src="images/Group 891.png" />
                     </div>
                   </div>
                 </div>

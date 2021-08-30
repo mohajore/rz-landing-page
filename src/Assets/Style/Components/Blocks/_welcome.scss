@@ -3,7 +3,8 @@
   background-color: $bg-primary-color;
 
   .Welcome1 {
-    margin-top: -65px;
+    margin-top: -63px;
+    padding: 0px 0px 40px;
     .welcome-img-container {
       margin-top: 120px;
       margin-bottom: 50px;
@@ -14,32 +15,53 @@
       }
     }
     .welcome-titles-container {
-      margin-top: 120px;
+      margin-top: 110px;
       h2 {
         color: $primary-color;
-        font-size: 60px;
+        font-size: 75px;
+        font-family: $NizarBold;
       }
       h2:last-of-type {
         margin-top: -15px;
+        margin-left: 70px;
       }
       .welcome-h5-container {
         margin-top: 20px;
-        width: 70%;
+        width: 500px;
         h5 {
-          font-weight: 100;
-          font-size: 30px;
+          font-size: 40px;
+          font-weight: lighter;
           color: $secondary-color;
         }
       }
       .welcome-shop-now-btn-container {
-        margin-top: 65px;
-        span {
+        margin-top: 45px;
+        cursor: pointer;
+        .BtnName {
           background-color: $primary-color;
           color: $white-color;
-          font-size: 25px;
-          display: inline-block;
-          padding: 20px;
-          cursor: pointer;
+          padding: 15px 25px;
+          font-size: 30px;
+          font-family: $NizarBold;
+          transition: all ease-in-out 0.4s;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+        .BtnIcon {
+          margin-left: 5px;
+          background-color: $primary-color;
+          color: $white-color;
+          padding: 15px 20px;
+          font-size: 30px;
+          font-family: $NizarBold;
+          transition: all ease-in-out 0.4s;
+          &:hover {
+            opacity: 0.7;
+          }
+          svg {
+            font-weight: bold;
+          }
         }
       }
     }

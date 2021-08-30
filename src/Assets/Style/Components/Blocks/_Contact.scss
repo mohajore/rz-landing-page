@@ -9,6 +9,14 @@
     position: relative;
     .CustomMapView {
       height: 550px;
+
+      .gm-bundled-control-on-bottom {
+        position: absolute;
+        left: auto;
+        right: 0%;
+        bottom: 0%;
+        top: 68%;
+      }
     }
 
     .BranchLocations {
@@ -88,8 +96,10 @@
 
         .ContactInfoIcon {
           display: inline-block;
+          cursor: pointer;
         }
         h5 {
+          cursor: pointer;
           margin-left: 5px;
           font-size: 15px;
         }

@@ -11,13 +11,12 @@
     align-self: center;
     .block-title-container {
       // background-color: green;
-      width: 70%;
+      width: 80%;
       display: flex;
       justify-content: center;
       h5 {
         color: $secondary-color;
-        font-weight: bolder;
-        font-size: 22px;
+        font-size: 25px;
         text-align: center;
         font-family: $SourceSansProBold-font;
       }

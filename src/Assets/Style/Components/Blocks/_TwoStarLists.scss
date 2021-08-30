@@ -1,0 +1,14 @@
+@import "../../Abstract/mixins";
+
+.two-lists {
+  margin-top: -10px;
+  ul {
+    padding: 0;
+    padding-left: 8px !important;
+    li {
+      font-size: 20px;
+      list-style-type: "\22C6"; // Star * sign
+      margin-top: 10px;
+    }
+  }
+}

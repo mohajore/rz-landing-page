@@ -1,10 +1,10 @@
 import { Component } from "react";
-import "../../Assets/Style/Components/Blocks/_draft.scss";
+import "../../Assets/Style/Components/Blocks/_TwoStarLists.scss";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
-class Draft extends Component {
+class TwoStarLists extends Component {
   render() {
     return (
       <div className="draft">
@@ -30,4 +30,4 @@ class Draft extends Component {
   }
 }
 
-export default Draft;
+export default TwoStarLists;

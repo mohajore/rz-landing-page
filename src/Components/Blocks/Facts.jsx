@@ -15,27 +15,44 @@ class Facts extends Component {
               <div className="Facts-num">
                 <h2>23</h2>
                 <h6></h6>
-                <p>Years of experience in field of packaging & disposables.</p>
+                <div className="FactsParagraphContainer">
+                  {" "}
+                  <p>
+                    Years of experience in field of packaging & disposables.
+                  </p>
+                </div>
               </div>
               <div className="Facts-num">
                 <h2>22</h2>
                 <h6></h6>
-                <p>Export countries.</p>
+                <div className="FactsParagraphContainer">
+                  {" "}
+                  <p>Export countries.</p>
+                </div>
               </div>
               <div className="Facts-num">
                 <h2>20,000</h2>
                 <h6></h6>
-                <p>sqm (215,000 square foot) Production facility.</p>
+                <div className="FactsParagraphContainer">
+                  {" "}
+                  <p>sqm (215,000 square foot) Production facility.</p>
+                </div>
               </div>
               <div className="Facts-num">
                 <h2>2300</h2>
                 <h6></h6>
-                <p>Items</p>
+                <div className="FactsParagraphContainer">
+                  {" "}
+                  <p>Items</p>
+                </div>
               </div>
               <div className="Facts-num">
                 <h2>185</h2>
                 <h6></h6>
-                <p>Employees ( Females & Males)</p>
+                <div className="FactsParagraphContainer">
+                  {" "}
+                  <p>Employees ( Females & Males)</p>
+                </div>
               </div>
             </div>
           </div>

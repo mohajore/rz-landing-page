@@ -1,6 +1,11 @@
 @font-face {
-  font-family: Nizar;
+  font-family: NizarLight;
   src: url(../../fonts/NizarCoconKurdishLight.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: NizarBold;
+  src: url(../../fonts/ArbFONTS-NizarCoconKurdishBold.otf);
   font-display: swap;
 }
 @font-face {
@@ -22,7 +27,8 @@
 $SourceSansPro-font: "SourceSansPro", sans-serif;
 $SourceSansProBold-font: "SourceSansProBold", sans-serif;
 $SourceSansProLight-font: "SourceSansProBoldLight", sans-serif;
-$Nizar-font: "Nizar", sans-serif;
+$Nizar-font: "NizarLight", sans-serif;
+$NizarBold: "NizarBold", sans-serif;
 $base-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

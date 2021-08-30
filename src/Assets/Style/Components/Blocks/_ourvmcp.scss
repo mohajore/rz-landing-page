@@ -1,11 +1,18 @@
 @import "../../Abstract/mixins";
 .OurVMCP {
+  .OurVMCP-Col {
+    // padding: 0;
+  }
   h5 {
     color: $primary-color;
-    font-size: 25px;
+    font-size: 30px;
+    font-family: $NizarBold;
   }
   .OurVMCP-p-parent {
     width: 82%;
+    p {
+      font-size: 20px;
+    }
   }
 }
 @include respond(laptop) {
