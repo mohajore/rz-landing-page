@@ -84,51 +84,50 @@
   }
 }
 @include respond(laptop) {
-  .header-container {
-    ul {
-      display: flex;
-      flex-direction: row-reverse;
-      height: 50%;
-      align-self: center;
+  // .header-container {
+  //   ul {
+  //     display: flex;
+  //     flex-direction: row-reverse;
+  //     height: 50%;
+  //     align-self: center;
 
-      li {
-        a {
-          font-size: 13px;
-        }
-      }
-    }
-  }
+  //     li {
+  //       a {
+  //         font-size: 13px;
+  //       }
+  //     }
+  //   }
+  // }
 }
 @include respond(small-laptop) {
-  .header-container {
-    display: flex;
-
-    img {
-      width: 70px;
-      height: 100%;
-    }
-    ul {
-      display: flex;
-      flex-direction: row-reverse;
-      width: 300px;
-      height: 50%;
-      align-self: center;
-      justify-content: center;
-      margin-left: 60px;
-
-      li {
+  .Header {
+    .header-container {
+      ul {
         display: flex;
-        column-gap: 1px;
-        width: 80px;
+        flex-direction: row;
+        height: 42px;
+        align-self: center;
 
-        .li-same-tag {
-          clip-path: polygon(50% 0, 73% 0, 45% 100%, 20% 100%);
+        li {
+          height: 120%;
+          a {
+            padding: 0px 9.5px;
+            font-size: 14px;
+          }
+          .a-same-tag {
+            color: $secondary-color;
+            background-color: white;
+            margin-top: 10px;
+          }
+          .a-shop-now-tag {
+            margin-top: 10px;
+          }
         }
-
-        a {
-          font-size: 11px;
-          padding: 0px;
-          width: 100%;
+      }
+      .logo-img {
+        text-align: right;
+        img {
+          width: 100px;
         }
       }
     }
@@ -154,8 +153,8 @@
   position: absolute;
   width: 36px;
   height: 30px;
-  left: 36px;
-  top: 30px;
+  left: 48px;
+  top: 20px;
 }
 
 /* Color/shape of burger icon bars */

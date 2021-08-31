@@ -41,22 +41,6 @@
         bottom: 4%;
         right: 10%;
         width: 250px;
-
-        // span {
-        //   display: inline-block;
-        //   background-color: $tertiary-color;
-        //   width: 12px;
-        //   height: 3px;
-        //   margin-bottom: -17px;
-        //   transition: all ease-in-out 0.4s;
-        //   margin-left: 5px;
-        // }
-        // h4 {
-        //   font-size: 20px;
-        //   color: $white-color;
-        //   margin-left: 20px;
-        //   font-family: $NizarBold;
-        // }
         .MemberName {
           font-size: 20px;
           font-family: $NizarBold;
@@ -200,6 +184,18 @@
 @include respond(small-laptop) {
   .TEA {
     .Carousel {
+      .react-multiple-carousel__arrow {
+        min-width: 33px;
+        min-height: 30px;
+        top: 20px;
+        &:before {
+          font-size: 18px;
+        }
+      }
+      .react-multiple-carousel__arrow--left {
+        right: 45px;
+      }
+
       .CarouselItemContainer {
         .name-job-title {
           height: 70px;
@@ -243,7 +239,7 @@
   .TEA {
     .Carousel {
       .react-multiple-carousel__arrow--left {
-        right: 50px;
+        right: 45px;
       }
       .CarouselItemContainer {
         .name-job-title {
@@ -274,7 +270,7 @@
   .TEA {
     .Carousel {
       .react-multiple-carousel__arrow--left {
-        right: 70px;
+        right: 45px;
       }
     }
   }

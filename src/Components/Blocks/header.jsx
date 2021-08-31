@@ -85,8 +85,8 @@ class Header extends Component {
     return (
       <div className="Header">
         <Container>
-          <div className="header-container">
-            <Col>
+          <Row className="header-container">
+            <Col xs={9} className="HeaderColumn">
               <ul>
                 <li className={activeHeader == 1 ? "activeHeader" : ""}>
                   <div className="li-same-tag"></div>
@@ -134,12 +134,12 @@ class Header extends Component {
                 </li>
               </ul>
             </Col>
-            <Col className="logo-img">
+            <Col xs={3} className="HeaderColumn logo-img">
               <a href="/">
                 <img src="images/logo1.png" />
               </a>
             </Col>
-          </div>
+          </Row>
         </Container>
 
         <div className="burger-menu">
