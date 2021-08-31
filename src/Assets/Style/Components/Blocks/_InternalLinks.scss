@@ -1,11 +1,11 @@
 @import "../../Abstract/mixins";
 .InternalLinks {
-  margin-top: 40px;
   background-color: $secondary-color;
   .InternalLink {
     color: $white-color;
     h4 {
-      font-size: 18px;
+      font-size: 16px;
+      font-family: $SourceSansPro-font;
       line-height: 20px;
       margin-top: 15px;
       text-transform: uppercase;
@@ -20,7 +20,8 @@
     }
     h6 {
       margin: 15px 0px;
-      font-size: 14px;
+      font-size: 12px;
+      font-family: $SourceSansPro-font;
       a {
         text-decoration: none;
         color: $white-color;

@@ -20,17 +20,15 @@
         color: $primary-color;
         font-size: 75px;
         font-family: $NizarBold;
-      }
-      h2:last-of-type {
-        margin-top: -15px;
-        margin-left: 70px;
+        width: 50%;
+        line-height: 1;
+        text-align: center;
       }
       .welcome-h5-container {
         margin-top: 20px;
         width: 500px;
         h5 {
           font-size: 40px;
-          font-weight: lighter;
           color: $secondary-color;
         }
       }
@@ -72,18 +70,19 @@
     .Welcome1 {
       .welcome-titles-container {
         h2 {
-          font-size: 50px;
+          font-size: 60px;
         }
         .welcome-h5-container {
           margin-top: 20px;
-          width: 60%;
+          // width: 60%;
           h5 {
-            font-size: 20px;
+            font-size: 35px;
           }
         }
         .welcome-shop-now-btn-container {
-          margin-top: 75px;
-          span {
+          margin-top: 60px;
+          .BtnName,
+          .BtnIcon {
             font-size: 20px;
           }
         }

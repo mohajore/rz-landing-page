@@ -23,7 +23,13 @@
   src: url(../../fonts//SourceSansPro-Light.ttf);
   font-display: swap;
 }
+@font-face {
+  font-family: SegoeUI;
+  src: url(../../fonts//SegoeUI.ttf);
+  font-display: swap;
+}
 //-*----------  START FONTS BASE  ----------*/
+$SegoeUI: "SegoeUI", sans-serif;
 $SourceSansPro-font: "SourceSansPro", sans-serif;
 $SourceSansProBold-font: "SourceSansProBold", sans-serif;
 $SourceSansProLight-font: "SourceSansProBoldLight", sans-serif;
@@ -50,3 +56,6 @@ $-bg-primary-color4: #6567a7;
 $border-color: #707070;
 $border-color2: #999ac5;
 $border-color4: #d6d6e8;
+$border-color5: #999ac4;
+$text-color2: #a5a7cb;
+$text-color3: #abacc7;

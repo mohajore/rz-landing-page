@@ -65,7 +65,7 @@ const SelectedImage = ({
               </p>
               <div className="MoreDetailsAndEyeIcon">
               <div className="EyeIcon"><AiOutlineEye size={35} /></div>
-              <div className="MoreDetails">More Details <AiOutlineDoubleRight size={30} /></div>
+              <div className="MoreDetails">More Details &nbsp; &nbsp;<AiOutlineDoubleRight size={25} /></div>
               </div>
              
               

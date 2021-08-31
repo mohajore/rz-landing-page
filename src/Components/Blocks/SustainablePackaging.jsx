@@ -63,10 +63,10 @@ class SustainablePackaging extends Component {
           </div>
           <div className="SustainablePackaging-text-container">
             <div>
-              <h6>Quality Assurance:</h6>
+              <h6 className="QualityAssuranceTitle">Quality Assurance:</h6>
             </div>
             <div>
-              <p>
+              <p className="QualityAssuranceParagraph">
                 Alhadaf Quality is placed at the highest stakes. All our
                 processes undergo vigorous tests/assessments to ensure products
                 are delivered to our clients on time and hygienically,

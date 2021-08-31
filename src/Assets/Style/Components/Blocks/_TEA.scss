@@ -7,6 +7,7 @@
       border-radius: 0%;
       border: 3px solid $border-color4;
       top: 0;
+      right: 0;
       background-color: $white-color;
       &:before {
         color: $border-color4;
@@ -21,7 +22,7 @@
       }
     }
     .react-multiple-carousel__arrow--left {
-      right: 110px;
+      right: 60px;
       left: auto;
     }
     .CarouselItemContainer {
@@ -35,35 +36,51 @@
       .name-job-title {
         background-color: $primary-color;
         border-left: 5px solid $tertiary-color;
-        padding: 5px 20px;
+        padding: 0px 0px;
         position: absolute;
         bottom: 4%;
         right: 10%;
         width: 250px;
 
-        span {
-          display: inline-block;
-          background-color: $tertiary-color;
-          width: 15px;
-          height: 2px;
-          margin-bottom: -17px;
-          transition: all ease-in-out 0.4s;
-        }
-        h4 {
-          font-size: 16px;
-          font-weight: bold;
+        // span {
+        //   display: inline-block;
+        //   background-color: $tertiary-color;
+        //   width: 12px;
+        //   height: 3px;
+        //   margin-bottom: -17px;
+        //   transition: all ease-in-out 0.4s;
+        //   margin-left: 5px;
+        // }
+        // h4 {
+        //   font-size: 20px;
+        //   color: $white-color;
+        //   margin-left: 20px;
+        //   font-family: $NizarBold;
+        // }
+        .MemberName {
+          font-size: 20px;
+          font-family: $NizarBold;
           color: $white-color;
-          margin-left: 20px;
+          margin-top: 10px;
+          margin-left: 10px;
+          &::before {
+            display: inline-block;
+            content: "";
+            border-top: 3px solid $tertiary-color;
+            width: 15px;
+            transform: translate(-5px, -5px);
+          }
         }
         h6 {
-          font-size: 12px;
+          font-size: 16px;
           color: $white-color;
           transition: font-size 0.4s ease-in-out;
-          margin-left: 21px;
+          margin-left: 24px;
         }
         .h6-email {
           margin-top: -5px;
           cursor: pointer;
+          color: $text-color3;
         }
         transition: all 0.4s ease-in-out;
       }
@@ -71,23 +88,21 @@
         border-left: 8px solid $tertiary-color;
         .name-job-title {
           width: 90%;
-          height: 40%;
+          height: 50%;
           bottom: 0%;
           border-left: none;
-          h4 {
+          .MemberName {
             font-size: 25px;
+            &::before {
+              transform: translate(-10px, -5px);
+            }
           }
           h6 {
-            font-size: 20px;
+            font-size: 25px;
+            margin-top: 10px;
           }
           .h6-email {
             text-decoration: underline;
-          }
-          span {
-            height: 3px;
-            width: 33px;
-            margin-left: -20px;
-            margin-bottom: -20px;
           }
           backdrop-filter: blur(8px);
           background-color: #696da08f;
@@ -104,7 +119,7 @@
         display: inline;
         color: $primary-color;
         font-size: 40px;
-        font-weight: bold;
+        font-family: $NizarBold;
         margin-left: 10px;
       }
       span {
@@ -125,22 +140,33 @@
           padding: 0px 10px;
           height: 80px;
           width: 80%;
-
-          h4 {
-            font-size: 14px;
+          .MemberName {
+            font-size: 18px;
+            margin-left: 0px;
+            &::before {
+              display: inline-block;
+              content: "";
+              border-top: 3px solid $tertiary-color;
+              width: 15px;
+              transform: translate(-5px, -3px);
+            }
           }
           h6 {
-            font-size: 12px;
+            font-size: 14px;
+            margin-left: 15px;
           }
         }
-
         &:hover {
           .name-job-title {
-            span {
-              height: 3px;
-              width: 30px;
-              margin-left: -15px;
-              margin-bottom: -22px;
+            .MemberName {
+              font-size: 25px;
+              &::before {
+                transform: translate(-10px, -5px);
+              }
+            }
+            h6 {
+              font-size: 20px;
+              margin-top: 10px;
             }
           }
         }
@@ -152,14 +178,14 @@
   .TEA {
     .Carousel {
       .react-multiple-carousel__arrow--left {
-        right: 90px;
+        right: 55px;
       }
       .CarouselItemContainer {
         &:hover {
           border-left: 8px solid $tertiary-color;
           .name-job-title {
             height: 50%; //
-            h4 {
+            .MemberName {
               font-size: 20px; //
             }
             h6 {
@@ -177,7 +203,7 @@
       .CarouselItemContainer {
         .name-job-title {
           height: 70px;
-          h4 {
+          .MemberName {
             font-size: 12px;
           }
           h6 {
@@ -188,15 +214,11 @@
           border-left: 8px solid $tertiary-color;
           .name-job-title {
             height: 50%;
-            h4 {
+            .MemberName {
               font-size: 14px;
             }
             h6 {
               font-size: 10px;
-            }
-            span {
-              margin-bottom: -15px;
-              height: 2px;
             }
           }
         }
@@ -221,39 +243,26 @@
   .TEA {
     .Carousel {
       .react-multiple-carousel__arrow--left {
-        right: 80px;
+        right: 50px;
       }
       .CarouselItemContainer {
         .name-job-title {
-          padding: 0;
-          height: 45%;
-          h4 {
+          height: 60px;
+          .MemberName {
             font-size: 10px;
           }
           h6 {
             font-size: 9px;
           }
-          span {
-            width: 10px;
-            margin-bottom: -15px;
-            margin-left: 3px;
-          }
         }
         &:hover {
           border-left: 8px solid $tertiary-color;
           .name-job-title {
-            height: 50%;
-            h4 {
+            .MemberName {
               font-size: 14px;
             }
             h6 {
               font-size: 10px;
-            }
-            span {
-              margin-bottom: -15px;
-              height: 2px;
-              margin-left: 0px;
-              width: 15px;
             }
           }
         }

@@ -20,11 +20,11 @@ class InternalLinks extends Component {
                 <h4>HOME</h4>
                 <span></span>
                 <h6>
-                  <a href="#">Contact</a>
+                  <a href="#">About US</a>
                 </h6>
                 <h6>
                   {" "}
-                  <a href="#">About Us</a>
+                  <a href="#">Contact</a>
                 </h6>
                 <h6>
                   {" "}
@@ -75,7 +75,7 @@ class InternalLinks extends Component {
                   <a href="#">Store Location</a>{" "}
                 </h6>
                 <h6>
-                  <a href="#">Store</a>{" "}
+                  <a href="#">FAQ</a>{" "}
                 </h6>
                 <h6>
                   <a href="#">Installment Plans</a>{" "}

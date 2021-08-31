@@ -1,6 +1,5 @@
 @import "../../Abstract/mixins";
 .CompanyNewsComponent {
-  // background: rgb(50, 53, 138);
   background: linear-gradient(
     90deg,
     rgba(50, 53, 138, 1) 50%,
@@ -20,6 +19,7 @@
             display: inline;
             color: $white-color;
             font-size: 40px;
+            font-family: $NizarBold;
             margin-left: 10px;
             text-transform: uppercase;
           }
@@ -36,13 +36,13 @@
           span:nth-child(1) {
             // background-color: saddlebrown;
             // position: absolute;
-            margin-bottom: 60px;
+            margin-bottom: 70px;
             z-index: 1;
           }
           span:nth-last-child(1) {
             // background-color: goldenrod;
             position: absolute;
-            bottom: 0%;
+            bottom: 15px;
           }
           span {
             // background-color: goldenrod;
@@ -55,6 +55,8 @@
               color: $white-color;
               border: solid 3px $-bg-primary-color3;
               transition: all 0.4s ease-in-out;
+              width: 40px;
+              height: 40px;
               &:hover {
                 background-color: $-bg-primary-color4;
               }
@@ -67,17 +69,30 @@
           margin: 15px 0;
           transition: border 0.4s ease-in-out;
           background-color: #4b4e98;
+          width: 100%;
           h3 {
-            font-size: 20px;
+            font-size: 25px;
             padding: 20px 20px 0px;
+            color: $text-color2;
           }
           h6 {
             margin-top: 20px;
-            font-size: 16px;
+            width: 100%;
+            font-size: 20px;
             padding: 0px 20px;
+            color: $text-color2;
+          }
+          h3,
+          h6 {
+            transition: all 0.4s ease-in-out;
           }
           &:hover {
             border-left: 10px solid $white-color;
+
+            h3,
+            h6 {
+              color: $white-color;
+            }
           }
           .Company-news-Item-icon {
             display: flex;
@@ -109,20 +124,24 @@
           }
         }
         .labourDayTitleParagraph {
+          padding: 20px;
           background-color: $-bg-primary-color2;
           margin-top: 280px;
           margin-left: 0px;
           .labourDayTitle {
-            padding: 20px;
             h4 {
               color: $primary-color;
               font-size: 40px;
+              font-family: $NizarBold;
+              line-height: 1;
             }
-            .labourDayParagraph {
-              p {
-                line-height: 1.7;
-                color: $secondary-color;
-              }
+          }
+          .labourDayParagraph {
+            margin-top: 20px;
+            p {
+              font-size: 20px;
+              line-height: 1.2;
+              color: $secondary-color;
             }
           }
         }
@@ -135,7 +154,6 @@
     .container {
       .row {
         .Company-news {
-          margin: 20px;
           .CompanyNewsTitleContainer {
             padding: 20px 0px;
             h5 {
@@ -146,6 +164,7 @@
         .Labour-Day {
           .labourDayTitleParagraph {
             margin-top: 220px;
+
             .labourDayTitle {
               h4 {
                 font-size: 35px;
@@ -153,8 +172,8 @@
             }
             .labourDayParagraph {
               p {
-                font-size: 17px;
-                line-height: 1.9;
+                font-size: 20px;
+                line-height: 1.5;
               }
             }
           }
@@ -182,7 +201,7 @@
             }
             .labourDayParagraph {
               p {
-                font-size: 17px;
+                font-size: 19px;
               }
             }
           }
@@ -203,18 +222,15 @@
         .Company-news {
           .rec-carousel {
             span:nth-child(1) {
-              margin-bottom: 40px;
+              margin-bottom: 50px;
               z-index: 1;
             }
             span:nth-last-child(1) {
               position: absolute;
-              bottom: 0%;
+              margin-bottom: -5px;
             }
             span {
               .MyArrow {
-                margin-top: 100px;
-                color: $white-color;
-                border: solid 1px $white-color;
                 height: 30px;
                 width: 30px;
               }
@@ -251,7 +267,6 @@
               justify-content: flex-end;
               svg {
                 font-size: 30px;
-                border: solid 1px $white-color;
                 cursor: pointer;
               }
             }
@@ -267,7 +282,8 @@
             }
             .labourDayParagraph {
               p {
-                font-size: 12px;
+                font-size: 13.7px;
+                line-height: 1.3;
               }
             }
           }

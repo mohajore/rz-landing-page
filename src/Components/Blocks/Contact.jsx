@@ -143,7 +143,7 @@ class Contact extends Component {
                     <Col>
                       <div className="ContactInfoSendAndSocialIcons">
                         <div className="sendbtnContainer">
-                          <div className="sendbtn btn"> send</div>
+                          <div className="sendbtn"> send</div>
                         </div>
                         <div className="SocialIcons">
                           <div className="SocialIcon">

@@ -14,8 +14,7 @@ class Welcome extends Component {
             <Row>
               <Col xl={6} lg={6} md={6} sm={12}>
                 <div className="welcome-titles-container">
-                  <h2 className="">WELCOME</h2>
-                  <h2 className="">TO RZ</h2>
+                  <h2 className="">WELCOME TO RZ</h2>
                   <div className="welcome-h5-container">
                     <h5>THE WOLRD OF DISPOSABLE AND PACKAGING</h5>
                   </div>

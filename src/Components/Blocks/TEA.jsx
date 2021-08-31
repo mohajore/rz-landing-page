@@ -59,8 +59,8 @@ class TEA extends Component {
                 {" "}
                 <img className="CarouselItem" src="images/tea1.png" />
                 <div className="name-job-title">
-                  <span></span>
-                  <h4>Mohammad Dokh</h4>
+                  {/* <span></span> */}
+                  <h4 className="MemberName">Mohammad Dokh</h4>
                   <h6>President - CEO</h6>
                   <h6 className="h6-email">sales@alhadaf-int.com</h6>
                 </div>
@@ -69,8 +69,8 @@ class TEA extends Component {
                 {" "}
                 <img className="" src="images/tea6.png" />
                 <div className="name-job-title">
-                  <span></span>
-                  <h4>Mohammad Dokh</h4>
+                  {/* <span></span> */}
+                  <h4 className="MemberName">Mohammad Dokh</h4>
                   <h6>President - CEO</h6>
                   <h6 className="h6-email">sales@alhadaf-int.com</h6>
                 </div>
@@ -79,8 +79,8 @@ class TEA extends Component {
                 {" "}
                 <img className="" src="images/tea3.png" />
                 <div className="name-job-title">
-                  <span></span>
-                  <h4>Mohammad Dokh</h4>
+                  {/* <span></span> */}
+                  <h4 className="MemberName">Mohammad Dokh</h4>
                   <h6>President - CEO</h6>
                   <h6 className="h6-email">sales@alhadaf-int.com</h6>
                 </div>
@@ -89,8 +89,8 @@ class TEA extends Component {
                 {" "}
                 <img className="" src="images/tea4.png" />
                 <div className="name-job-title">
-                  <span></span>
-                  <h4>Mohammad Dokh</h4>
+                  {/* <span></span> */}
+                  <h4 className="MemberName">Mohammad Dokh</h4>
                   <h6>President - CEO</h6>
                   <h6 className="h6-email">sales@alhadaf-int.com</h6>
                 </div>
@@ -99,8 +99,8 @@ class TEA extends Component {
                 {" "}
                 <img className="" src="images/tea5.png" />
                 <div className="name-job-title">
-                  <span></span>
-                  <h4>Mohammad Dokh</h4>
+                  {/* <span></span> */}
+                  <h4 className="MemberName">Mohammad Dokh</h4>
                   <h6>President - CEO</h6>
                   <h6 className="h6-email">sales@alhadaf-int.com</h6>
                 </div>
@@ -109,8 +109,8 @@ class TEA extends Component {
                 {" "}
                 <img className="" src="images/tea4.png" />
                 <div className="name-job-title">
-                  <span></span>
-                  <h4>Mohammad Dokh</h4>
+                  {/* <span></span> */}
+                  <h4 className="MemberName">Mohammad Dokh</h4>
                   <h6>President - CEO</h6>
                   <h6 className="h6-email">sales@alhadaf-int.com</h6>
                 </div>
@@ -119,8 +119,8 @@ class TEA extends Component {
                 {" "}
                 <img className="" src="images/tea5.png" />
                 <div className="name-job-title">
-                  <span></span>
-                  <h4>Mohammad Dokh</h4>
+                  {/* <span></span> */}
+                  <h4 className="MemberName">Mohammad Dokh</h4>
                   <h6>President - CEO</h6>
                   <h6 className="h6-email">sales@alhadaf-int.com</h6>
                 </div>

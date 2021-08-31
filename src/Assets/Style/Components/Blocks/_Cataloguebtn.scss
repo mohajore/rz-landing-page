@@ -6,9 +6,9 @@
     .Cataloguebtn-name {
       background-color: $primary-color;
       color: $white-color;
-      padding: 12px 25px;
-      font-size: 25px;
-      font-weight: bold;
+      padding: 12px 40px 12px 25px;
+      font-size: 30px;
+      font-family: $NizarBold;
       transition: all ease-in-out 0.4s;
       &:hover {
         opacity: 0.7;
@@ -19,7 +19,8 @@
       background-color: $primary-color;
       color: $white-color;
       padding: 12px;
-      font-size: 25px;
+      font-size: 30px;
+      font-family: $NizarBold;
       transition: all ease-in-out 0.4s;
       &:hover {
         opacity: 0.7;
