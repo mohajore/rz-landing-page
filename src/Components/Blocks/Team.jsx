@@ -1,9 +1,6 @@
 import { Component } from "react";
-import "../../Assets/Style/Components/Blocks/_TEA.scss";
+import "../../Assets/Style/Components/Blocks/_Team.scss";
 import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import { IoIosArrowForward } from "react-icons/io";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 const responsive = {
@@ -36,12 +33,12 @@ const CustomRightArrow = ({ onClick, ...rest }) => {
   // onMove means if dragging or swiping in progress.
   return <button onClick={() => onClick()} />;
 };
-class TEA extends Component {
+class Team extends Component {
   render() {
     return (
-      <div className="TEA">
+      <div className="Team">
         <Container>
-          <div className="TEA-text-container">
+          <div className="Team-text-container">
             <div>
               <span></span>
               <h6>TEAM</h6>
@@ -132,4 +129,4 @@ class TEA extends Component {
     );
   }
 }
-export default TEA;
+export default Team;

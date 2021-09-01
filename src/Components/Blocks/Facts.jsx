@@ -14,7 +14,7 @@ class Facts extends Component {
             <div class="grid-container">
               <div className="Facts-num">
                 <h2>23</h2>
-                <h6></h6>
+                {/* <h6></h6> */}
                 <div className="FactsParagraphContainer">
                   {" "}
                   <p>
@@ -24,7 +24,7 @@ class Facts extends Component {
               </div>
               <div className="Facts-num">
                 <h2>22</h2>
-                <h6></h6>
+                {/* <h6></h6> */}
                 <div className="FactsParagraphContainer">
                   {" "}
                   <p>Export countries.</p>
@@ -32,7 +32,7 @@ class Facts extends Component {
               </div>
               <div className="Facts-num">
                 <h2>20,000</h2>
-                <h6></h6>
+                {/* <h6></h6> */}
                 <div className="FactsParagraphContainer">
                   {" "}
                   <p>sqm (215,000 square foot) Production facility.</p>
@@ -40,7 +40,7 @@ class Facts extends Component {
               </div>
               <div className="Facts-num">
                 <h2>2300</h2>
-                <h6></h6>
+                {/* <h6></h6> */}
                 <div className="FactsParagraphContainer">
                   {" "}
                   <p>Items</p>
@@ -48,7 +48,7 @@ class Facts extends Component {
               </div>
               <div className="Facts-num">
                 <h2>185</h2>
-                <h6></h6>
+                {/* <h6></h6> */}
                 <div className="FactsParagraphContainer">
                   {" "}
                   <p>Employees ( Females & Males)</p>

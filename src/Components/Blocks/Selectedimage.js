@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-
-import { AiOutlineEye, AiOutlineDoubleRight } from "react-icons/ai";
+import {  AiOutlineDoubleRight } from "react-icons/ai";
+import LightboxExample from "../Blocks/react-image-lightbox-Library";
 const imgStyle = {
   transition: "transform .135s cubic-bezier(0.0,0.0,0.2,1),opacity linear .15s"
 };
@@ -15,6 +15,7 @@ const cont = {
   position: "relative"
 };
 
+
 const SelectedImage = ({
   index,
   photo,
@@ -22,7 +23,8 @@ const SelectedImage = ({
   direction,
   top,
   left,
-  selected
+  selected,
+  images
 }) => {
   const [isSelected, setIsSelected] = useState(selected);
   //calculate x,y scale
@@ -64,8 +66,9 @@ const SelectedImage = ({
           <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry.
               </p>
               <div className="MoreDetailsAndEyeIcon">
-              <div className="EyeIcon"><AiOutlineEye size={35} /></div>
+              <div className="EyeIcon"> <LightboxExample photo={images} selectedImage={photo} /></div>
               <div className="MoreDetails">More Details &nbsp; &nbsp;<AiOutlineDoubleRight size={25} /></div>
+              
               </div>
              
               

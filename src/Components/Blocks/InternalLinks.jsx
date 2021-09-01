@@ -19,7 +19,7 @@ class InternalLinks extends Component {
               <div className="InternalLink">
                 <h4>HOME</h4>
                 <span></span>
-                <h6>
+                <h6 className="FirstHeader">
                   <a href="#">About US</a>
                 </h6>
                 <h6>
@@ -40,7 +40,7 @@ class InternalLinks extends Component {
               <div className="InternalLink">
                 <h4>GALLERY</h4>
                 <span></span>
-                <h6>
+                <h6 className="FirstHeader">
                   {" "}
                   <a href="#">All</a>
                 </h6>
@@ -70,7 +70,7 @@ class InternalLinks extends Component {
               <div className="InternalLink">
                 <h4>MORE</h4>
                 <span></span>
-                <h6>
+                <h6 className="FirstHeader">
                   {" "}
                   <a href="#">Store Location</a>{" "}
                 </h6>
@@ -92,7 +92,7 @@ class InternalLinks extends Component {
               <div className="InternalLink">
                 <h4>Location</h4>
                 <span></span>
-                <h6>
+                <h6 className="FirstHeader">
                   <a href="#">Byader</a>{" "}
                 </h6>
                 <h6>

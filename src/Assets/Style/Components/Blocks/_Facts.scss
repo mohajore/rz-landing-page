@@ -23,15 +23,17 @@
       .Facts-num {
         h2 {
           font-size: 60px;
-          font-weight: bold;
           margin-bottom: -10px;
-        }
-        h6 {
-          display: inline-block;
-          text-align: center;
-          background-color: $tertiary-color;
-          width: 40px;
-          height: 5px;
+          font-family: $NizarBold;
+          &::after {
+            display: block;
+            content: "";
+            border-top: 0.35rem solid $tertiary-color;
+            width: 50px;
+            margin: 0 auto;
+            transform: translateY(-0.3rem);
+            transition: all 0.4s ease-in-out;
+          }
         }
         .FactsParagraphContainer {
           display: flex;
@@ -57,13 +59,6 @@
           h2 {
             font-size: 50px;
           }
-          h6 {
-            display: inline-block;
-            text-align: center;
-            background-color: $tertiary-color;
-            width: 40px;
-            height: 5px;
-          }
           .FactsParagraphContainer {
             p {
               font-size: 15px;
@@ -86,10 +81,6 @@
             font-size: 40px;
             margin-bottom: -5px;
           }
-          h6 {
-            width: 40px;
-            height: 5px;
-          }
           .FactsParagraphContainer {
             p {
               font-size: 13px;
@@ -110,6 +101,16 @@
         grid-template-columns: 30% 30% 30%;
         grid-gap: 20px;
         padding: 10px;
+        .Facts-num {
+          h2 {
+            &::after {
+              width: 35px;
+            }
+          }
+          .FactsParagraphContainer {
+            margin-top: 10px;
+          }
+        }
       }
     }
   }
@@ -124,10 +125,6 @@
         .Facts-num {
           h2 {
             font-size: 30px;
-          }
-          h6 {
-            width: 20px;
-            height: 5px;
           }
           .FactsParagraphContainer {
             p {

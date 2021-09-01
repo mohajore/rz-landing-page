@@ -1,5 +1,5 @@
 import { Component } from "react";
-import "../../Assets/Style/Components/Blocks/_TEA.scss";
+import "../../Assets/Style/Components/Blocks/_SustainablePackaging.scss";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";

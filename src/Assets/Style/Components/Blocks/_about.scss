@@ -41,8 +41,6 @@
 @include respond(large-laptop) {
   .About {
     .About1 {
-      .About-image-container {
-      }
       .About-text-container {
         div {
           display: flex;
@@ -61,8 +59,6 @@
 @include respond(laptop) {
   .About {
     .About1 {
-      .About-image-container {
-      }
       .About-text-container {
         div {
           display: flex;
@@ -72,6 +68,7 @@
           }
           p {
             line-height: 1;
+            font-size: 16px;
           }
         }
       }
@@ -91,7 +88,7 @@
             height: 3px;
           }
           p {
-            font-size: 16px;
+            font-size: 15px;
           }
         }
       }
@@ -111,7 +108,6 @@
             height: 4px;
           }
           p {
-            font-size: 20px;
             line-height: 1.2;
           }
         }
@@ -131,15 +127,6 @@
             width: 25px;
           }
         }
-      }
-    }
-  }
-}
-
-@include respond(phone) {
-  .About {
-    .About1 {
-      .About-image-container {
       }
     }
   }

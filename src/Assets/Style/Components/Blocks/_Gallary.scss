@@ -13,6 +13,7 @@
           display: none;
         }
         ul {
+          margin-bottom: 30px;
           li {
             padding: 5px 7px;
             display: inline-block;
@@ -21,10 +22,16 @@
             border-bottom: 2px solid $white-color;
             color: $primary-color;
             font-size: 18px;
-            font-weight: lighter;
+            //
+            color: $primary-color;
+            text-shadow: -0.25px -0.25px 0 transparent,
+              0.25px 0.25px transparent;
+            transition: all ease-in-out 0.4s;
             &:hover {
               border-bottom: 2px solid $tertiary-color;
-              font-family: $NizarBold;
+              // font-family: $NizarBold;
+              text-shadow: -0.5px -0.5px 0 $primary-color,
+                0.3px 0.3px $primary-color;
             }
           }
         }
@@ -44,7 +51,7 @@
           width: 45px;
           height: 5px;
           margin-bottom: 7px;
-          // margin-left: 15px;
+          margin-left: 2px;
         }
       }
     }
@@ -53,12 +60,15 @@
       opacity: 1;
       .gallery-single-img-title {
         position: absolute;
-        background-color: #575e99d7;
+        // background-color: #575e99e5;
+        background-color: #575b9dda;
         opacity: 0;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
+        bottom: 0;
+        right: 0;
         padding: 35px;
         color: $white-color;
         transition: 0.3s;
@@ -79,20 +89,25 @@
           display: flex;
           justify-content: space-between;
           div {
-            padding: 10px 28px;
+            // padding: 10px 28px;
             font-size: 20px;
             font-family: $NizarBold;
             transition: all ease-in-out 0.4s;
-            margin: auto 0px;
+            display: flex;
+            align-items: center;
             &:hover {
               background-color: $primary-color;
             }
           }
           .EyeIcon {
-            padding: 10px;
+            .lightboxEyeContainer {
+              // background-color: yellow;
+              padding: 10px;
+            }
           }
           .MoreDetails {
             padding-left: 15px;
+            display: none;
           }
         }
       }
@@ -139,7 +154,16 @@
           ul {
             li {
               font-size: 13px;
-              padding: 5px 7px;
+              padding: 0px 0px;
+
+              .dropdown {
+                .btn {
+                  padding: 0 10px;
+                }
+                svg {
+                  // padding: 0.375rem 0.75rem !important;
+                }
+              }
             }
             .LiDropDownMenu {
               .dropdown-toggle {

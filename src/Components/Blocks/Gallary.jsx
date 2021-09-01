@@ -46,6 +46,7 @@ const imageRenderer = ({ index, left, top, key, photo }) => {
   return (
     <SelectedImage
       // selected={selectAll ? true : false}
+      images={photos}
       key={key}
       margin={"2px"}
       index={index}

@@ -1,7 +1,6 @@
 @import "../../Abstract/mixins";
 .Welcome {
   background-color: $bg-primary-color;
-
   .Welcome1 {
     margin-top: -63px;
     padding: 0px 0px 40px;
@@ -16,16 +15,17 @@
     }
     .welcome-titles-container {
       margin-top: 110px;
+
       h2 {
+        text-align: left;
         color: $primary-color;
         font-size: 75px;
         font-family: $NizarBold;
-        width: 50%;
+        width: 100%;
         line-height: 1;
-        text-align: center;
       }
       .welcome-h5-container {
-        margin-top: 20px;
+        margin-top: 50px;
         width: 500px;
         h5 {
           font-size: 40px;
@@ -33,14 +33,15 @@
         }
       }
       .welcome-shop-now-btn-container {
-        margin-top: 45px;
+        margin-top: 95px;
         cursor: pointer;
         .BtnName {
           background-color: $primary-color;
           color: $white-color;
-          padding: 15px 25px;
+          padding: 12px 20px 12px 15px;
           font-size: 30px;
           font-family: $NizarBold;
+          height: 100%;
           transition: all ease-in-out 0.4s;
           &:hover {
             opacity: 0.7;
@@ -50,7 +51,7 @@
           margin-left: 5px;
           background-color: $primary-color;
           color: $white-color;
-          padding: 15px 20px;
+          padding: 12px;
           font-size: 30px;
           font-family: $NizarBold;
           transition: all ease-in-out 0.4s;
@@ -58,7 +59,7 @@
             opacity: 0.7;
           }
           svg {
-            font-weight: bold;
+            font-size: 40px;
           }
         }
       }
@@ -73,17 +74,22 @@
           font-size: 60px;
         }
         .welcome-h5-container {
-          margin-top: 20px;
-          // width: 60%;
+          margin-top: 50px;
           h5 {
             font-size: 35px;
           }
         }
         .welcome-shop-now-btn-container {
-          margin-top: 55px;
+          margin-top: 80px;
           .BtnName,
           .BtnIcon {
             font-size: 20px;
+          }
+          .BtnName {
+            padding: 15px 20px 15px 15px;
+          }
+          .BtnIcon {
+            padding: 15px 8px;
           }
         }
       }
@@ -98,17 +104,23 @@
           font-size: 50px;
         }
         .welcome-h5-container {
-          margin-top: 20px;
+          margin-top: 40px;
           width: 80%;
           h5 {
             font-size: 30px;
           }
         }
         .welcome-shop-now-btn-container {
-          margin-top: 40px;
+          margin-top: 63px;
           .BtnName,
           .BtnIcon {
-            font-size: 16px;
+            font-size: 18px;
+          }
+          .BtnIcon {
+            padding: 15px 12px;
+            svg {
+              font-size: 30px;
+            }
           }
         }
       }
@@ -127,17 +139,21 @@
           font-size: 40px;
         }
         .welcome-h5-container {
-          margin-top: 10px;
+          margin-top: 20px;
           width: 70%;
           h5 {
             font-size: 20px;
           }
         }
         .welcome-shop-now-btn-container {
-          margin-top: 30px;
+          margin-top: 50px;
           .BtnName,
           .BtnIcon {
             padding: 12px 13px;
+            font-size: 14px;
+          }
+          .BtnIcon {
+            padding: 12px 9px;
             font-size: 14px;
           }
         }
@@ -148,7 +164,6 @@
 @include respond(tablet) {
   .Welcome {
     .Welcome1 {
-      //   background-color: goldenrod;
       margin-top: -75px;
       .welcome-img-container {
         margin-top: 90px;
@@ -172,6 +187,9 @@
           .BtnIcon {
             padding: 15px 20px;
             font-size: 20px;
+          }
+          .BtnIcon {
+            padding: 15px 12px;
           }
         }
       }
@@ -198,6 +216,9 @@
             padding: 15px 18px;
             font-size: 18px;
           }
+          .BtnIcon {
+            padding: 15px 10px;
+          }
         }
       }
     }
@@ -219,8 +240,11 @@
           margin-top: 40px;
           .BtnName,
           .BtnIcon {
-            padding: 8px 10px;
+            padding: 15px 16px;
             font-size: 14px;
+          }
+          .BtnIcon {
+            padding: 15px 8px;
           }
         }
       }

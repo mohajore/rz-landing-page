@@ -4,8 +4,7 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import { slide as Menu } from "react-burger-menu";
-import reactDom from "react-dom";
-class Example extends Component {
+class SideBar extends Component {
   showSettings(event) {
     event.preventDefault();
   }
@@ -144,7 +143,7 @@ class Header extends Component {
 
         <div className="burger-menu">
           {" "}
-          <Example className="" />{" "}
+          <SideBar className="" />{" "}
         </div>
         <div className="logo-img1">
           <a href="#">
@@ -156,5 +155,4 @@ class Header extends Component {
     );
   }
 }
-
 export default Header;

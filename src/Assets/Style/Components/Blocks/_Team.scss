@@ -1,5 +1,5 @@
 @import "../../Abstract/mixins";
-.TEA {
+.Team {
   .Carousel {
     margin-top: 50px;
     .react-multiple-carousel__arrow {
@@ -94,7 +94,7 @@
       }
     }
   }
-  .TEA-text-container {
+  .Team-text-container {
     position: absolute;
     div {
       display: flex;
@@ -117,7 +117,7 @@
   }
 }
 @include respond(large-laptop) {
-  .TEA {
+  .Team {
     .Carousel {
       .CarouselItemContainer {
         .name-job-title {
@@ -159,7 +159,7 @@
   }
 }
 @include respond(laptop) {
-  .TEA {
+  .Team {
     .Carousel {
       .react-multiple-carousel__arrow--left {
         right: 55px;
@@ -182,7 +182,7 @@
   }
 }
 @include respond(small-laptop) {
-  .TEA {
+  .Team {
     .Carousel {
       .react-multiple-carousel__arrow {
         min-width: 33px;
@@ -220,7 +220,7 @@
         }
       }
     }
-    .TEA-text-container {
+    .Team-text-container {
       margin-top: 10px;
       .CarouselItemContainer {
         h6 {
@@ -236,7 +236,7 @@
   }
 }
 @include respond(tablet) {
-  .TEA {
+  .Team {
     .Carousel {
       .react-multiple-carousel__arrow--left {
         right: 45px;
@@ -267,7 +267,7 @@
   }
 }
 @include respond(phone) {
-  .TEA {
+  .Team {
     .Carousel {
       .react-multiple-carousel__arrow--left {
         right: 45px;

@@ -1,19 +1,14 @@
 import { Component } from "react";
-import "../../Assets/Style/Components/Blocks/_welcome.scss";
-import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-
 import Welcome from "../Blocks/Welcome";
 import About from "../Blocks/About";
 import TwoStarLists from "../Blocks/TwoStarLists";
 import OurVMCP from "../Blocks/Ourvmcp";
-import SmallRedLine from "../Blocks/SmallRedLine";
+import ProductsTitle from "../Blocks/ProductsTitle";
 import Catalogue from "../Blocks/Catalogue";
 import Cataloguebtn from "../Blocks/Cataloguebtn";
 import Facts from "../Blocks/Facts";
 import CompanyNews from "../Blocks/CompanyNews";
-import TEA from "../Blocks/TEA";
+import Team from "../Blocks/Team";
 import SustainablePackaging from "../Blocks/SustainablePackaging";
 import CustomizedFoodPackaging from "../Blocks/CustomizedFoodPackaging";
 import Contact from "../Blocks/Contact";
@@ -27,12 +22,12 @@ class HomePage extends Component {
         <About />
         <TwoStarLists />
         <OurVMCP />
-        <SmallRedLine />
+        <ProductsTitle />
         <Catalogue />
         <Cataloguebtn />
         <Facts />
         <CompanyNews />
-        <TEA />
+        <Team />
         <SustainablePackaging />
         <CustomizedFoodPackaging />
         <Gallary />

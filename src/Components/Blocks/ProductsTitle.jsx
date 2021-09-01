@@ -1,21 +1,18 @@
 import { Component } from "react";
-import "../../Assets/Style/Components/Blocks/_SmallRedLine.scss";
+import "../../Assets/Style/Components/Blocks/_ProductsTitle.scss";
 import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-
-class SmallRedLine extends Component {
+class ProductsTitle extends Component {
   render() {
     return (
-      <div className="SmallRedLine">
+      <div className="ProductsTitle">
         <Container>
-          <div className="SmallRedLine1">
+          <div className="ProductsTitle1">
             <div>
               <span></span>
               <h5>Our portfolio of products contains over 1800 products.</h5>
             </div>
           </div>
-          <div className="SmallRedLine1 WhiteLine1">
+          <div className="ProductsTitle1 WhiteLine1">
             <div>
               <span></span>
               <h5>
@@ -29,4 +26,4 @@ class SmallRedLine extends Component {
   }
 }
 
-export default SmallRedLine;
+export default ProductsTitle;

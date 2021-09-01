@@ -17,6 +17,9 @@
           transition: ease-in-out 0.5s !important;
           opacity: 1;
         }
+        a {
+          color: $primary-color !important;
+        }
       }
       li {
         display: flex;
@@ -83,22 +86,6 @@
     }
   }
 }
-@include respond(laptop) {
-  // .header-container {
-  //   ul {
-  //     display: flex;
-  //     flex-direction: row-reverse;
-  //     height: 50%;
-  //     align-self: center;
-
-  //     li {
-  //       a {
-  //         font-size: 13px;
-  //       }
-  //     }
-  //   }
-  // }
-}
 @include respond(small-laptop) {
   .Header {
     .header-container {
@@ -146,7 +133,6 @@
     }
   }
 }
-
 //// side bar menu style start
 /* Position and sizing of burger button */
 .bm-burger-button {
@@ -156,28 +142,23 @@
   left: 48px;
   top: 20px;
 }
-
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: #373a47;
 }
-
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
   background: $tertiary-color;
 }
-
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
   height: 24px;
   width: 24px;
 }
-
 /* Color/shape of close button cross */
 .bm-cross {
   background: #bdc3c7;
 }
-
 /*
 Sidebar wrapper styles
 Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
@@ -186,31 +167,29 @@ Note: Beware of modifying this element as it can break the animations - you shou
   position: fixed;
   height: 100%;
 }
-
 /* General sidebar styles */
 .bm-menu {
   background: $primary-color;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
   // margin-left: -110px;
+  width: 250px;
 }
-
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
   fill: #373a47;
 }
-
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
   padding: 0.8em;
+  margin-left: 10px;
+  margin-top: -30px;
 }
-
 /* Individual item */
 .bm-item {
   display: inline-block;
 }
-
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(236, 236, 244, 1);
@@ -226,7 +205,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
     color: $tertiary-color;
   }
 }
-
+.bm-cross-button {
+  right: 58px;
+  position: absolute;
+  width: 54px;
+  height: 24px;
+  right: 58px !important;
+}
 //// side bar menu end
 @include respond(tablet) {
   //// side bar menu style start
