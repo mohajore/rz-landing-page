@@ -1,8 +1,8 @@
 @import "../../Abstract/mixins";
 .About {
   overflow: hidden;
-  background-color: red;
   .About1 {
+      // AboutUs Image Start 
     .About-image-container {
       margin-top: -10px;
       .white-div {
@@ -11,6 +11,8 @@
         }
       }
     }
+     // AboutUs Image End 
+      // AboutUs Paragraph Start 
     .About-text-container {
       margin-top: 40px;
       div {
@@ -37,6 +39,7 @@
         }
       }
     }
+     // AboutUs Paragraph End 
   }
 }
 @include respond(large-laptop) {

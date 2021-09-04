@@ -15,6 +15,7 @@ class InternalLinks extends Component {
       <div className="InternalLinks">
         <Container>
           <Row>
+          {/* InternalLink Section Start  */}
             <Col md={2} sm={3} xs={6}>
               <div className="InternalLink">
                 <h4>HOME</h4>
@@ -106,6 +107,8 @@ class InternalLinks extends Component {
             <Col className="InternalLinkBlank" md={2} sm={3} xs={6}>
               <div className="InternalLink"></div>
             </Col>
+             {/* InternalLink Section End  */}
+            {/* Logo with SocialMedia Icons Start */}
             <Col xl={2} md={4} sm={3} xs={6}>
               <div className="InternalLinkLast">
                 <div>
@@ -119,8 +122,10 @@ class InternalLinks extends Component {
                 </div>
               </div>
             </Col>
+             {/* Logo with SocialMedia Icons End */}
           </Row>
         </Container>
+         {/* Logo with SocialMedia Icons Start [Tablet]  */}
         <Row>
           <div>
             <div className="InternalLinkLast1">
@@ -136,9 +141,9 @@ class InternalLinks extends Component {
             </div>
           </div>
         </Row>
+        {/* Logo with SocialMedia Icons End [Tablet]  */}
       </div>
     );
   }
 }
-
 export default InternalLinks;

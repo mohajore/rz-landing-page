@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {  AiOutlineDoubleRight } from "react-icons/ai";
-import LightboxExample from "../Blocks/react-image-lightbox-Library";
+import LightboxExample from "./react-image-lightbox-Library";
 const imgStyle = {
   transition: "transform .135s cubic-bezier(0.0,0.0,0.2,1),opacity linear .15s"
 };
@@ -68,14 +68,9 @@ const SelectedImage = ({
               <div className="MoreDetailsAndEyeIcon">
               <div className="EyeIcon"> <LightboxExample photo={images} selectedImage={photo} /></div>
               <div className="MoreDetails">More Details &nbsp; &nbsp;<AiOutlineDoubleRight size={25} /></div>
-              
               </div>
-             
-              
-
       </div>
     </div>
   );
 };
-
 export default SelectedImage;

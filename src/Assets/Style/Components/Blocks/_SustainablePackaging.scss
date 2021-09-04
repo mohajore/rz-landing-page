@@ -7,6 +7,7 @@
     div {
       display: flex;
       align-items: center;
+      // Sustainable Packaging Solutions Title Start
       h5 {
         display: inline;
         color: $primary-color;
@@ -22,6 +23,8 @@
         height: 4px;
         margin-bottom: 10px;
       }
+      // Sustainable Packaging Solutions Title End
+      // EcoFriendly Products Title Start and Quality Assurance Title Start
       h6 {
         display: inline;
         color: $primary-color;
@@ -29,17 +32,22 @@
         font-family: $NizarBold;
         margin-left: 50px;
       }
+      // EcoFriendly Products Title End and Quality Assurance Title End
+      // Sustainable Packaging Solutions Paragraph Start and Quality Assurance Paragraph Start
       p {
         font-size: 16.5px;
         line-height: 1.56;
         color: $secondary-color;
         margin-left: 50px;
       }
+      // Sustainable Packaging Solutions Paragraph End
       .QualityAssuranceParagraph {
         margin-top: -5px;
       }
+      //  Quality Assurance Paragraph End
     }
   }
+  // EcoFriendly Products  Start
   .EcoFriendlyProductsTitle,
   .EcoFriendlyProductsParagraph {
     margin-top: -15px;
@@ -50,6 +58,8 @@
       margin-top: -15px;
     }
   }
+    // EcoFriendly Products End
+    // Sustainable Packaging Twologos Start 
   .SustainablePackaginTwologos {
     display: flex;
     justify-content: center;
@@ -66,7 +76,9 @@
       }
     }
   }
-  .SustainablePackaginFivelogosTitle {
+  // Sustainable Packaging Twologos End 
+  // Alhadaf Quality Certifications title Start 
+  .AlhadafQualityCertificationsTitle {
     margin: 10px 0 50px;
     h5 {
       margin-top: 10px;
@@ -77,6 +89,8 @@
       margin-left: 50px;
     }
   }
+  // Alhadaf Quality Certifications title End
+  // Alhadaf Quality Certifications 5  Start 
   .SustainablePackaginFivelogos {
     .Fivelogos {
       display: grid;
@@ -94,15 +108,19 @@
           margin-bottom: 20px;
         }
         div {
+    
           h5 {
             font-size: 20px;
             font-family: $SegoeUI;
             margin: 0px auto;
+            width: 200px;
+        
           }
         }
       }
     }
   }
+   // Alhadaf Quality Certifications 5 End
 }
 @include respond(large-laptop) {
   .SustainablePackaging {
@@ -149,7 +167,7 @@
         }
       }
     }
-    .SustainablePackaginFivelogosTitle {
+    .AlhadafQualityCertificationsTitle {
       h5 {
         margin-left: 40px;
       }
@@ -191,7 +209,7 @@
         }
       }
     }
-    .SustainablePackaginFivelogosTitle {
+    .AlhadafQualityCertificationsTitle {
       h5 {
         font-size: 20px;
       }

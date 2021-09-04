@@ -1,5 +1,6 @@
 @import "../../Abstract/mixins";
 .Team {
+    // react-multi-carousel Start
   .Carousel {
     margin-top: 50px;
     .react-multiple-carousel__arrow {
@@ -94,6 +95,8 @@
       }
     }
   }
+  // react-multi-carousel End
+  // Team Word Title Start
   .Team-text-container {
     position: absolute;
     div {
@@ -115,6 +118,7 @@
       }
     }
   }
+  // Team Word Title End
 }
 @include respond(large-laptop) {
   .Team {

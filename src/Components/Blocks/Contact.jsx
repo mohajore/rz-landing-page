@@ -5,8 +5,6 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import LocationPicker from "react-location-picker";
 import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-
 import { BiPhone } from "react-icons/bi";
 import { HiOutlineMail } from "react-icons/hi";
 import { CgPin } from "react-icons/cg";
@@ -34,13 +32,13 @@ class Contact extends Component {
     // Set new location
     this.setState({ position });
   };
-
   render() {
     const { defaultPosition } = this.state;
     return (
       <div className="Contact">
         <Container>
           <Row className="row1">
+            {/* Map Section Start */}
             <Col Col={6}>
               <div className="LocationPickerExample">
                 <LocationPicker
@@ -81,12 +79,17 @@ class Contact extends Component {
                 </div>
               </div>
             </Col>
+             {/* Map Section End */}
+              {/* Form & Contact Info & Social Section Start */}
             <Col md={6}>
               <div className="ContactContainerAll">
+                {/* Contact Title Start */}
                 <div className="ContactContainer">
                   <span></span>
                   <h5>Contact</h5>
                 </div>
+                   {/* Contact Title End */}
+                   {/* Contact Form Start */}
                 <div className="ContactForm">
                   <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -107,8 +110,10 @@ class Contact extends Component {
                     </Form.Group>
                   </Form>
                 </div>
+                {/* Contact Form End */}
                 <div className="ContactInfo">
                   <Row>
+                    {/* Contact info Start */}
                     <Col>
                       <div className="ContactInfoIconAndTextContainer">
                         {" "}
@@ -140,6 +145,8 @@ class Contact extends Component {
                         </h5>
                       </div>
                     </Col>
+                     {/* Contact info End */}
+                      {/* Contact Social  Start */}
                     <Col>
                       <div className="ContactInfoSendAndSocialIcons">
                         <div className="sendbtnContainer">
@@ -165,10 +172,12 @@ class Contact extends Component {
                         </div>
                       </div>
                     </Col>
+                     {/* Contact Socail End */}
                   </Row>
                 </div>
               </div>
             </Col>
+              {/* Form & Contact Info & Social Section End */}
           </Row>
         </Container>
       </div>

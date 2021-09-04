@@ -4,6 +4,8 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import { slide as Menu } from "react-burger-menu";
+
+// react-burger-menu SideBar Class Component less than 768px start
 class SideBar extends Component {
   showSettings(event) {
     event.preventDefault();
@@ -39,6 +41,8 @@ class SideBar extends Component {
     );
   }
 }
+// react-burger-menu SideBar Class Component less than 768px End
+
 
 class Header extends Component {
   state = { activeHeader: 0 };
@@ -85,6 +89,7 @@ class Header extends Component {
       <div className="Header">
         <Container>
           <Row className="header-container">
+            {/* Header List start */}
             <Col xs={9} className="HeaderColumn">
               <ul>
                 <li className={activeHeader == 1 ? "activeHeader" : ""}>
@@ -133,14 +138,17 @@ class Header extends Component {
                 </li>
               </ul>
             </Col>
+             {/* Header List End */}
+               {/* Header Logo Start */}
             <Col xs={3} className="HeaderColumn logo-img">
               <a href="/">
                 <img src="images/logo1.png" />
               </a>
             </Col>
+              {/* Header Logo End */}
           </Row>
         </Container>
-
+    {/* react-burger-menu SideBar Section less than 768px Start */}
         <div className="burger-menu">
           {" "}
           <SideBar className="" />{" "}
@@ -151,7 +159,9 @@ class Header extends Component {
             <img src="images/logo1.png" />
           </a>
         </div>
+        {/* react-burger-menu SideBar Section less than 768px End */}
       </div>
+    
     );
   }
 }

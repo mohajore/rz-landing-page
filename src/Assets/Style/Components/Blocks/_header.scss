@@ -5,6 +5,7 @@
 .Header {
   .header-container {
     display: flex;
+    //  Header List style start 
     ul {
       display: flex;
       flex-direction: row;
@@ -71,13 +72,16 @@
         background-color: $primary-color;
       }
     }
+    //  Header List style End 
   }
+  // Logo Syle Start
   .logo-img {
     text-align: right;
     img {
       width: 120px;
     }
   }
+  // Logo Syle End
   .logo-img1 {
     display: none;
     text-align: right;
@@ -213,8 +217,3 @@ Note: Beware of modifying this element as it can break the animations - you shou
   right: 58px !important;
 }
 //// side bar menu end
-@include respond(tablet) {
-  //// side bar menu style start
-
-  //// side bar menu end
-}

@@ -1,13 +1,11 @@
 import { Component } from "react";
 import "../../Assets/Style/Components/Blocks/_TwoStarLists.scss";
 import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
 
 class TwoStarLists extends Component {
   render() {
     return (
-      <div className="draft">
+      <div className="TwoStarLists">
         <Container>
           <div className="two-lists">
             <ul>

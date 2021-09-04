@@ -1,13 +1,13 @@
 import { Component } from "react";
-import "../../Assets/Style/Components/Blocks/_Catalogue.scss";
+import "../../Assets/Style/Components/Blocks/_Products.scss";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import { HiOutlineChevronDoubleRight } from "react-icons/hi";
-class Catalogue extends Component {
+class Products extends Component {
   render() {
     return (
-      <div className="Catalogue">
+      <div className="Products">
         <Container>
           <Row>
             <Col lg={2} md={3} sm={4} xs={6}>
@@ -118,4 +118,4 @@ class Catalogue extends Component {
   }
 }
 
-export default Catalogue;
+export default Products;

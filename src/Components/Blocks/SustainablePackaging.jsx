@@ -1,7 +1,6 @@
 import { Component } from "react";
 import "../../Assets/Style/Components/Blocks/_SustainablePackaging.scss";
 import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
 class SustainablePackaging extends Component {
@@ -10,10 +9,13 @@ class SustainablePackaging extends Component {
       <div className="SustainablePackaging">
         <Container>
           <div className="SustainablePackaging-text-container">
+          {/* Sustainable Packaging Solutions Title Start */}
             <div>
               <span></span>
               <h5> Sustainable Packaging Solutions</h5>
             </div>
+               {/* Sustainable Packaging Solutions Title End */}
+               {/* Sustainable Packaging Solutions Paragraph Start */}
             <div>
               <p>
                 Alhadaf Int. Company for Importing & Industry L.LC is everyday
@@ -34,9 +36,13 @@ class SustainablePackaging extends Component {
                 end-of-life.
               </p>
             </div>
+             {/* Sustainable Packaging Solutions Paragraph End */}
+             {/* EcoFriendly Products Title Start */}
             <div className="EcoFriendlyProductsTitle">
               <h6>RZ Eco-Friendly products:</h6>
             </div>
+               {/* EcoFriendly Products Title End */}
+                  {/* EcoFriendly Products Paragraph Start */}
             <div className="EcoFriendlyProductsParagraph">
               <Row>
                 <p>*Food grade certified by international standards.</p>
@@ -50,7 +56,9 @@ class SustainablePackaging extends Component {
                 </p>
               </Row>
             </div>
+              {/* EcoFriendly Products Paragraph End */}
           </div>
+           {/* Sustainable Packaging Twologos Start */}
           <div className="SustainablePackaginTwologos">
             <div className="Twologos">
               <div className="Twologos1">
@@ -61,10 +69,14 @@ class SustainablePackaging extends Component {
               </div>
             </div>
           </div>
+           {/* Sustainable Packaging Twologos End */}
           <div className="SustainablePackaging-text-container">
+             {/*Quality Assurance Title Start */}
             <div>
               <h6 className="QualityAssuranceTitle">Quality Assurance:</h6>
             </div>
+              {/*Quality Assurance Title End */}
+              {/*Quality Assurance Paragraph Start */}
             <div>
               <p className="QualityAssuranceParagraph">
                 Alhadaf Quality is placed at the highest stakes. All our
@@ -79,10 +91,15 @@ class SustainablePackaging extends Component {
                 planet sustainability
               </p>
             </div>
+               {/*Quality Assurance Paragraph End */}
           </div>
-          <div className="SustainablePackaginFivelogosTitle ">
+         
+            {/*Alhadaf Quality Certifications title Start */}
+          <div className="AlhadafQualityCertificationsTitle ">
             <h5> Alhadaf Quality Certifications:</h5>
           </div>
+            {/*Alhadaf Quality Certifications title End */}
+              {/*Alhadaf Quality Certifications 5  Start */}
           <div className="SustainablePackaginFivelogos">
             <div className="Fivelogos">
               <div className="Fivelogos1 ">
@@ -125,6 +142,7 @@ class SustainablePackaging extends Component {
               </div>
             </div>
           </div>
+            {/*Alhadaf Quality Certifications 5  End */}
         </Container>
       </div>
     );

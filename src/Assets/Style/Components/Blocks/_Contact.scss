@@ -5,6 +5,7 @@
   overflow: hidden;
   position: relative;
   margin-top: 40px;
+  // Map Section Start
   .LocationPickerExample {
     position: relative;
     .CustomMapView {
@@ -56,8 +57,10 @@
       }
     }
   }
+  // Map Section End 
   .ContactContainerAll {
     padding: 20px 0px 0px 20px;
+    // Contact Title Start
     .ContactContainer {
       h5 {
         display: inline;
@@ -75,6 +78,8 @@
         margin-bottom: 8px;
       }
     }
+    // Contact Title End
+    // Contact Form Start
     .ContactForm {
       .form-control {
         border: none;
@@ -87,9 +92,11 @@
         }
       }
     }
+    // Contact Form End
     .ContactInfo {
       padding-bottom: 50px;
       color: $white-color;
+      // Contact info Start
       .ContactInfoIconAndTextContainer {
         display: flex;
         padding: 5px;
@@ -104,6 +111,8 @@
           font-size: 15px;
         }
       }
+    // Contact info End
+    // Contact Social  Start
       .ContactInfoSendAndSocialIcons {
         display: flex;
         flex-direction: column;
@@ -140,6 +149,7 @@
           }
         }
       }
+      // Contact Social End
     }
   }
 }

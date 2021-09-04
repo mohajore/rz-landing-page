@@ -3,7 +3,7 @@ import "../../Assets/Style/Components/Blocks/_ourvmcp.scss";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-
+// Our Vision,Mission,Core Values,Policies Class Component
 class OurVMCP extends Component {
   render() {
     return (

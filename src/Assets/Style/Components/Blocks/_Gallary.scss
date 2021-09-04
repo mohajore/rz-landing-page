@@ -5,6 +5,7 @@
     .GallaryTitle {
       display: flex;
       justify-content: space-between;
+      // Gallary List Start
       .GallaryList {
         .GallaryListUlOne {
           display: inline-block;
@@ -36,6 +37,8 @@
           }
         }
       }
+      // Gallary List End
+      // Gallary Title Start
       .GallaryTitleWord {
         h5 {
           display: inline;
@@ -54,10 +57,13 @@
           margin-left: 2px;
         }
       }
+      // Gallary Title End
     }
-    .gallery-single-img {
-      position: relative;
-      opacity: 1;
+    // .gallery-single-img {
+    //   position: relative;
+    //   opacity: 1;
+
+    // Selectedimage.js file Start
       .gallery-single-img-title {
         position: absolute;
         // background-color: #575e99e5;
@@ -100,10 +106,11 @@
             }
           }
           .EyeIcon {
+            // react-image-lightbox-Library Start
             .lightboxEyeContainer {
-              // background-color: yellow;
               padding: 10px;
             }
+            // react-image-lightbox-Library End
           }
           .MoreDetails {
             padding-left: 15px;
@@ -111,9 +118,10 @@
           }
         }
       }
+      // Selectedimage.js file End
     }
   }
-}
+
 @include respond(small-laptop) {
   .Gallary {
     .Gallary1 {

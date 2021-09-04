@@ -4,7 +4,7 @@ import About from "../Blocks/About";
 import TwoStarLists from "../Blocks/TwoStarLists";
 import OurVMCP from "../Blocks/Ourvmcp";
 import ProductsTitle from "../Blocks/ProductsTitle";
-import Catalogue from "../Blocks/Catalogue";
+import Products from "../Blocks/Products";
 import Cataloguebtn from "../Blocks/Cataloguebtn";
 import Facts from "../Blocks/Facts";
 import CompanyNews from "../Blocks/CompanyNews";
@@ -23,7 +23,7 @@ class HomePage extends Component {
         <TwoStarLists />
         <OurVMCP />
         <ProductsTitle />
-        <Catalogue />
+        <Products />
         <Cataloguebtn />
         <Facts />
         <CompanyNews />

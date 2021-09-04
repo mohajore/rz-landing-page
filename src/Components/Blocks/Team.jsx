@@ -3,6 +3,7 @@ import "../../Assets/Style/Components/Blocks/_Team.scss";
 import Container from "react-bootstrap/Container";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+// react-multi-carousel Properties start
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1200 },
@@ -33,17 +34,21 @@ const CustomRightArrow = ({ onClick, ...rest }) => {
   // onMove means if dragging or swiping in progress.
   return <button onClick={() => onClick()} />;
 };
+// react-multi-carousel Properties End
 class Team extends Component {
   render() {
     return (
       <div className="Team">
         <Container>
+          {/* Team Word Title Start */}
           <div className="Team-text-container">
             <div>
               <span></span>
               <h6>TEAM</h6>
             </div>
           </div>
+           {/* Team Word Title End */}
+           {/* react-multi-carousel Start */}
           <div className="Carousel">
             <Carousel
               showDots={false}
@@ -124,6 +129,7 @@ class Team extends Component {
               </div>
             </Carousel>
           </div>
+          {/* react-multi-carousel End */}
         </Container>
       </div>
     );

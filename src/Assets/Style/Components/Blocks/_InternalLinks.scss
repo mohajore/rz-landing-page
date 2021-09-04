@@ -1,7 +1,7 @@
 @import "../../Abstract/mixins";
 .InternalLinks {
   background-color: $secondary-color;
-
+  // InternalLink Section Start 
   .InternalLink {
     margin-top: 40px;
     color: $white-color;
@@ -33,6 +33,8 @@
       }
     }
   }
+    // InternalLink Section End
+  // Logo with SocialMedia Icons Start
   .InternalLinkLast {
     background-color: $white-color;
     display: flex;
@@ -57,9 +59,12 @@
       }
     }
   }
+  // Logo with SocialMedia Icons End
+  // Logo with SocialMedia Icons Start [Tablet]
   .InternalLinkLast1 {
     display: none;
   }
+  // Logo with SocialMedia Icons End [Tablet]
 }
 @include respond(laptop) {
   .InternalLinks {
@@ -103,6 +108,7 @@
     .InternalLinkLast {
       display: none;
     }
+    // Logo with SocialMedia Icons Start [Tablet]
     .InternalLinkLast1 {
       background-color: $white-color;
       display: flex;
@@ -122,6 +128,7 @@
         }
       }
     }
+    // Logo with SocialMedia Icons End [Tablet]
   }
 }
 @include respond(large-phone) {

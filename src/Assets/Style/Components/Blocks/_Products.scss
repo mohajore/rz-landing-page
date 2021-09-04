@@ -1,5 +1,5 @@
 @import "../../Abstract/mixins";
-.Catalogue {
+.Products {
   .block {
     background-color: $-bg-primary-color2;
     height: 160px;
@@ -11,7 +11,6 @@
     align-self: center;
     cursor: pointer;
     .block-title-container {
-      // background-color: green;
       width: 80%;
       display: flex;
       justify-content: center;
@@ -50,7 +49,7 @@
   }
 }
 @include respond(laptop) {
-  .Catalogue {
+  .Products {
     .block {
       height: 140px; //
       border-bottom: 5px $primary-color solid;
@@ -63,7 +62,7 @@
   }
 }
 @include respond(small-laptop) {
-  .Catalogue {
+  .Products {
     .block {
       .block-title-container {
         h5 {
@@ -75,7 +74,7 @@
 }
 
 @include respond(tablet) {
-  .Catalogue {
+  .Products {
     .block {
       .block-title-container {
         h5 {
@@ -86,7 +85,7 @@
   }
 }
 @include respond(large-phone) {
-  .Catalogue {
+  .Products {
     .block {
       .block-title-container {
         h5 {

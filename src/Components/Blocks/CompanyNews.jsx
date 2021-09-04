@@ -10,6 +10,7 @@ import {
 } from "react-icons/io";
 import Carousel, { consts } from "react-elastic-carousel";
 class CompanyNews extends Component {
+  // react-elastic-carousel propeties Start
   constructor(props) {
     super(props);
     this.breakPoints = [
@@ -31,6 +32,7 @@ class CompanyNews extends Component {
       </span>
     );
   }
+  // react-elastic-carousel propeties End
   render() {
     return (
       <div className="CompanyNewsComponent">
@@ -38,10 +40,13 @@ class CompanyNews extends Component {
           <Row>
             <Col className="Symmtric" md={6}>
               <div className="Company-news">
+                 {/* Company-news Title Start */}
                 <div className="CompanyNewsTitleContainer">
                   <span></span>
                   <h5>Company news</h5>
                 </div>
+                  {/* Company-news Title End */}
+                 {/* react-elastic-carousel Start */}
                 <Carousel
                   renderArrow={this.myArrow}
                   breakPoints={this.breakPoints}
@@ -129,8 +134,10 @@ class CompanyNews extends Component {
                     </div>
                   </div>
                 </Carousel>
+                   {/* react-elastic-carousel End */}
               </div>
             </Col>
+              {/* Labour-Day Paragraph Start */}
             <Col className="Labour-Day Symmtric" md={6}>
               <div className="labourDay-imgDiv">
                 <img src="../../images/labourDay.png" />
@@ -167,6 +174,7 @@ class CompanyNews extends Component {
                 </div>
               </div>
             </Col>
+              {/* Labour-Day Paragraph End */}
           </Row>
         </Container>
       </div>

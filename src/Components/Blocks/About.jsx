@@ -10,6 +10,7 @@ class About extends Component {
         <Container>
           <div className="About1">
             <Row>
+                {/* AboutUs Image Start */}
               <Col xl={6} lg={6} md={6} sm={12}>
                 <div className="About-image-container">
                   &nbsp;
@@ -22,6 +23,8 @@ class About extends Component {
                   </div>
                 </div>
               </Col>
+               {/* AboutUs Image End */}
+              {/* AboutUs Paragraph Start */}
               <Col xl={6} lg={6} md={6} sm={12}>
                 <div className="About-text-container">
                   <div>
@@ -56,6 +59,7 @@ class About extends Component {
                   </div>
                 </div>
               </Col>
+                {/* AboutUs Paragraph End */}
             </Row>
           </div>
         </Container>

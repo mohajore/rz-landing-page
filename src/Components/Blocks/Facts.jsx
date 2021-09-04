@@ -1,8 +1,6 @@
 import { Component } from "react";
 import "../../Assets/Style/Components/Blocks/_Facts.scss";
 import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
 class Facts extends Component {
   render() {
     return (
@@ -10,7 +8,6 @@ class Facts extends Component {
         <Container>
           <div className="Facts1">
             <div className="fact-word">Facts</div>
-
             <div class="grid-container">
               <div className="Facts-num">
                 <h2>23</h2>

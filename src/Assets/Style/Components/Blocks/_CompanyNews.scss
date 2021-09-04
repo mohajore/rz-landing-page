@@ -13,6 +13,7 @@
         background-color: $primary-color;
         margin: 20px 0px;
         height: 100%;
+        // Company-news Title Start
         .CompanyNewsTitleContainer {
           padding: 20px 0px;
           h5 {
@@ -31,25 +32,23 @@
             margin-bottom: 10px;
           }
         }
+        // Company-news Title End
+        // react-elastic-carousel Start
+        // react-elastic-carousel Arrows Start
         .rec-carousel {
           position: relative;
           span:nth-child(1) {
-            // background-color: saddlebrown;
-            // position: absolute;
             margin-bottom: 70px;
             z-index: 1;
           }
           span:nth-last-child(1) {
-            // background-color: goldenrod;
             position: absolute;
             bottom: 15px;
           }
           span {
-            // background-color: goldenrod;
             display: flex;
             flex-direction: column-reverse;
             cursor: pointer;
-            // background-color: yellow;
             .MyArrow {
               margin-top: 100px;
               color: $white-color;
@@ -63,6 +62,8 @@
             }
           }
         }
+        // react-elastic-carousel End Start
+       // react-elastic-carousel Sections Start
         .Company-news-Item {
           color: $white-color;
           border-left: 10px solid $tertiary-color;
@@ -108,10 +109,13 @@
             }
           }
         }
+         // react-elastic-carousel Sections Start
+         // react-elastic-carousel End
       }
       .Symmtric {
         // padding: 0;
       }
+      // Labour-Day Paragraph Start 
       .Labour-Day {
         position: relative;
         .labourDay-imgDiv {
@@ -146,6 +150,7 @@
           }
         }
       }
+      // Labour-Day Paragraph End
     }
   }
 }

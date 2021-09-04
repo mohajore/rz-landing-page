@@ -1,8 +1,6 @@
 import { Component } from "react";
 import "../../Assets/Style/Components/Blocks/_Cataloguebtn.scss";
 import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
 import { BiDownload } from "react-icons/bi";
 
 class Cataloguebtn extends Component {

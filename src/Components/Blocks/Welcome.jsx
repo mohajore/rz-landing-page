@@ -12,6 +12,7 @@ class Welcome extends Component {
         <Container>
           <div className="Welcome1">
             <Row>
+               {/* Wlecome Intoduction section start */}
               <Col xl={6} lg={6} md={6} sm={12}>
                 <div className="welcome-titles-container">
                   <h2 className="">WELCOME TO RZ</h2>
@@ -27,6 +28,8 @@ class Welcome extends Component {
                   </div>
                 </div>
               </Col>
+              {/* Wlecome Intoduction section End */}
+              {/* Wlecome image section start */}
               <Col xl={6} lg={6} md={6} sm={12}>
                 {" "}
                 <div className="welcome-img-container">
@@ -34,6 +37,7 @@ class Welcome extends Component {
                   <img className="" src="images/building1.jpg" />{" "}
                 </div>{" "}
               </Col>
+               {/* Wlecome image section End */}
             </Row>
           </div>
         </Container>
