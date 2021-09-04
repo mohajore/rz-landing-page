@@ -1,6 +1,7 @@
 @import "../../Abstract/mixins";
 .About {
   overflow: hidden;
+  background-color: red;
   .About1 {
     .About-image-container {
       margin-top: -10px;
