@@ -34,7 +34,7 @@
 }
 @include respond(laptop) {
   .ProductsTitle {
-    .ProductsTitle {
+    .ProductsTitle1 {
       div {
         h5 {
           font-size: 20px;
@@ -56,7 +56,7 @@
 }
 @include respond(small-laptop) {
   .ProductsTitle {
-    .ProductsTitle {
+    .ProductsTitle1 {
       div {
         h5 {
           font-size: 18px;
@@ -70,7 +70,7 @@
 }
 @include respond(tablet) {
   .ProductsTitle {
-    .ProductsTitle {
+    .ProductsTitle1 {
       div {
         h5 {
           font-size: 22px;
@@ -88,7 +88,7 @@
 }
 @include respond(large-phone) {
   .ProductsTitle {
-    .ProductsTitle {
+    .ProductsTitle1 {
       div {
         h5 {
           font-size: 16px;
@@ -104,7 +104,7 @@
 }
 @include respond(phone) {
   .ProductsTitle {
-    .ProductsTitle {
+    .ProductsTitle1 {
       div {
         h5 {
           font-size: 18px;
