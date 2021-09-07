@@ -44,7 +44,7 @@ class Facts extends Component {
                 </div>
               </div>
               <div className="Facts-num">
-                <h2>185</h2>
+                <h2>200</h2>
                 {/* <h6></h6> */}
                 <div className="FactsParagraphContainer">
                   {" "}

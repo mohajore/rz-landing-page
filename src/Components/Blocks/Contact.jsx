@@ -79,8 +79,8 @@ class Contact extends Component {
                 </div>
               </div>
             </Col>
-             {/* Map Section End */}
-              {/* Form & Contact Info & Social Section Start */}
+            {/* Map Section End */}
+            {/* Form & Contact Info & Social Section Start */}
             <Col md={6}>
               <div className="ContactContainerAll">
                 {/* Contact Title Start */}
@@ -88,8 +88,8 @@ class Contact extends Component {
                   <span></span>
                   <h5>Contact</h5>
                 </div>
-                   {/* Contact Title End */}
-                   {/* Contact Form Start */}
+                {/* Contact Title End */}
+                {/* Contact Form Start */}
                 <div className="ContactForm">
                   <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -121,7 +121,7 @@ class Contact extends Component {
                           {" "}
                           <BiPhone size={25} />
                         </div>
-                        <h5 className="UnderlineClass "> +962798089000</h5>
+                        <h5 className="UnderlineClass ">+962798089000</h5>
                       </div>
 
                       <div className="ContactInfoIconAndTextContainer">
@@ -145,8 +145,8 @@ class Contact extends Component {
                         </h5>
                       </div>
                     </Col>
-                     {/* Contact info End */}
-                      {/* Contact Social  Start */}
+                    {/* Contact info End */}
+                    {/* Contact Social  Start */}
                     <Col>
                       <div className="ContactInfoSendAndSocialIcons">
                         <div className="sendbtnContainer">
@@ -172,12 +172,12 @@ class Contact extends Component {
                         </div>
                       </div>
                     </Col>
-                     {/* Contact Socail End */}
+                    {/* Contact Socail End */}
                   </Row>
                 </div>
               </div>
             </Col>
-              {/* Form & Contact Info & Social Section End */}
+            {/* Form & Contact Info & Social Section End */}
           </Row>
         </Container>
       </div>

@@ -1,21 +1,20 @@
 import { Component } from "react";
 import "../../Assets/Style/Components/Blocks/_SustainablePackaging.scss";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-
+import { Row, Col } from "react-bootstrap/";
 class SustainablePackaging extends Component {
   render() {
     return (
       <div className="SustainablePackaging">
         <Container>
           <div className="SustainablePackaging-text-container">
-          {/* Sustainable Packaging Solutions Title Start */}
+            {/* Sustainable Packaging Solutions Title Start */}
             <div>
               <span></span>
               <h5> Sustainable Packaging Solutions</h5>
             </div>
-               {/* Sustainable Packaging Solutions Title End */}
-               {/* Sustainable Packaging Solutions Paragraph Start */}
+            {/* Sustainable Packaging Solutions Title End */}
+            {/* Sustainable Packaging Solutions Paragraph Start */}
             <div>
               <p>
                 Alhadaf Int. Company for Importing & Industry L.LC is everyday
@@ -36,13 +35,13 @@ class SustainablePackaging extends Component {
                 end-of-life.
               </p>
             </div>
-             {/* Sustainable Packaging Solutions Paragraph End */}
-             {/* EcoFriendly Products Title Start */}
+            {/* Sustainable Packaging Solutions Paragraph End */}
+            {/* EcoFriendly Products Title Start */}
             <div className="EcoFriendlyProductsTitle">
               <h6>RZ Eco-Friendly products:</h6>
             </div>
-               {/* EcoFriendly Products Title End */}
-                  {/* EcoFriendly Products Paragraph Start */}
+            {/* EcoFriendly Products Title End */}
+            {/* EcoFriendly Products Paragraph Start */}
             <div className="EcoFriendlyProductsParagraph">
               <Row>
                 <p>*Food grade certified by international standards.</p>
@@ -56,9 +55,9 @@ class SustainablePackaging extends Component {
                 </p>
               </Row>
             </div>
-              {/* EcoFriendly Products Paragraph End */}
+            {/* EcoFriendly Products Paragraph End */}
           </div>
-           {/* Sustainable Packaging Twologos Start */}
+          {/* Sustainable Packaging Twologos Start */}
           <div className="SustainablePackaginTwologos">
             <div className="Twologos">
               <div className="Twologos1">
@@ -69,80 +68,111 @@ class SustainablePackaging extends Component {
               </div>
             </div>
           </div>
-           {/* Sustainable Packaging Twologos End */}
+          {/* Sustainable Packaging Twologos End */}
           <div className="SustainablePackaging-text-container">
-             {/*Quality Assurance Title Start */}
+            {/*Quality Assurance Title Start */}
             <div>
               <h6 className="QualityAssuranceTitle">Quality Assurance:</h6>
             </div>
-              {/*Quality Assurance Title End */}
-              {/*Quality Assurance Paragraph Start */}
-            <div>
-              <p className="QualityAssuranceParagraph">
-                Alhadaf Quality is placed at the highest stakes. All our
-                processes undergo vigorous tests/assessments to ensure products
-                are delivered to our clients on time and hygienically,
-                conforming to national/international standards and accepted
-                product specifications. We have a Quality Assurance & Control
-                Team with highly qualified and well-trained Quality
-                professionals. all the incoming raw material inspections are
-                undertaken as per international Standards, to ensure the product
-                quality is not compromised at all, focusing on Human Health, and
-                planet sustainability
-              </p>
+            {/*Quality Assurance Title End */}
+            {/*Quality Assurance Paragraph Start */}
+            <div className="QualityAssuranceSection">
+              <Row>
+                <Col md={2} sm={3}>
+                  <img src="/images/qualitya.png" />
+                </Col>
+                <Col md={10} sm={9}>
+                  <p className="QualityAssuranceParagraph">
+                    Alhadaf Quality is placed at the highest stakes. All our
+                    processes undergo vigorous tests/assessments to ensure
+                    products are delivered to our clients on time and
+                    hygienically, conforming to national & international
+                    standards and accepted product specifications. We have a
+                    Quality Assurance & Control Team with highly qualified
+                    standards to keep every thing at the right track.
+                  </p>
+                </Col>
+              </Row>
             </div>
-               {/*Quality Assurance Paragraph End */}
+            {/*Quality Assurance Paragraph End */}
           </div>
-         
-            {/*Alhadaf Quality Certifications title Start */}
+
+          {/*Alhadaf Quality Certifications title Start */}
           <div className="AlhadafQualityCertificationsTitle ">
             <h5> Alhadaf Quality Certifications:</h5>
           </div>
-            {/*Alhadaf Quality Certifications title End */}
-              {/*Alhadaf Quality Certifications 5  Start */}
+          {/*Alhadaf Quality Certifications title End */}
+          {/*Alhadaf Quality Certifications 5  Start */}
           <div className="SustainablePackaginFivelogos">
             <div className="Fivelogos">
               <div className="Fivelogos1 ">
                 <img src="../../images/iso9001.png" />
                 <div>
                   <h5>
-                    Environmental Management System certificate (ISO 14001)
+                    <a
+                      href="/pdf/JO21-85198  Rami Saheb & Partner CO. (Al Hadaf) - ISO 14001 Certificate .pdf"
+                      target="_blank"
+                    >
+                      {" "}
+                      Environmental Management System certificate (ISO 14001)
+                    </a>
                   </h5>{" "}
                 </div>
               </div>
               <div className="Fivelogos1 ">
                 <img src="../../images/ISO22000.png" />
                 <div>
-                  <h5>Food Safety Management System Certificate (ISO 22000)</h5>{" "}
+                  <h5>
+                    <a
+                      href="/pdf/JO21-85191  Rami Saheb & Partner CO. (Al Hadaf Int.) - ISO 22000 2018 Certificate .pdf"
+                      target="_blank"
+                    >
+                      Food Safety Management System Certificate (ISO 22000)
+                    </a>{" "}
+                  </h5>
                 </div>
               </div>
               <div className="Fivelogos1 ">
                 <img src="../../images/iso14001.png" />
                 <div>
-                  <h5>Quality Management System Certificate (ISO:9001)</h5>{" "}
+                  <h5>
+                    <a
+                      href="/pdf/JO21-85199  Rami Saheb & Partner CO. (Al Hadaf) - ISO 9001 Certificate.pdf"
+                      target="_blank"
+                    >
+                      Quality Management System Certificate (ISO:9001)
+                    </a>{" "}
+                  </h5>
                 </div>
               </div>
               <div className="Fivelogos1 ">
                 <img src="../../images/BRC.png" />
                 <div>
                   <h5>
-                    Food Contact Certificate (Jordan Food & Drugs
-                    Administration)
-                  </h5>{" "}
+                    <a href="/pdf/BRC 2021.pdf" target="_blank">
+                      Food Contact Certificate (Jordan Food & Drugs
+                      Administration)
+                    </a>{" "}
+                  </h5>
                 </div>
               </div>
               <div className="Fivelogos1 ">
                 <img src="../../images/jfd.png" />
                 <div>
                   <h5>
-                    Global Standers for Packaging & Packaging Materials. (BRC
-                    Certificate)
-                  </h5>{" "}
+                    <a
+                      href="/pdf/الغذاء والدواء 2021 .انجليزي.pdf"
+                      target="_blank"
+                    >
+                      Global Standers for Packaging & Packaging Materials. (BRC
+                      Certificate)
+                    </a>{" "}
+                  </h5>
                 </div>
               </div>
             </div>
           </div>
-            {/*Alhadaf Quality Certifications 5  End */}
+          {/*Alhadaf Quality Certifications 5  End */}
         </Container>
       </div>
     );

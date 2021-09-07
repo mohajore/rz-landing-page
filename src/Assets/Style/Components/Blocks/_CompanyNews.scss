@@ -63,7 +63,7 @@
           }
         }
         // react-elastic-carousel End Start
-       // react-elastic-carousel Sections Start
+        // react-elastic-carousel Sections Start
         .Company-news-Item {
           color: $white-color;
           border-left: 10px solid $tertiary-color;
@@ -71,6 +71,7 @@
           transition: border 0.4s ease-in-out;
           background-color: #4b4e98;
           width: 100%;
+          cursor: pointer;
           h3 {
             font-size: 25px;
             padding: 20px 20px 0px;
@@ -109,13 +110,13 @@
             }
           }
         }
-         // react-elastic-carousel Sections Start
-         // react-elastic-carousel End
+        // react-elastic-carousel Sections Start
+        // react-elastic-carousel End
       }
       .Symmtric {
         // padding: 0;
       }
-      // Labour-Day Paragraph Start 
+      // Labour-Day Paragraph Start
       .Labour-Day {
         position: relative;
         .labourDay-imgDiv {

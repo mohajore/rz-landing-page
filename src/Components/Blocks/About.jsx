@@ -10,7 +10,7 @@ class About extends Component {
         <Container>
           <div className="About1">
             <Row>
-                {/* AboutUs Image Start */}
+              {/* AboutUs Image Start */}
               <Col xl={6} lg={6} md={6} sm={12}>
                 <div className="About-image-container">
                   &nbsp;
@@ -23,7 +23,7 @@ class About extends Component {
                   </div>
                 </div>
               </Col>
-               {/* AboutUs Image End */}
+              {/* AboutUs Image End */}
               {/* AboutUs Paragraph Start */}
               <Col xl={6} lg={6} md={6} sm={12}>
                 <div className="About-text-container">
@@ -38,28 +38,28 @@ class About extends Component {
                       top manufacturers of food packaging and disposables for
                       households and the foodservice industry in the region. We
                       pride ourselves on delivering high-quality products at
-                      very competitive prices. Our leaders challenge us everyday
-                      to go beyond what we have promised our customers, the best
-                      quality products and service at competitive prices. This
-                      commitment is combined with our passion to ensure that our
-                      customers, both local and global, have a seamless journey
-                      from start to finish and hence keep coming back to us
-                      again and again. With state-of-the-art machinery combined
-                      with our in depth production and quality knowledge gained
-                      from our over 20 years’ experience, we ensure that our
-                      products are top quality. Throughout the company we focus
-                      on continuous improvement, we strive to exceed our
-                      customer expectations. We pride ourselves on understanding
-                      what our customers require. Alhadaf renowned production
-                      flexibility allows us to meet our customers’ requirements.
-                      We can customize our products to any channel’s
-                      requirements. product range expanded recently to include
-                      our eco-friendly products, recyclable and (Biodegradable)
+                      very competitive prices. Our leaders challenge us every
+                      day to go beyond what we have promised our customers, the
+                      best quality products and service at competitive prices.
+                      This commitment is combined with our passion to ensure
+                      that our customers, both local and global, have a seamless
+                      journey from start to finish and hence keep coming back to
+                      us again and again.
+                      <br />
+                      <hr />
+                      With state-of-the-art machinery combined with our in-depth
+                      production and quality knowledge gained from our over 20
+                      years’ experience, we ensure that our products are top
+                      quality. Throughout the company we focus on continuous
+                      improvement, we strive to exceed our customer
+                      expectations. We pride ourselves on understanding what our
+                      customers require. Alhadaf renowned production flexibility
+                      allows us to meet our customers’ requirements.
                     </p>
                   </div>
                 </div>
               </Col>
-                {/* AboutUs Paragraph End */}
+              {/* AboutUs Paragraph End */}
             </Row>
           </div>
         </Container>

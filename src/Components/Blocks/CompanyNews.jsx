@@ -11,6 +11,12 @@ import {
 import Carousel, { consts } from "react-elastic-carousel";
 class CompanyNews extends Component {
   // react-elastic-carousel propeties Start
+  //  const selectedParagraph = this.setState;
+  // setState = {};
+  state = {
+    selectedParagraph:
+      "Alhadaf Int Company is launching new production lines to bring to market Nurse Cap & PE Gloves made locally, to have 16 production lines in total as part of the development plans for this year 2021",
+  };
   constructor(props) {
     super(props);
     this.breakPoints = [
@@ -32,21 +38,23 @@ class CompanyNews extends Component {
       </span>
     );
   }
+
   // react-elastic-carousel propeties End
   render() {
+    const { selectedParagraph } = this.state;
     return (
       <div className="CompanyNewsComponent">
         <Container>
           <Row>
             <Col className="Symmtric" md={6}>
               <div className="Company-news">
-                 {/* Company-news Title Start */}
+                {/* Company-news Title Start */}
                 <div className="CompanyNewsTitleContainer">
                   <span></span>
                   <h5>Company news</h5>
                 </div>
-                  {/* Company-news Title End */}
-                 {/* react-elastic-carousel Start */}
+                {/* Company-news Title End */}
+                {/* react-elastic-carousel Start */}
                 <Carousel
                   renderArrow={this.myArrow}
                   breakPoints={this.breakPoints}
@@ -63,118 +71,148 @@ class CompanyNews extends Component {
                     );
                   }}
                 >
-                  <div className="Company-news-Item">
-                    <h3>Alhadaf celebrates the Labor Day with Employees </h3>
+                  <div
+                    className="Company-news-Item"
+                    onClick={() => {
+                      this.setState({
+                        selectedParagraph:
+                          " Alhadaf Int Company is launching new production lines to bring to market Nurse Cap & PE Gloves made locally, to have 16 production lines in total as part of the development plans for this year 2021",
+                      });
+                    }}
+                  >
+                    <h3>
+                      Alhadaf Int Company is launching new production lines{" "}
+                    </h3>
                     <h6>
                       Alhadaf Int Company is launching new production lines to
-                      bring to market . . .{" "}
+                      bring to market Nurse Cap & PE Gloves made locally . . .{" "}
+                    </h6>
+                    <div className="Company-news-Item-icon">
+                      <IoIosArrowForward />
+                    </div>
+                  </div>
+                  <div
+                    className="Company-news-Item"
+                    onClick={() => {
+                      this.setState({
+                        selectedParagraph:
+                          "Alhadaf celebrates the 1st of May, “Labor Day”. CEO Mr. Rami Saheb joined his big family of employees to celebrate and appreciate hard workers efforts during the year.  Focusing on gender equity and social justice. raising the quote : “No work is insignificant. All labor that uplifts humanity has dignity and importance and should be undertaken with painstaking excellence.”   M. L. K.",
+                      });
+                    }}
+                  >
+                    <h3>Alhadaf celebrates the 1st of May, “Labor Day”. </h3>
+                    <h6>
+                      Alhadaf celebrates the 1st of May, “Labor Day”. CEO Mr.
+                      Rami Saheb joined his big family of employees to . . .{" "}
+                    </h6>
+                    <div
+                      className="Company-news-Item-icon"
+                      onClick={() => {
+                        this.setState({
+                          selectedParagraph:
+                            " Alhadaf family celebrate the National Flag day on the 16th of April as part of the national celebration of the country’s centenary on April 11. National music, patriotism speech and several activities were made around this national occasion.",
+                        });
+                      }}
+                    >
+                      <IoIosArrowForward />
+                    </div>
+                  </div>
+                  <div
+                    className="Company-news-Item"
+                    onClick={() => {
+                      this.setState({
+                        selectedParagraph:
+                          " Our real goal is to invest internal energies to create knowledge, refine skills and develop experiences. Alhadaf Int. Co organized a new training course for the Sales & CRM team on “ The Art of Sales & effective supervision” done by MK Academy in main office in Jordan to keep the flow of development moving a head at all levels. Aug, 2021",
+                      });
+                    }}
+                  >
+                    <h3>
+                      Alhadaf family celebrate the National Flag day on the 16th
+                      of April{" "}
+                    </h3>
+                    <h6>
+                      Alhadaf family celebrate the National Flag day on the 16th
+                      of April as part of the national celebration of the
+                      country’s . . .{" "}
+                    </h6>
+                    <div className="Company-news-Item-icon">
+                      <IoIosArrowForward />
+                    </div>
+                  </div>
+                  <div
+                    className="Company-news-Item"
+                    onClick={() => {
+                      this.setState({
+                        selectedParagraph:
+                          "Alhadaf Int. Co. Management, CEO Mr. Rami Saheb signed a new development project agreement supported by Jordan Enterprise Development Corporation (JEDCO), for increasing export through E- Commerce platforms. Aug, 2021                          ",
+                      });
+                    }}
+                  >
+                    <h3>
+                      Alhadaf Int. Co. Management, CEO Mr. Rami Saheb signed a
+                      new development project{" "}
+                    </h3>
+                    <h6>
+                      Alhadaf Int. Co. Management, CEO Mr. Rami Saheb signed a
+                      new development project agreement supported by . . .{" "}
+                    </h6>
+                    <div className="Company-news-Item-icon">
+                      <IoIosArrowForward />
+                    </div>
+                  </div>
+                  <div
+                    className="Company-news-Item"
+                    onClick={() => {
+                      this.setState({
+                        selectedParagraph:
+                          " Alhadaf Int. Co. for Importing & Industry participated in the largest Food platform gathering in the MENA Area. “Food & Beverage Products, Food processing, Technologies Fair “ in Istanbul, which was held between 1st – 4th  of Sep, 2021, At the CNR EXPO ISTANBUL CENTE . The Exhibition hosted more than 84 countries, and thousands of ",
+                      });
+                    }}
+                  >
+                    <h3>
+                      Our real goal is to invest internal energies to create
+                      knowledge,
+                    </h3>
+                    <h6>
+                      Our real goal is to invest internal energies to create
+                      knowledge, refine skills and develop experiences . . .{" "}
                     </h6>
                     <div className="Company-news-Item-icon">
                       <IoIosArrowForward />
                     </div>
                   </div>
                   <div className="Company-news-Item">
-                    <h3>Alhadaf celebrates the Labor Day with Employees </h3>
+                    <h3>
+                      Alhadaf Int. Co. for Importing & Industry participated in
+                      the largest Food platform{" "}
+                    </h3>
                     <h6>
-                      Alhadaf Int Company is launching new production lines to
-                      bring to market . . .{" "}
-                    </h6>
-                    <div className="Company-news-Item-icon">
-                      <IoIosArrowForward />
-                    </div>
-                  </div>
-                  <div className="Company-news-Item">
-                    <h3>Alhadaf celebrates the Labor Day with Employees </h3>
-                    <h6>
-                      Alhadaf Int Company is launching new production lines to
-                      bring to market . . .{" "}
-                    </h6>
-                    <div className="Company-news-Item-icon">
-                      <IoIosArrowForward />
-                    </div>
-                  </div>
-                  <div className="Company-news-Item">
-                    <h3>Alhadaf celebrates the Labor Day with Employees </h3>
-                    <h6>
-                      Alhadaf Int Company is launching new production lines to
-                      bring to market . . .{" "}
-                    </h6>
-                    <div className="Company-news-Item-icon">
-                      <IoIosArrowForward />
-                    </div>
-                  </div>
-                  <div className="Company-news-Item">
-                    <h3>Alhadaf celebrates the Labor Day with Employees </h3>
-                    <h6>
-                      Alhadaf Int Company is launching new production lines to
-                      bring to market . . .{" "}
-                    </h6>
-                    <div className="Company-news-Item-icon">
-                      <IoIosArrowForward />
-                    </div>
-                  </div>
-                  <div className="Company-news-Item">
-                    <h3>Alhadaf celebrates the Labor Day with Employees </h3>
-                    <h6>
-                      Alhadaf Int Company is launching new production lines to
-                      bring to market . . .{" "}
-                    </h6>
-                    <div className="Company-news-Item-icon">
-                      <IoIosArrowForward />
-                    </div>
-                  </div>
-                  <div className="Company-news-Item">
-                    <h3>Alhadaf celebrates the Labor Day with Employees </h3>
-                    <h6>
-                      Alhadaf Int Company is launching new production lines to
-                      bring to market . . .{" "}
+                      Alhadaf Int. Co. for Importing & Industry participated in
+                      the largest Food platform gathering in the MENA Area . . .{" "}
                     </h6>
                     <div className="Company-news-Item-icon">
                       <IoIosArrowForward />
                     </div>
                   </div>
                 </Carousel>
-                   {/* react-elastic-carousel End */}
+                {/* react-elastic-carousel End */}
               </div>
             </Col>
-              {/* Labour-Day Paragraph Start */}
+            {/* Labour-Day Paragraph Start */}
             <Col className="Labour-Day Symmtric" md={6}>
               <div className="labourDay-imgDiv">
-                <img src="../../images/labourDay.png" />
+                <img src="../../images/news photos.jfif" />
               </div>
               <div className="labourDayTitleParagraph">
                 <div className="labourDayTitle">
                   <h4>Alhadaf celebrates the Labor Day with Employees </h4>{" "}
                 </div>
                 <div className="labourDayParagraph">
-                  <p>
-                    Alhadaf Int Company is launching new production lines to
-                    bring to market Nurse Cap & PE Gloves. We are considered to
-                    be one of the top manufacturers of food packaging and
-                    disposables for households and the foodservice industry in
-                    the region. We pride ourselves on delivering high-quality
-                    products at very competitive prices. Our leaders challenge
-                    us everyday to go beyond what we have promised our
-                    customers, the best quality products and service at
-                    competitive prices. This commitment is combined with our
-                    passion to ensure that our customers, both local and global,
-                    have a seamless journey from start to finish and hence keep
-                    coming back to us again and again. With state of the art
-                    machinery combined with our in depth production and quality
-                    knowledge gained from our over 20 years experience, we
-                    ensure that our products are top quality. Throughout the
-                    company we focus on continuous improvement, we strive to
-                    exceed our customer expectations. We pride ourselves on
-                    understanding what our customers require. Al Hadaf renowned
-                    production flexibility allows us to meet our customers'
-                    requirements. We can customize our products to your
-                    requirements. Our portfolio of products contains over 1500
-                    products. Our core products are
-                  </p>
+                  <p>{selectedParagraph}</p>
                 </div>
               </div>
             </Col>
-              {/* Labour-Day Paragraph End */}
+            {/* Labour-Day Paragraph End */}
           </Row>
         </Container>
       </div>

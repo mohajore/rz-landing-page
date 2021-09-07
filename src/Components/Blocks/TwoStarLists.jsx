@@ -10,11 +10,19 @@ class TwoStarLists extends Component {
           <div className="two-lists">
             <ul>
               <li>
-                &nbsp;in Alhadaf, are focused on sustainability from our raw
+                &nbsp; We can customize our products to any channel’s
+                requirements.
+              </li>
+              <li>
+                &nbsp; The product range expanded recently to include our
+                eco-friendly products, recyclable and (Biodegradable)
+              </li>
+              <li>
+                &nbsp;We, in Alhadaf, are focused on sustainability from our raw
                 materials to our manufacturing to our logistics.
               </li>
               <li>
-                &nbsp;in the end, it is the people in Alhadaf who make us
+                &nbsp;But in the end, it is the people in Alhadaf who make us
                 different. Every day, we endeavour to make sure that you, the
                 customer is happy with us, our products and our service. With
                 our energy, passion and our commitment, we aim to make Alhadaf

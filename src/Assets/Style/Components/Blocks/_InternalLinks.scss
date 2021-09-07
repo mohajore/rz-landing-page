@@ -1,7 +1,7 @@
 @import "../../Abstract/mixins";
 .InternalLinks {
   background-color: $secondary-color;
-  // InternalLink Section Start 
+  // InternalLink Section Start
   .InternalLink {
     margin-top: 40px;
     color: $white-color;
@@ -33,7 +33,7 @@
       }
     }
   }
-    // InternalLink Section End
+  // InternalLink Section End
   // Logo with SocialMedia Icons Start
   .InternalLinkLast {
     background-color: $white-color;
@@ -43,6 +43,10 @@
     height: 100%;
     div {
       margin: 0 auto;
+      img {
+        margin-top: -2px;
+        width: 150px;
+      }
     }
     .header-icons-div {
       font-size: 20px;
@@ -72,11 +76,6 @@
       display: none;
     }
     .InternalLinkLast {
-      div {
-        img {
-          width: 90%; //
-        }
-      }
       .header-icons-div {
         margin-top: 30px;
         svg {
@@ -117,6 +116,9 @@
 
       div {
         margin: 0 auto;
+        img {
+          width: 150px;
+        }
       }
       .header-icons-div {
         font-size: 20px;

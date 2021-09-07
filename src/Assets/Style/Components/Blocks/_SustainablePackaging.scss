@@ -41,10 +41,15 @@
         margin-left: 50px;
       }
       // Sustainable Packaging Solutions Paragraph End
+      //  Quality Assurance Start
+      img {
+        margin-left: 40px;
+      }
       .QualityAssuranceParagraph {
         margin-top: -5px;
       }
-      //  Quality Assurance Paragraph End
+
+      //  Quality Assurance  End
     }
   }
   // EcoFriendly Products  Start
@@ -58,8 +63,8 @@
       margin-top: -15px;
     }
   }
-    // EcoFriendly Products End
-    // Sustainable Packaging Twologos Start 
+  // EcoFriendly Products End
+  // Sustainable Packaging Twologos Start
   .SustainablePackaginTwologos {
     display: flex;
     justify-content: center;
@@ -76,8 +81,8 @@
       }
     }
   }
-  // Sustainable Packaging Twologos End 
-  // Alhadaf Quality Certifications title Start 
+  // Sustainable Packaging Twologos End
+  // Alhadaf Quality Certifications title Start
   .AlhadafQualityCertificationsTitle {
     margin: 10px 0 50px;
     h5 {
@@ -90,7 +95,7 @@
     }
   }
   // Alhadaf Quality Certifications title End
-  // Alhadaf Quality Certifications 5  Start 
+  // Alhadaf Quality Certifications 5  Start
   .SustainablePackaginFivelogos {
     .Fivelogos {
       display: grid;
@@ -103,24 +108,25 @@
         text-align: center;
         color: $primary-color;
         img {
-          width: 80px;
+          width: 100px;
           height: 90px;
           margin-bottom: 20px;
         }
         div {
-    
           h5 {
             font-size: 20px;
             font-family: $SegoeUI;
             margin: 0px auto;
             width: 200px;
-        
+            a {
+              color: $primary-color;
+            }
           }
         }
       }
     }
   }
-   // Alhadaf Quality Certifications 5 End
+  // Alhadaf Quality Certifications 5 End
 }
 @include respond(large-laptop) {
   .SustainablePackaging {
@@ -165,6 +171,9 @@
         h6 {
           margin-left: 40px;
         }
+        img {
+          width: 150px;
+        }
       }
     }
     .AlhadafQualityCertificationsTitle {
@@ -176,6 +185,13 @@
 }
 @include respond(small-laptop) {
   .SustainablePackaging {
+    .SustainablePackaging-text-container {
+      div {
+        img {
+          width: 110px;
+        }
+      }
+    }
     .SustainablePackaginFivelogos {
       .Fivelogos {
         grid-template-columns: auto auto auto;
@@ -231,6 +247,9 @@
         p {
           font-size: 15px;
           line-height: 1.2;
+        }
+        img {
+          margin-bottom: 20px;
         }
       }
     }
