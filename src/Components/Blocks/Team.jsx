@@ -39,7 +39,7 @@ const CustomRightArrow = ({ onClick, ...rest }) => {
 
 function Team({ data }) {
     return (
-        <div className="Team">
+        <div className="Team" id="Team">
             <Container>
                 {/* Team Word Title Start */}
                 <div className="Team-text-container">

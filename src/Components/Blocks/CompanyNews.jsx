@@ -36,7 +36,7 @@ class CompanyNews extends Component {
         const { selectedParagraph, selectedTitle } = this.state;
         const { data } = this.props;
         return (
-            <div className="CompanyNewsComponent">
+            <div className="CompanyNewsComponent" id="CompanyNews">
                 <Container>
                     <Row>
                         <Col className="Symmtric" md={6}>

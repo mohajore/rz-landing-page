@@ -47,7 +47,7 @@ class Contact extends Component {
         const onFieldChange = (name, value) => this.setState({ fields: { ...fields, [name]: value }, errors: { name: "", email: "", message: "", subject: "" } });
 
         return (
-            <div className="Contact">
+            <div className="Contact" id="Contact">
                 <Container>
                     <Row className="row1">
                         {/* Map Section Start */}

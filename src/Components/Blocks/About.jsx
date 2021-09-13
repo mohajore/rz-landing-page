@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 import { apiService } from "../../services/ApiService";
 function About({ data: { title, image, value, value2 } }) {
     return (
-        <div className="About">
+        <div className="About" id="about">
             <Container>
                 <div className="About1">
                     <Row>

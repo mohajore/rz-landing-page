@@ -17,7 +17,7 @@ class Gallary extends Component {
         const { photos } = this.state;
         const { data, gallery_all } = this.props;
         return (
-            <div className="Gallary">
+            <div className="Gallary" id="Gallary">
                 <Container>
                     <div className="Gallary1">
                         {/* Gallary Header Start */}
