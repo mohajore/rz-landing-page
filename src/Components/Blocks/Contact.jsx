@@ -44,7 +44,7 @@ class Contact extends Component {
     };
     render() {
         const { defaultPosition, fields, errors } = this.state;
-        const onFieldChange = (name, value) => this.setState({ fields: { ...fields, [name]: value }, errors: { name: "", email: "", message: "" } });
+        const onFieldChange = (name, value) => this.setState({ fields: { ...fields, [name]: value }, errors: { name: "", email: "", message: "", subject: "" } });
 
         return (
             <div className="Contact">
@@ -53,8 +53,18 @@ class Contact extends Component {
                         {/* Map Section Start */}
                         <Col Col={6}>
                             <div className="LocationPickerExample">
-                                <LocationPicker containerElement={<div style={{ height: "100%" }} />} mapElement={<div className="CustomMapView" />} onChange={this.handleLocationChange} defaultPosition={defaultPosition} circleOptions={{ visible: false }} />
-                                <div className="BranchLocations">
+                                {/* <LocationPicker containerElement={<div style={{ height: "100%" }} />} mapElement={<div className="CustomMapView" />} onChange={this.handleLocationChange} defaultPosition={defaultPosition} circleOptions={{ visible: false }} /> */}
+
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.577205211585!2d35.99852782633892!3d31.99483310680974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b60d4671037c7%3A0x10c9531afc09e061!2zQWxoYWRhZiBpbnRsIENvLiBmb3IgaW1wb3J0aW5nICYgaW5kdXN0cnkg2KfZhNmH2K_ZgSDYp9mE2K_ZiNmE2YrYqSDZhNmE2KfYs9iq2YrYsdin2K8g2Ygg2KfZhNi12YbYp9i52KkgUlo!5e0!3m2!1sen!2sjo!4v1631544661040!5m2!1sen!2sjo"
+                                    width={"100%"}
+                                    height={450}
+                                    style={{ border: 0 }}
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                ></iframe>
+
+                                {/* <div className="BranchLocations">
                                     <div className="BranchLocation">
                                         <div className="BranchLocationIcons">
                                             <CgPin />
@@ -82,7 +92,7 @@ class Contact extends Component {
                                             <h4>Tabrbour</h4>
                                         </div>
                                     </div>
-                                </div>
+                                </div>*/}
                             </div>
                         </Col>
                         {/* Map Section End */}
@@ -192,15 +202,14 @@ class Contact extends Component {
                 this.setState({
                     errors: handelErrors,
                 });
+                console.log(handelErrors, "erros");
                 return;
             } else {
                 return displayAlert("Error", message, "error");
             }
         }
 
-        console.log(data, "data.user");
-
-        displayAlert("Done", "Message Sent", "success").then(() => this.setState({ fields: { name: "", email: "", message: "" } }));
+        displayAlert("Done", "Message Sent", "success").then(() => this.setState({ fields: { name: "", email: "", message: "", subject: "" } }));
     };
 }
 export default Contact;

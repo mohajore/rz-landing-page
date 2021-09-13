@@ -28,7 +28,7 @@ class HomePage extends Component {
         qa: {},
         qa_certificate: [],
         sustainable_packaging: [],
-        gallary: [],
+        gallery: [],
         pageLoader: true,
     };
     componentDidMount() {
@@ -50,6 +50,7 @@ class HomePage extends Component {
             facts: data.facts,
             team: data.team,
             gallery: data.gallery,
+            gallery_all: data.gallery_all,
             pageLoader: false,
         });
     };
@@ -64,7 +65,7 @@ class HomePage extends Component {
     };
 
     render() {
-        const { news, products, welcome, about_us, vmpc, facts, team, qa, qa_certificate, sustainable_packaging, gallary, pageLoader } = this.state;
+        const { news, products, welcome, about_us, vmpc, facts, team, qa, qa_certificate, sustainable_packaging, gallery, pageLoader, gallery_all } = this.state;
         return pageLoader ? (
             <MainLoader />
         ) : (
@@ -81,9 +82,9 @@ class HomePage extends Component {
                 <Team data={team} />
                 <SustainablePackaging data={sustainable_packaging} qa={qa} qa_certificate={qa_certificate} />
                 <CustomizedFoodPackaging />
-                <Gallary data={gallary} />
+                <Gallary data={gallery} gallery_all={gallery_all} />
                 <Contact data={welcome} />
-                <InternalLinks data={gallary} />
+                <InternalLinks data={gallery} />
             </div>
         );
     }

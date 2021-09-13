@@ -59,7 +59,9 @@ function Team({ data }) {
                                     <div className="name-job-title">
                                         {/* <span></span> */}
                                         <h4 className="MemberName">{title}</h4>
-                                        <h6>{value}</h6>
+                                        {/* <h6>{value}</h6> */}
+                                        <h6 dangerouslySetInnerHTML={{ __html: value }} />
+
                                         <h6 className="h6-email"></h6>
                                     </div>
                                 </div>

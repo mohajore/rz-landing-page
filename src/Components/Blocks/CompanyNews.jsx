@@ -52,17 +52,17 @@ class CompanyNews extends Component {
                                     renderArrow={this.myArrow}
                                     breakPoints={this.breakPoints}
                                     verticalMode
-                                    itemsToShow={3}
-                                    renderPagination={({ pages, activePage, onClick }) => {
-                                        return (
-                                            <div direction="row">
-                                                {pages.map((page) => {
-                                                    const isActivePage = activePage === page;
-                                                    return <div></div>;
-                                                })}
-                                            </div>
-                                        );
-                                    }}
+                                    // itemsToShow={3}
+                                    // renderPagination={({ pages, activePage, onClick }) => {
+                                    //     return (
+                                    //         <div direction="row">
+                                    //             {pages.map((page) => {
+                                    //                 const isActivePage = activePage === page;
+                                    //                 return <div></div>;
+                                    //             })}
+                                    //         </div>
+                                    //     );
+                                    // }}
                                 >
                                     {data?.map(({ text, title, id, iamge }) => {
                                         return (
