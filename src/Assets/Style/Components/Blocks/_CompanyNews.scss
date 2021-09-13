@@ -33,6 +33,8 @@
                 // react-elastic-carousel Arrows Start
                 .rec-carousel {
                     position: relative;
+                    max-height: 1000px;
+                    height: 664px;
                     span:nth-child(1) {
                         margin-bottom: 70px;
                         z-index: 1;
