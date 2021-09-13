@@ -1,137 +1,131 @@
 @import "../../Abstract/mixins";
 .About {
-  overflow: hidden;
-  .About1 {
-      // AboutUs Image Start 
-    .About-image-container {
-      margin-top: -10px;
-      .white-div {
-        img {
-          width: 100%;
+    overflow: hidden;
+    .About1 {
+        // AboutUs Image Start
+        .About-image-container {
+            margin-top: -10px;
+            .white-div {
+                img {
+                    width: 100%;
+                }
+            }
         }
-      }
+        // AboutUs Image End
+        // AboutUs Paragraph Start
+        .About-text-container {
+            margin-top: 40px;
+            div {
+                h5 {
+                    display: inline;
+                    color: $primary-color;
+                    font-size: 40px;
+                    margin-left: 10px;
+                    font-family: $NizarBold;
+                }
+                span {
+                    display: inline-block;
+                    background-color: $tertiary-color;
+                    width: 45px;
+                    height: 5px;
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 1.2;
+                    color: $secondary-color;
+                }
+            }
+        }
+        // AboutUs Paragraph End
     }
-     // AboutUs Image End 
-      // AboutUs Paragraph Start 
-    .About-text-container {
-      margin-top: 40px;
-      div {
-        display: flex;
-        align-items: center;
-        h5 {
-          display: inline;
-          color: $primary-color;
-          font-size: 40px;
-          margin-left: 10px;
-          font-family: $NizarBold;
-        }
-        span {
-          display: inline-block;
-          background-color: $tertiary-color;
-          width: 45px;
-          height: 5px;
-          margin-bottom: 10px;
-        }
-        p {
-          font-size: 20px;
-          line-height: 1.2;
-          color: $secondary-color;
-        }
-      }
-    }
-     // AboutUs Paragraph End 
-  }
 }
 @include respond(large-laptop) {
-  .About {
-    .About1 {
-      .About-text-container {
-        div {
-          display: flex;
-          align-items: center;
-          h5 {
-            font-size: 34px;
-          }
-          p {
-            line-height: 1;
-          }
+    .About {
+        .About1 {
+            .About-text-container {
+                div {
+                    h5 {
+                        font-size: 34px;
+                    }
+                    p {
+                        line-height: 1;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
 @include respond(laptop) {
-  .About {
-    .About1 {
-      .About-text-container {
-        div {
-          display: flex;
-          align-items: center;
-          h5 {
-            font-size: 30px;
-          }
-          p {
-            line-height: 1;
-            font-size: 16px;
-          }
+    .About {
+        .About1 {
+            .About-text-container {
+                div {
+                    h5 {
+                        font-size: 30px;
+                    }
+                    p {
+                        line-height: 1;
+                        font-size: 16px;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
 @include respond(small-laptop) {
-  .About {
-    .About1 {
-      .About-text-container {
-        div {
-          h5 {
-            font-size: 20px;
-          }
-          span {
-            width: 25px;
-            height: 3px;
-          }
-          p {
-            font-size: 15px;
-          }
+    .About {
+        .About1 {
+            .About-text-container {
+                div {
+                    h5 {
+                        font-size: 20px;
+                    }
+                    span {
+                        width: 25px;
+                        height: 3px;
+                    }
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
 @include respond(tablet) {
-  .About {
-    .About1 {
-      .About-text-container {
-        div {
-          h5 {
-            font-size: 30px;
-          }
-          span {
-            width: 30px;
-            height: 4px;
-          }
-          p {
-            line-height: 1.2;
-          }
+    .About {
+        .About1 {
+            .About-text-container {
+                div {
+                    h5 {
+                        font-size: 30px;
+                    }
+                    span {
+                        width: 30px;
+                        height: 4px;
+                    }
+                    p {
+                        line-height: 1.2;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
 @include respond(large-phone) {
-  .About {
-    .About1 {
-      .About-text-container {
-        div {
-          h5 {
-            font-size: 25px;
-          }
-          span {
-            width: 25px;
-          }
+    .About {
+        .About1 {
+            .About-text-container {
+                div {
+                    h5 {
+                        font-size: 25px;
+                    }
+                    span {
+                        width: 25px;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }

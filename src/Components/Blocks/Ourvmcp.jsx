@@ -4,68 +4,49 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 // Our Vision,Mission,Core Values,Policies Class Component
-class OurVMCP extends Component {
-  render() {
+
+function OurVMCP({ data: { core_values, mission, policies, vision } }) {
     return (
-      <div className="OurVMCP">
-        <Container>
-          <Row>
-            <Col className="OurVMCP-Col" lg={3} md={6} sm={6}>
-              <div className="OurVMCP-parent-div">
-                <h5>Our Vision</h5>
-                <div className="OurVMCP-p-parent">
-                  <p>
-                    To become one of the biggest companies in the world for food
-                    packaging services.{" "}
-                  </p>
-                </div>
-              </div>
-            </Col>
-            <Col className="OurVMCP-Col" lg={3} md={6} sm={6}>
-              <div className="OurVMCP-parent-div">
-                <h5>Our Mission</h5>
-                <div className="OurVMCP-p-parent">
-                  <p>
-                    To exceed our customers' expectations in quality, delivery,
-                    and cost through continuous improvement and customer
-                    interaction
-                    <br />
-                    Our Core Values: Commitment, credibility, integrity,
-                    passion, loyalty, creativity, teamwork, and social
-                    responsibility.{" "}
-                  </p>
-                </div>
-              </div>
-            </Col>
-            <Col className="OurVMCP-Col" lg={3} md={6} sm={6}>
-              <div className="OurVMCP-parent-div">
-                <h5>Our Core Values</h5>
-                <div className="OurVMCP-p-parent">
-                  {" "}
-                  <p>
-                    Commitment, credibility, integrity, passion, loyalty,
-                    creativity, teamwork, and social responsibility.{" "}
-                  </p>
-                </div>
-              </div>
-            </Col>
-            <Col className="OurVMCP-Col" lg={3} md={6} sm={6}>
-              <div OurVMCP className="OurVMCP-parent-div">
-                <h5>Our Policies</h5>
-                <div className="OurVMCP-p-parent">
-                  {" "}
-                  <p>
-                    Sustainability, gender equality, anti-bribery, against
-                    corruption, and against racial discrimination.{" "}
-                  </p>
-                </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </div>
+        <div className="OurVMCP">
+            <Container>
+                <Row>
+                    <Col className="OurVMCP-Col" lg={3} md={6} sm={6}>
+                        <div className="OurVMCP-parent-div">
+                            <h5>{vision.title}</h5>
+                            <div className="OurVMCP-p-parent">
+                                <p dangerouslySetInnerHTML={{ __html: vision.value }} />
+                            </div>
+                        </div>
+                    </Col>
+                    <Col className="OurVMCP-Col" lg={3} md={6} sm={6}>
+                        <div className="OurVMCP-parent-div">
+                            <h5>{mission.title}</h5>
+                            <div className="OurVMCP-p-parent">
+                                <p dangerouslySetInnerHTML={{ __html: mission.value }} />
+                            </div>
+                        </div>
+                    </Col>
+                    <Col className="OurVMCP-Col" lg={3} md={6} sm={6}>
+                        <div className="OurVMCP-parent-div">
+                            <h5>{core_values.title}</h5>
+                            <div className="OurVMCP-p-parent">
+                                <p dangerouslySetInnerHTML={{ __html: core_values.value }} />
+                            </div>
+                        </div>
+                    </Col>
+                    <Col className="OurVMCP-Col" lg={3} md={6} sm={6}>
+                        <div OurVMCP className="OurVMCP-parent-div">
+                            <h5>{policies.title}</h5>
+                            <div className="OurVMCP-p-parent">
+                                {" "}
+                                <p dangerouslySetInnerHTML={{ __html: policies.value }} />
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
     );
-  }
 }
 
 export default OurVMCP;

@@ -1,252 +1,252 @@
 @import "../../Abstract/mixins";
 .Contact {
-  padding: 0px;
-  background-color: $primary-color;
-  overflow: hidden;
-  position: relative;
-  margin-top: 40px;
-  // Map Section Start
-  .LocationPickerExample {
+    padding: 0px;
+    background-color: $primary-color;
+    overflow: hidden;
     position: relative;
-    .CustomMapView {
-      height: 550px;
+    margin-top: 40px;
+    // Map Section Start
+    .LocationPickerExample {
+        position: relative;
+        .CustomMapView {
+            height: 550px;
 
-      .gm-bundled-control-on-bottom {
-        position: absolute;
-        left: auto;
-        right: 0%;
-        bottom: 0%;
-        top: 68%;
-      }
-    }
-
-    .BranchLocations {
-      position: absolute;
-      bottom: 0%;
-      left: 0;
-      right: 0;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      background-color: #575e998f;
-      .BranchLocation {
-        display: flex;
-        cursor: pointer;
-        .BranchLocationTitle {
-          margin-left: 5px;
-          margin-top: -10px;
-          span {
-            display: inline-block;
-            background-color: $white-color;
-            width: 25px;
-            height: 2px;
-            margin-bottom: -35px;
-          }
-          h4 {
-            font-size: 20px;
-            color: $secondary-color;
-          }
-        }
-        .BranchLocationIcons {
-          color: $white-color;
-          margin-top: 15px;
-          svg {
-            font-size: 20px;
-          }
-        }
-      }
-    }
-  }
-  // Map Section End 
-  .ContactContainerAll {
-    padding: 20px 0px 0px 20px;
-    // Contact Title Start
-    .ContactContainer {
-      h5 {
-        display: inline;
-        color: $white-color;
-        font-size: 40px;
-        font-family: $NizarBold;
-        margin-left: 10px;
-        text-transform: uppercase;
-      }
-      span {
-        display: inline-block;
-        background-color: $tertiary-color;
-        width: 45px;
-        height: 5px;
-        margin-bottom: 8px;
-      }
-    }
-    // Contact Title End
-    // Contact Form Start
-    .ContactForm {
-      .form-control {
-        border: none;
-        margin-top: 20px;
-        border-bottom: 1px solid $border-color2;
-        background-color: $primary-color;
-        color: $white-color;
-        &::placeholder {
-          color: $border-color2;
-        }
-      }
-    }
-    // Contact Form End
-    .ContactInfo {
-      padding-bottom: 50px;
-      color: $white-color;
-      // Contact info Start
-      .ContactInfoIconAndTextContainer {
-        display: flex;
-        padding: 5px;
-
-        .ContactInfoIcon {
-          display: inline-block;
-          cursor: pointer;
-        }
-        h5 {
-          cursor: pointer;
-          margin-left: 5px;
-          font-size: 15px;
-        }
-      }
-    // Contact info End
-    // Contact Social  Start
-      .ContactInfoSendAndSocialIcons {
-        display: flex;
-        flex-direction: column;
-        .sendbtnContainer {
-          display: flex;
-          justify-content: flex-end;
-          .sendbtn {
-            padding: 10px 74px;
-            font-size: 25px;
-            font-family: $NizarBold;
-            background-color: $white-color;
-            color: $primary-color;
-            text-transform: uppercase;
-            transition: all 0.4s ease-in-out;
-            &:hover {
-              background-color: $border-color2;
-              opacity: 0.8;
+            .gm-bundled-control-on-bottom {
+                position: absolute;
+                left: auto;
+                right: 0%;
+                bottom: 0%;
+                top: 68%;
             }
-          }
         }
-        .SocialIcons {
-          display: flex;
-          justify-content: flex-end;
-          margin-top: 15px;
-          column-gap: 5px;
-          .SocialIcon {
-            border: 3px $border-color5 solid;
-            padding: 10px 11px;
-            transition: all 0.4s ease-in-out;
-            cursor: pointer;
-            &:hover {
-              background-color: $border-color2;
+
+        .BranchLocations {
+            position: absolute;
+            bottom: 0%;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color: #575e998f;
+            .BranchLocation {
+                display: flex;
+                cursor: pointer;
+                .BranchLocationTitle {
+                    margin-left: 5px;
+                    margin-top: -10px;
+                    span {
+                        display: inline-block;
+                        background-color: $white-color;
+                        width: 25px;
+                        height: 2px;
+                        margin-bottom: -35px;
+                    }
+                    h4 {
+                        font-size: 20px;
+                        color: $secondary-color;
+                    }
+                }
+                .BranchLocationIcons {
+                    color: $white-color;
+                    margin-top: 15px;
+                    svg {
+                        font-size: 20px;
+                    }
+                }
             }
-          }
         }
-      }
-      // Contact Social End
     }
-  }
+    // Map Section End
+    .ContactContainerAll {
+        padding: 20px 0px 0px 20px;
+        // Contact Title Start
+        .ContactContainer {
+            h5 {
+                display: inline;
+                color: $white-color;
+                font-size: 40px;
+                font-family: $NizarBold;
+                margin-left: 10px;
+                text-transform: uppercase;
+            }
+            span {
+                display: inline-block;
+                background-color: $tertiary-color;
+                width: 45px;
+                height: 5px;
+                margin-bottom: 8px;
+            }
+        }
+        // Contact Title End
+        // Contact Form Start
+        .ContactForm {
+            .form-control {
+                border: none;
+                margin-top: 20px;
+                border-bottom: 1px solid $border-color2;
+                background-color: $primary-color;
+                color: $white-color;
+                &::placeholder {
+                    color: $border-color2;
+                }
+            }
+        }
+        // Contact Form End
+        .ContactInfo {
+            padding-bottom: 50px;
+            color: $white-color;
+            // Contact info Start
+            .ContactInfoIconAndTextContainer {
+                display: flex;
+                padding: 5px;
+
+                .ContactInfoIcon {
+                    display: inline-block;
+                    cursor: pointer;
+                }
+                h5 {
+                    cursor: pointer;
+                    margin-left: 5px;
+                    font-size: 15px;
+                }
+            }
+            // Contact info End
+            // Contact Social  Start
+            .ContactInfoSendAndSocialIcons {
+                display: flex;
+                flex-direction: column;
+                .sendbtnContainer {
+                    display: flex;
+                    justify-content: flex-end;
+                    .sendbtn {
+                        padding: 10px 74px;
+                        font-size: 25px;
+                        font-family: $NizarBold;
+                        background-color: $white-color;
+                        color: $primary-color;
+                        text-transform: uppercase;
+                        transition: all 0.4s ease-in-out;
+                        &:hover {
+                            background-color: $border-color2;
+                            opacity: 0.8;
+                        }
+                    }
+                }
+                .SocialIcons {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-top: 15px;
+                    column-gap: 5px;
+                    .SocialIcon {
+                        border: 3px $border-color5 solid;
+                        padding: 10px 11px;
+                        transition: all 0.4s ease-in-out;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: $border-color2;
+                        }
+                    }
+                }
+            }
+            // Contact Social End
+        }
+    }
 }
 
 @include respond(laptop) {
-  .Contact {
-    .ContactContainerAll {
-      padding: 20px 0px 0px 20px;
-      .ContactContainer {
-        h5 {
-          font-size: 30px;
+    .Contact {
+        .ContactContainerAll {
+            padding: 20px 0px 0px 20px;
+            .ContactContainer {
+                h5 {
+                    font-size: 30px;
+                }
+                span {
+                    height: 4px;
+                }
+            }
         }
-        span {
-          height: 4px;
-        }
-      }
     }
-  }
 }
 @include respond(small-laptop) {
-  .Contact {
-    .ContactContainerAll {
-      .ContactContainer {
-        h5 {
-          font-size: 25px;
-        }
-        span {
-          height: 3px;
-          margin-bottom: 7px;
-        }
-      }
-      .ContactInfo {
-        .ContactInfoIconAndTextContainer {
-          .ContactInfoIcon {
-          }
-          h5 {
-            margin-left: 5px;
-            font-size: 12px;
-            margin-top: 5px;
-          }
-        }
-        .ContactInfoSendAndSocialIcons {
-          .sendbtnContainer {
-            .sendbtn {
-              padding: 10px 50px;
-              font-size: 15px;
+    .Contact {
+        .ContactContainerAll {
+            .ContactContainer {
+                h5 {
+                    font-size: 25px;
+                }
+                span {
+                    height: 3px;
+                    margin-bottom: 7px;
+                }
             }
-          }
-          .SocialIcons {
-            column-gap: 4px;
+            .ContactInfo {
+                .ContactInfoIconAndTextContainer {
+                    .ContactInfoIcon {
+                    }
+                    h5 {
+                        margin-left: 5px;
+                        font-size: 12px;
+                        margin-top: 5px;
+                    }
+                }
+                .ContactInfoSendAndSocialIcons {
+                    .sendbtnContainer {
+                        .sendbtn {
+                            padding: 10px 50px;
+                            font-size: 15px;
+                        }
+                    }
+                    .SocialIcons {
+                        column-gap: 4px;
 
-            .SocialIcon {
-              padding: 5px;
-              svg {
-                width: 20px;
-                height: 20px;
-              }
+                        .SocialIcon {
+                            padding: 5px;
+                            svg {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     }
-  }
 }
 @include respond(tablet) {
-  .row1 {
-    flex-direction: column-reverse;
-  }
-  .LocationPickerExample {
-    margin-bottom: 50px;
-  }
+    .row1 {
+        flex-direction: column-reverse;
+    }
+    .LocationPickerExample {
+        margin-bottom: 50px;
+    }
 }
 @include respond(large-phone) {
-  .Contact {
-    .ContactContainerAll {
-      .ContactContainer {
-        h5 {
-          font-size: 20px;
+    .Contact {
+        .ContactContainerAll {
+            .ContactContainer {
+                h5 {
+                    font-size: 20px;
+                }
+                span {
+                    width: 20px;
+                    margin-bottom: 6px;
+                }
+            }
         }
-        span {
-          width: 20px;
-          margin-bottom: 6px;
-        }
-      }
     }
-  }
 }
 @include respond(small-phone) {
-  .Contact {
-    .ContactContainerAll {
-      .ContactInfo {
-        .ContactInfoIconAndTextContainer {
-          h5 {
-            font-size: 9px;
-          }
+    .Contact {
+        .ContactContainerAll {
+            .ContactInfo {
+                .ContactInfoIconAndTextContainer {
+                    h5 {
+                        font-size: 9px;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }

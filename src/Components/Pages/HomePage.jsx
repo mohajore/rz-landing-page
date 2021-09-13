@@ -14,28 +14,79 @@ import CustomizedFoodPackaging from "../Blocks/CustomizedFoodPackaging";
 import Contact from "../Blocks/Contact";
 import Gallary from "../Blocks/Gallary";
 import InternalLinks from "../Blocks/InternalLinks";
+import { generalServices } from "../../services/GeneralServices";
+import MainLoader from "../Blocks/MainLoader";
 class HomePage extends Component {
-  render() {
-    return (
-      <div className="HomePage">
-        <Welcome />
-        <About />
-        <TwoStarLists />
-        <OurVMCP />
-        <ProductsTitle />
-        <Products />
-        <Cataloguebtn />
-        <Facts />
-        <CompanyNews />
-        <Team />
-        <SustainablePackaging />
-        <CustomizedFoodPackaging />
-        <Gallary />
-        <Contact />
-        <InternalLinks />
-      </div>
-    );
-  }
+    state = {
+        news: [],
+        products: [],
+        welcome: {},
+        about_us: {},
+        vmpc: {},
+        facts: [],
+        team: [],
+        qa: {},
+        qa_certificate: [],
+        sustainable_packaging: [],
+        gallary: [],
+        pageLoader: true,
+    };
+    componentDidMount() {
+        Promise.all([this.getHomePageData(), this.getGallary()]);
+    }
+
+    getHomePageData = async () => {
+        const { success, data } = await generalServices.getHomePageData();
+        if (!success) return;
+        this.setState({
+            news: data.news,
+            welcome: data.welcome,
+            products: data.products,
+            about_us: data.about_us,
+            qa: data.qa,
+            qa_certificate: data.qa_certificate,
+            sustainable_packaging: data.sustainable_packaging,
+            vmpc: data.vmpc,
+            facts: data.facts,
+            team: data.team,
+            gallery: data.gallery,
+            pageLoader: false,
+        });
+    };
+
+    getGallary = async (key) => {
+        const { success, data } = await generalServices.getGallary(key ?? 0);
+        if (!success) return;
+
+        this.setState({
+            gallary: data,
+        });
+    };
+
+    render() {
+        const { news, products, welcome, about_us, vmpc, facts, team, qa, qa_certificate, sustainable_packaging, gallary, pageLoader } = this.state;
+        return pageLoader ? (
+            <MainLoader />
+        ) : (
+            <div className="HomePage">
+                <Welcome data={welcome} />
+                <About data={about_us} />
+                <TwoStarLists data={welcome} />
+                <OurVMCP data={vmpc} />
+                <ProductsTitle />
+                <Products data={products} />
+                {/* <Cataloguebtn /> */}
+                <Facts data={facts} />
+                <CompanyNews data={news} />
+                <Team data={team} />
+                <SustainablePackaging data={sustainable_packaging} qa={qa} qa_certificate={qa_certificate} />
+                <CustomizedFoodPackaging />
+                <Gallary data={gallary} />
+                <Contact data={welcome} />
+                <InternalLinks data={gallary} />
+            </div>
+        );
+    }
 }
 
 export default HomePage;
