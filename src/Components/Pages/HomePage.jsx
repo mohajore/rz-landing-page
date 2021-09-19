@@ -86,7 +86,9 @@ class HomePage extends Component {
                 {/* <Cataloguebtn /> */}
                 <Facts data={facts} />
                 <CompanyNews data={news} />
-                <Team data={team} />
+                {
+                    /**<Team data={team} /> */
+                }
                 <SustainablePackaging data={sustainable_packaging} qa={qa} qa_certificate={qa_certificate} />
                 <CustomizedFoodPackaging data={contact_us} />
                 <Gallary data={gallery} gallery_all={gallery_all} />
