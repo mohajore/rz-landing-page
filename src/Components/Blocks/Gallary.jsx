@@ -15,9 +15,10 @@ class Gallary extends Component {
         lightBox: false,
         imageSelected: "",
         photos: this.props.gallery_all.map(({ image }) => apiService.imageLink + image),
+        gallerySelected: this.props.gallery_all,
     };
     render() {
-        const { photos, lightBox, imageSelected } = this.state;
+        const { photos, lightBox, imageSelected, gallerySelected } = this.state;
         const { data, gallery_all } = this.props;
         return (
             <div className="Gallary" id="Gallary">
@@ -40,24 +41,26 @@ class Gallary extends Component {
                                             this.setState({
                                                 tabSelected: -1,
                                                 photos: gallery_all.map(({ image }) => apiService.imageLink + image),
+                                                gallerySelected: gallery_all,
                                             })
                                         }
                                     >
                                         All
                                     </li>
 
-                                    {data.map(({ id, images, name }) => {
+                                    {data.map((item) => {
                                         return (
                                             <li
-                                                className={this.state.tabSelected === id ? "tab-active" : ""}
+                                                className={this.state.tabSelected === item.id ? "tab-active" : ""}
                                                 onClick={() =>
                                                     this.setState({
-                                                        tabSelected: id,
-                                                        photos: images.map(({ image }) => apiService.imageLink + image),
+                                                        tabSelected: item.id,
+                                                        photos: item.images.map(({ image }) => apiService.imageLink + image),
+                                                        gallerySelected: item.images,
                                                     })
                                                 }
                                             >
-                                                {name}
+                                                {item.name}
                                             </li>
                                         );
                                     })}
@@ -69,6 +72,7 @@ class Gallary extends Component {
                                             this.setState({
                                                 tabSelected: -1,
                                                 photos: gallery_all.map(({ image }) => apiService.imageLink + image),
+                                                gallerySelected: gallery_all,
                                             })
                                         }
                                     >
@@ -77,17 +81,18 @@ class Gallary extends Component {
                                     <li className="LiDropDownMenu">
                                         {" "}
                                         <DropdownButton id="dropdown-basic-button" title={<BsThreeDotsVertical />}>
-                                            {data.map(({ id, images, name }) => {
+                                            {data.map((item) => {
                                                 return (
                                                     <Dropdown.Item
                                                         onClick={() =>
                                                             this.setState({
-                                                                tabSelected: id,
-                                                                photos: images.map(({ image }) => apiService.imageLink + image),
+                                                                tabSelected: item.id,
+                                                                photos: item.images.map(({ image }) => apiService.imageLink + image),
+                                                                gallerySelected: item.images,
                                                             })
                                                         }
                                                     >
-                                                        <li>{name} </li>
+                                                        <li>{item.name} </li>
                                                     </Dropdown.Item>
                                                 );
                                             })}
@@ -119,7 +124,7 @@ class Gallary extends Component {
                             {/* <Gallery photos={photos} renderImage={this.imageRenderer} /> */}
                             <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 570: 2, 900: 3 }}>
                                 <Masonry columnsCount={3} gutter="10px">
-                                    {gallery_all.map(({ image, title, text }, i) => (
+                                    {gallerySelected.map(({ image, title, text }, i) => (
                                         // <div>
                                         //     <img key={i} src={image} style={{ width: "100%", display: "block" }} />
                                         // </div>
