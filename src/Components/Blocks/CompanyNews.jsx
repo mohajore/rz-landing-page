@@ -64,7 +64,7 @@ class CompanyNews extends Component {
                                     //     );
                                     // }}
                                 >
-                                    {data?.map(({ text, title, id, iamge }) => {
+                                    {data?.map(({ text, title, id, image }) => {
                                         return (
                                             <div
                                                 className="Company-news-Item"
@@ -77,7 +77,7 @@ class CompanyNews extends Component {
                                             >
                                                 <h3>{title} </h3>
                                                 {/* <h6>{text}</h6> */}
-                                                <h6 dangerouslySetInnerHTML={{ __html: text }} />
+                                                {/* <h6 dangerouslySetInnerHTML={{ __html: text }} /> */}
 
                                                 <div className="Company-news-Item-icon">
                                                     <IoIosArrowForward />

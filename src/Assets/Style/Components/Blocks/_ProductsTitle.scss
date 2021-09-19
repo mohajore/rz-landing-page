@@ -1,123 +1,124 @@
 @import "../../Abstract/mixins";
 .ProductsTitle {
-  margin-top: 20px;
-  .ProductsTitle1 {
-    div {
-      display: flex;
-      align-items: center;
-      h5 {
-        font-family: $SourceSansProBold-font;
-        display: inline;
-        color: $primary-color;
-        font-size: 30px;
-        font-family: $SourceSansProBold-font;
-        text-transform: uppercase;
-        margin-left: 15px;
-      }
-      span {
-        display: inline;
-        background-color: $tertiary-color;
-        width: 35px;
-        height: 4px;
-        margin-bottom: 10px;
-      }
+    margin-top: 20px;
+    .ProductsTitle1 {
+        div {
+            display: flex;
+            align-items: flex-start;
+            h5 {
+                font-family: $SourceSansProBold-font;
+                display: inline;
+                color: $primary-color;
+                font-size: 30px;
+                font-family: $SourceSansProBold-font;
+                text-transform: uppercase;
+                margin-left: 15px;
+                margin-top: -15px;
+            }
+            span {
+                display: inline;
+                background-color: $tertiary-color;
+                width: 35px;
+                height: 4px;
+                margin-bottom: 10px;
+            }
+        }
     }
-  }
-  .WhiteLine1 {
-    margin-top: -15px;
-    div {
-      span {
-        background-color: $white-color;
-      }
+    .WhiteLine1 {
+        margin-top: -15px;
+        div {
+            span {
+                background-color: $white-color;
+            }
+        }
     }
-  }
 }
 @include respond(laptop) {
-  .ProductsTitle {
-    .ProductsTitle1 {
-      div {
-        h5 {
-          font-size: 20px;
+    .ProductsTitle {
+        .ProductsTitle1 {
+            div {
+                h5 {
+                    font-size: 20px;
+                }
+                span {
+                    height: 3px;
+                }
+            }
         }
-        span {
-          height: 3px;
+        .WhiteLine1 {
+            margin-top: -10px;
+            div {
+                span {
+                    background-color: $white-color;
+                }
+            }
         }
-      }
     }
-    .WhiteLine1 {
-      margin-top: -10px;
-      div {
-        span {
-          background-color: $white-color;
-        }
-      }
-    }
-  }
 }
 @include respond(small-laptop) {
-  .ProductsTitle {
-    .ProductsTitle1 {
-      div {
-        h5 {
-          font-size: 18px;
+    .ProductsTitle {
+        .ProductsTitle1 {
+            div {
+                h5 {
+                    font-size: 18px;
+                }
+                span {
+                    margin-bottom: 12px;
+                }
+            }
         }
-        span {
-          margin-bottom: 12px;
-        }
-      }
     }
-  }
 }
 @include respond(tablet) {
-  .ProductsTitle {
-    .ProductsTitle1 {
-      div {
-        h5 {
-          font-size: 22px;
+    .ProductsTitle {
+        .ProductsTitle1 {
+            div {
+                h5 {
+                    font-size: 22px;
+                }
+                span {
+                    margin-bottom: 35px;
+                    width: 30px;
+                }
+            }
         }
-        span {
-          margin-bottom: 35px;
-          width: 30px;
+        .WhiteLine1 {
+            margin-top: -10px;
         }
-      }
     }
-    .WhiteLine1 {
-      margin-top: -10px;
-    }
-  }
 }
 @include respond(large-phone) {
-  .ProductsTitle {
-    .ProductsTitle1 {
-      div {
-        h5 {
-          font-size: 16px;
+    .ProductsTitle {
+        .ProductsTitle1 {
+            div {
+                h5 {
+                    font-size: 16px;
+                }
+                span {
+                    width: 20px;
+                    margin-bottom: 10px;
+                    height: 3px;
+                }
+            }
         }
-        span {
-          width: 20px;
-          margin-bottom: 10px;
-          height: 3px;
-        }
-      }
     }
-  }
 }
 @include respond(phone) {
-  .ProductsTitle {
-    .ProductsTitle1 {
-      div {
-        h5 {
-          font-size: 18px;
-          margin-left: 5px;
+    .ProductsTitle {
+        .ProductsTitle1 {
+            div {
+                h5 {
+                    font-size: 18px;
+                    margin-left: 5px;
+                }
+                span {
+                    margin-bottom: 25px;
+                    height: 2px;
+                }
+            }
         }
-        span {
-          margin-bottom: 25px;
-          height: 2px;
+        .WhiteLine1 {
+            margin-top: -7px;
         }
-      }
     }
-    .WhiteLine1 {
-      margin-top: -7px;
-    }
-  }
 }

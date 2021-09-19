@@ -1,6 +1,7 @@
 import { Component } from "react";
 import "../../Assets/Style/Components/Blocks/_Facts.scss";
 import Container from "react-bootstrap/Container";
+import CountUp from "react-countup";
 function Facts({ data }) {
     return (
         <div className="Facts">
@@ -11,7 +12,9 @@ function Facts({ data }) {
                         {data.map(({ title, image, value }) => {
                             return (
                                 <div className="Facts-num">
-                                    <h2>{title}</h2>
+                                    <h2>
+                                        <CountUp start={0} end={title} duration={4} separator="" decimals={0} decimal="," suffix="" />
+                                    </h2>
 
                                     {/* <h6></h6> */}
                                     <div className="FactsParagraphContainer">

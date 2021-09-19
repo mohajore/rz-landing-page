@@ -161,11 +161,10 @@ class Contact extends Component {
                                                     </div>
                                                 </div>
                                                 <div className="SocialIcons">
-                                                    <div className="SocialIcon">
-                                                        {" "}
-                                                        <FaInstagram size={20} />
-                                                    </div>{" "}
-                                                    <div className="SocialIcon">
+                                                    {this.props.social.map(({ title }) => {
+                                                        return <div className="SocialIcon">{title == "facebook" ? <FaFacebookF size={20} /> : title == "instagram" ? <FaInstagram size={20} /> : title == "linkedIn" ? <FaLinkedinIn size={20} /> : title == "Twitter" ? <FaTwitter size={20} /> : null}</div>;
+                                                    })}
+                                                    {/* <div className="SocialIcon">
                                                         {" "}
                                                         <FaFacebookF size={20} />
                                                     </div>
@@ -175,8 +174,7 @@ class Contact extends Component {
                                                     </div>
                                                     <div className="SocialIcon">
                                                         {" "}
-                                                        <FaLinkedinIn size={20} />
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                             </div>
                                         </Col>

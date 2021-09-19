@@ -1,56 +1,52 @@
 @import "../../Abstract/mixins";
 
 .two-lists {
-  margin-top: -10px;
-  ul {
-    padding: 0;
-    padding-left: 8px !important;
-    li {
-      font-size: 20px;
-      list-style-type: "\22C6"; // Star * sign
-      margin-top: 10px;
+    margin-top: -10px;
+    ul {
+        padding: 0;
+        padding-left: 8px !important;
+        li {
+            font-size: 20px;
+            list-style-type: "\22C6"; // Star * sign
+        }
     }
-  }
 }
 @include respond(laptop) {
-  .two-lists {
-    margin-top: -10px;
-    ul {
-      padding: 0;
-      padding-left: 8px !important;
-      li {
-        font-size: 16px; //
-        list-style-type: "\22C6"; // Star * sign
-        margin-top: 10px;
-      }
+    .two-lists {
+        margin-top: -10px;
+        ul {
+            padding: 0;
+            padding-left: 8px !important;
+            li {
+                font-size: 16px; //
+                list-style-type: "\22C6"; // Star * sign
+            }
+        }
     }
-  }
 }
 @include respond(small-laptop) {
-  .two-lists {
-    margin-top: -10px;
-    ul {
-      padding: 0;
-      padding-left: 8px !important;
-      li {
-        font-size: 15px; //
-        list-style-type: "\22C6"; // Star * sign
-        margin-top: 10px;
-      }
+    .two-lists {
+        margin-top: -10px;
+        ul {
+            padding: 0;
+            padding-left: 8px !important;
+            li {
+                font-size: 15px; //
+                list-style-type: "\22C6"; // Star * sign
+            }
+        }
     }
-  }
 }
 @include respond(tablet) {
-  .two-lists {
-    margin-top: -10px;
-    ul {
-      padding: 0;
-      padding-left: 6px !important;
-      li {
-        font-size: 15px; //
-        list-style-type: "\22C6"; // Star * sign
-        margin-top: 10px;
-      }
+    .two-lists {
+        margin-top: -10px;
+        ul {
+            padding: 0;
+            padding-left: 6px !important;
+            li {
+                font-size: 15px; //
+                list-style-type: "\22C6"; // Star * sign
+            }
+        }
     }
-  }
 }

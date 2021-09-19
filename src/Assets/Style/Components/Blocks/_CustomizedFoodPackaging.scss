@@ -1,178 +1,180 @@
 @import "../../Abstract/mixins";
 .CustomizedFoodPackaging {
-  background-image: url(../../../../../src/images/background1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  .UnderContainerCustomizedFoodPackaging {
-    .CustomizedFoodPackagingTitle {
-      text-align: center;
-      padding: 40px 0px;
-      span {
-        display: inline-block;
-        background-color: $tertiary-color;
-        width: 45px;
-        height: 4px;
-        margin-bottom: 8px;
-        margin-top: 10px;
-      }
-      h5 {
-        margin-top: 10px;
-        display: inline;
-        color: $white-color;
-        font-size: 40px;
-        font-family: $NizarBold;
-        margin-left: 15px;
-      }
-    }
-    .CustomizedFoodPackagingTwoTitles {
-      padding: 30px 0px 50px;
-      display: flex;
-      justify-content: center;
-      .TwoTitles {
-        display: flex;
-        column-gap: 50px;
-        .title {
-          cursor: pointer;
-          color: $white-color;
-          border: 3px solid $white-color;
-          display: flex;
-          justify-content: center;
-          text-align: center;
-          transition: all ease-in-out 0.4s;
-          height: 100%;
-          h5 {
-            padding: 20px 0px;
-            width: 300px;
-            height: 100%;
-            margin: auto;
-          }
-          &:hover {
-            opacity: 0.8;
-          }
+    background-image: url(../../../../../src/images/background1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .UnderContainerCustomizedFoodPackaging {
+        .CustomizedFoodPackagingTitle {
+            text-align: center;
+            padding: 40px 0px;
+            span {
+                display: inline-block;
+                background-color: $tertiary-color;
+                width: 45px;
+                height: 4px;
+                margin-bottom: 8px;
+                margin-top: 10px;
+            }
+            h5 {
+                margin-top: 10px;
+                display: inline;
+                color: $white-color;
+                font-size: 40px;
+                font-family: $NizarBold;
+                margin-left: 15px;
+            }
         }
-      }
+        .CustomizedFoodPackagingTwoTitles {
+            padding: 30px 0px 50px;
+            display: flex;
+            justify-content: center;
+            .TwoTitles {
+                display: flex;
+                column-gap: 50px;
+                .title {
+                    cursor: pointer;
+                    color: $white-color;
+                    border: 3px solid $white-color;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    transition: all ease-in-out 0.4s;
+                    height: 100%;
+                    h5,
+                    a {
+                        padding: 20px 0px;
+                        width: 300px;
+                        height: 100%;
+                        margin: auto;
+                        color: #fff;
+                    }
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
     }
-  }
 }
 @include respond(large-laptop) {
-  .CustomizedFoodPackaging {
-    .UnderContainerCustomizedFoodPackaging {
-      .CustomizedFoodPackagingTitle {
-        h5 {
-          font-size: 34px;
-        }
-      }
-      .CustomizedFoodPackagingTwoTitles {
-        padding: 30px 0px 40px;
-        .TwoTitles {
-          .title {
-            h5 {
-              padding: 15px 0px;
-              width: 260px;
-              font-size: 15px;
+    .CustomizedFoodPackaging {
+        .UnderContainerCustomizedFoodPackaging {
+            .CustomizedFoodPackagingTitle {
+                h5 {
+                    font-size: 34px;
+                }
             }
-          }
+            .CustomizedFoodPackagingTwoTitles {
+                padding: 30px 0px 40px;
+                .TwoTitles {
+                    .title {
+                        h5 {
+                            padding: 15px 0px;
+                            width: 260px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
 @include respond(laptop) {
-  .CustomizedFoodPackaging {
-    .UnderContainerCustomizedFoodPackaging {
-      .CustomizedFoodPackagingTitle {
-        span {
-          margin-bottom: 7px;
-        }
-        h5 {
-          font-size: 28px;
-        }
-      }
-      .CustomizedFoodPackagingTwoTitles {
-        padding: 0px 0px 40px;
-
-        .TwoTitles {
-          column-gap: 40px;
-          .title {
-            h5 {
-              padding: 15px 0px;
-              width: 180px;
-              font-size: 13px;
+    .CustomizedFoodPackaging {
+        .UnderContainerCustomizedFoodPackaging {
+            .CustomizedFoodPackagingTitle {
+                span {
+                    margin-bottom: 7px;
+                }
+                h5 {
+                    font-size: 28px;
+                }
             }
-          }
+            .CustomizedFoodPackagingTwoTitles {
+                padding: 0px 0px 40px;
+
+                .TwoTitles {
+                    column-gap: 40px;
+                    .title {
+                        h5 {
+                            padding: 15px 0px;
+                            width: 180px;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
 @include respond(small-laptop) {
-  .CustomizedFoodPackaging {
-    .UnderContainerCustomizedFoodPackaging {
-      .CustomizedFoodPackagingTitle {
-        span {
-          margin-bottom: 6px;
-          height: 4px;
-        }
-        h5 {
-          font-size: 25px;
-        }
-      }
-      .CustomizedFoodPackagingTwoTitles {
-        padding: 0px 0px 40px;
-        .TwoTitles {
-          column-gap: 30px;
-          .title {
-            border: 2.5px solid $white-color;
-            h5 {
-              width: 150px;
+    .CustomizedFoodPackaging {
+        .UnderContainerCustomizedFoodPackaging {
+            .CustomizedFoodPackagingTitle {
+                span {
+                    margin-bottom: 6px;
+                    height: 4px;
+                }
+                h5 {
+                    font-size: 25px;
+                }
             }
-          }
+            .CustomizedFoodPackagingTwoTitles {
+                padding: 0px 0px 40px;
+                .TwoTitles {
+                    column-gap: 30px;
+                    .title {
+                        border: 2.5px solid $white-color;
+                        h5 {
+                            width: 150px;
+                        }
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
 @include respond(tablet) {
-  .CustomizedFoodPackaging {
-    .UnderContainerCustomizedFoodPackaging {
-      .CustomizedFoodPackagingTitle {
-        span {
-          margin-bottom: 4px;
-          height: 3px;
-          width: 30px;
+    .CustomizedFoodPackaging {
+        .UnderContainerCustomizedFoodPackaging {
+            .CustomizedFoodPackagingTitle {
+                span {
+                    margin-bottom: 4px;
+                    height: 3px;
+                    width: 30px;
+                }
+                h5 {
+                    font-size: 18px;
+                }
+            }
         }
-        h5 {
-          font-size: 18px;
-        }
-      }
     }
-  }
 }
 @include respond(large-phone) {
-  .CustomizedFoodPackaging {
-    .UnderContainerCustomizedFoodPackaging {
-      .CustomizedFoodPackagingTitle {
-        span {
-          margin-bottom: 6px;
-          width: 30px;
-          height: 3px;
-        }
-        h5 {
-          font-size: 16px;
-        }
-      }
-      .CustomizedFoodPackagingTwoTitles {
-        padding: 0px 0px 40px;
-        .TwoTitles {
-          column-gap: 20px;
-          .title {
-            border: 1.8px solid $white-color;
-            h5 {
-              width: 140px;
+    .CustomizedFoodPackaging {
+        .UnderContainerCustomizedFoodPackaging {
+            .CustomizedFoodPackagingTitle {
+                span {
+                    margin-bottom: 6px;
+                    width: 30px;
+                    height: 3px;
+                }
+                h5 {
+                    font-size: 16px;
+                }
             }
-          }
+            .CustomizedFoodPackagingTwoTitles {
+                padding: 0px 0px 40px;
+                .TwoTitles {
+                    column-gap: 20px;
+                    .title {
+                        border: 1.8px solid $white-color;
+                        h5 {
+                            width: 140px;
+                        }
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }

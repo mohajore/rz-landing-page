@@ -4,9 +4,11 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import { slide as Menu } from "react-burger-menu";
+import { generalServices } from "../../services/GeneralServices";
 
 // react-burger-menu SideBar Class Component less than 768px start
 class SideBar extends Component {
+    state = { shop_link: {} };
     showSettings(event) {
         event.preventDefault();
     }
@@ -81,7 +83,18 @@ class Header extends Component {
                 activeHeader: 7,
             });
         }
+
+        this.getHomePageData();
     }
+
+    getHomePageData = async () => {
+        const { success, data } = await generalServices.getHomePageData();
+        if (!success) return;
+        this.setState({
+            shop_link: data.shop_link,
+        });
+    };
+
     render() {
         const { activeHeader } = this.state;
         return (
@@ -128,7 +141,7 @@ class Header extends Component {
                                     </a>
                                 </li>
                                 <li className={activeHeader == 7 ? "activeHeader" : ""} className="shop-now">
-                                    <a className="a-shop-now-tag" href="SHOPNOW">
+                                    <a className="a-shop-now-tag" href={this.state.shop_link} target="_blank">
                                         SHOP NOW
                                     </a>
                                 </li>

@@ -7,14 +7,17 @@ import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import { apiService } from "../../services/ApiService";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-
+import { AiOutlineDoubleRight } from "react-icons/ai";
+import Lightbox from "./react-image-lightbox-Library";
 class Gallary extends Component {
     state = {
         tabSelected: -1,
+        lightBox: false,
+        imageSelected: "",
         photos: this.props.gallery_all.map(({ image }) => apiService.imageLink + image),
     };
     render() {
-        const { photos } = this.state;
+        const { photos, lightBox, imageSelected } = this.state;
         const { data, gallery_all } = this.props;
         return (
             <div className="Gallary" id="Gallary">
@@ -116,8 +119,44 @@ class Gallary extends Component {
                             {/* <Gallery photos={photos} renderImage={this.imageRenderer} /> */}
                             <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 570: 2, 900: 3 }}>
                                 <Masonry columnsCount={3} gutter="10px">
-                                    {photos.map((image, i) => (
-                                        <img key={i} src={image} style={{ width: "100%", display: "block" }} />
+                                    {gallery_all.map(({ image, title, text }, i) => (
+                                        // <div>
+                                        //     <img key={i} src={image} style={{ width: "100%", display: "block" }} />
+                                        // </div>
+                                        <div className="gallery-single-img" onClick={() => this.setState({ imageSelected: apiService.imageLink + image, lightBox: true })}>
+                                            <img key={i} src={apiService.imageLink + image} style={{ width: "100%", display: "block" }} />
+
+                                            <div className="gallery-single-img-title">
+                                                <h3>{title}</h3>
+                                                <p>{text}</p>
+                                                <div className="MoreDetailsAndEyeIcon">
+                                                    <div className="MoreDetails">
+                                                        More Details &nbsp; &nbsp;
+                                                        <AiOutlineDoubleRight size={25} />
+                                                    </div>
+                                                    {/* <div className="EyeIcon">
+                                                        <Lightbox
+                                                            // photo={photos} selectedImage={apiService.imageLink + image}
+
+                                                            mainSrc={photos[i]}
+                                                            nextSrc={photos[(i + 1) % photos.length]}
+                                                            prevSrc={photos[(i + photos.length - 1) % photos.length]}
+                                                            onCloseRequest={() => this.setState({ isOpen: false })}
+                                                            onMovePrevRequest={() =>
+                                                                this.setState({
+                                                                    photoIndex: (i + photos.length - 1) % photos.length,
+                                                                })
+                                                            }
+                                                            onMoveNextRequest={() =>
+                                                                this.setState({
+                                                                    photoIndex: (i + 1) % photos.length,
+                                                                })
+                                                            }
+                                                        />
+                                                    </div> */}
+                                                </div>
+                                            </div>
+                                        </div>
                                     ))}
                                 </Masonry>
                             </ResponsiveMasonry>

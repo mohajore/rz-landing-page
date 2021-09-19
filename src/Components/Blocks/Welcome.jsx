@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 import { IoIosArrowForward } from "react-icons/io";
 import { apiService } from "../../services/ApiService";
 
-function Welcome({ data: { title, image, value, value2 } }) {
+function Welcome({ shop_link, data: { title, image, value, value2 } }) {
     return (
         <div className="Welcome">
             <Container>
@@ -17,15 +17,16 @@ function Welcome({ data: { title, image, value, value2 } }) {
                             <div className="welcome-titles-container">
                                 <h2 className="">{title}</h2>
                                 <div className="welcome-h5-container">
-                                    <h5>{value}</h5>
+                                    {/* <h5>{value}</h5> */}
+                                    <h5 dangerouslySetInnerHTML={{ __html: value }} />
                                 </div>
-                                <div className="welcome-shop-now-btn-container">
+                                <a href={shop_link} className="welcome-shop-now-btn-container" target="_blank">
                                     <span className="BtnName">SHOP NOW </span>
                                     <span className="BtnIcon">
                                         {" "}
                                         <IoIosArrowForward className="IoIosArrowForward" />
                                     </span>
-                                </div>
+                                </a>
                             </div>
                         </Col>
                         {/* Welcome Intoduction section End */}

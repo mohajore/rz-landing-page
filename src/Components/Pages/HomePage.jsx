@@ -30,6 +30,9 @@ class HomePage extends Component {
         sustainable_packaging: [],
         gallery: [],
         pageLoader: true,
+        contact_us: [],
+        shop_link: {},
+        social: [],
     };
     componentDidMount() {
         Promise.all([this.getHomePageData(), this.getGallary()]);
@@ -52,6 +55,10 @@ class HomePage extends Component {
             gallery: data.gallery,
             gallery_all: data.gallery_all,
             pageLoader: false,
+            contact_us: data.contact_us,
+            shop_link: data.shop_link,
+            social: data.social,
+            product_title: data.product_title,
         });
     };
 
@@ -65,26 +72,26 @@ class HomePage extends Component {
     };
 
     render() {
-        const { news, products, welcome, about_us, vmpc, facts, team, qa, qa_certificate, sustainable_packaging, gallery, pageLoader, gallery_all } = this.state;
+        const { news, products, welcome, about_us, vmpc, facts, team, qa, qa_certificate, sustainable_packaging, gallery, pageLoader, gallery_all, contact_us, product_title, shop_link, social } = this.state;
         return pageLoader ? (
             <MainLoader />
         ) : (
             <div className="HomePage">
-                <Welcome data={welcome} />
+                <Welcome data={welcome} shop_link={shop_link} />
                 <About data={about_us} />
                 <TwoStarLists data={welcome} />
                 <OurVMCP data={vmpc} />
-                <ProductsTitle />
+                <ProductsTitle product_title={product_title} />
                 <Products data={products} />
                 {/* <Cataloguebtn /> */}
                 <Facts data={facts} />
                 <CompanyNews data={news} />
                 <Team data={team} />
                 <SustainablePackaging data={sustainable_packaging} qa={qa} qa_certificate={qa_certificate} />
-                <CustomizedFoodPackaging />
+                <CustomizedFoodPackaging data={contact_us} />
                 <Gallary data={gallery} gallery_all={gallery_all} />
-                <Contact data={welcome} />
-                <InternalLinks data={gallery} />
+                <Contact data={welcome} social={social} />
+                <InternalLinks data={gallery} social={social} />
             </div>
         );
     }

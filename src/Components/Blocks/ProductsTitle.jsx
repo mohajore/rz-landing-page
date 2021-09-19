@@ -5,19 +5,20 @@ class ProductsTitle extends Component {
     render() {
         return (
             <div className="ProductsTitle">
+                {console.log(this.props.product_title, "this.props.product_title")}
                 <Container>
                     <div className="ProductsTitle1">
                         <div>
                             <span></span>
-                            <h5>Our portfolio of products contains over 1800 products.</h5>
+                            <h5>{this.props.product_title?.value}</h5>
                         </div>
                     </div>
-                    <div className="ProductsTitle1 WhiteLine1">
+                    {/* <div className="ProductsTitle1 WhiteLine1">
                         <div>
                             <span></span>
                             <h5>Our main core products vary between different groups, are:</h5>
                         </div>
-                    </div>
+                    </div> */}
                 </Container>
             </div>
         );
