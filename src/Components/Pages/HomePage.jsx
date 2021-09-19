@@ -91,7 +91,9 @@ class HomePage extends Component {
                 <CustomizedFoodPackaging data={contact_us} />
                 <Gallary data={gallery} gallery_all={gallery_all} />
                 <Contact data={welcome} social={social} />
-                <InternalLinks data={gallery} social={social} />
+               {
+                   /* <InternalLinks data={gallery} social={social} /> */
+               }
             </div>
         );
     }

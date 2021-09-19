@@ -38,40 +38,45 @@ const CustomRightArrow = ({ onClick, ...rest }) => {
 // react-multi-carousel Properties End
 
 function Team({ data }) {
-    return (
-        <div className="Team" id="Team">
-            <Container>
-                {/* Team Word Title Start */}
-                <div className="Team-text-container">
-                    <div>
-                        <span></span>
-                        <h6>TEAM</h6>
+    if(1 == 2){
+        return (
+            <div className="Team" id="Team">
+                <Container>
+                    {/* Team Word Title Start */}
+                    <div className="Team-text-container">
+                        <div>
+                            <span></span>
+                            <h6>TEAM</h6>
+                        </div>
                     </div>
-                </div>
-                {/* Team Word Title End */}
-                {/* react-multi-carousel Start */}
-                <div className="Carousel">
-                    <Carousel showDots={false} responsive={responsive} infinite={true} autoPlay={false} autoPlaySpeed={3000}>
-                        {data.map(({ id, title, image, value }) => {
-                            return (
-                                <div className="CarouselItemContainer">
-                                    <img className="CarouselItem" src={apiService.imageLink + image} />
-                                    <div className="name-job-title">
-                                        {/* <span></span> */}
-                                        <h4 className="MemberName">{title}</h4>
-                                        {/* <h6>{value}</h6> */}
-                                        <h6 dangerouslySetInnerHTML={{ __html: value }} />
-
-                                        <h6 className="h6-email"></h6>
+                    {/* Team Word Title End */}
+                    {/* react-multi-carousel Start */}
+                    <div className="Carousel">
+                        <Carousel showDots={false} responsive={responsive} infinite={true} autoPlay={false} autoPlaySpeed={3000}>
+                            {data.map(({ id, title, image, value }) => {
+                                return (
+                                    <div className="CarouselItemContainer">
+                                        <img className="CarouselItem" src={apiService.imageLink + image} />
+                                        <div className="name-job-title">
+                                            {/* <span></span> */}
+                                            <h4 className="MemberName">{title}</h4>
+                                            {/* <h6>{value}</h6> */}
+                                            <h6 dangerouslySetInnerHTML={{ __html: value }} />
+    
+                                            <h6 className="h6-email"></h6>
+                                        </div>
                                     </div>
-                                </div>
-                            );
-                        })}
-                    </Carousel>
-                </div>
-                {/* react-multi-carousel End */}
-            </Container>
-        </div>
-    );
+                                );
+                            })}
+                        </Carousel>
+                    </div>
+                    {/* react-multi-carousel End */}
+                </Container>
+            </div>
+        );
+    }else{
+        return null;
+    }
+    
 }
 export default Team;

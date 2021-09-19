@@ -162,7 +162,7 @@ class Contact extends Component {
                                                 </div>
                                                 <div className="SocialIcons">
                                                     {this.props.social.map(({ title }) => {
-                                                        return <div className="SocialIcon">{title == "facebook" ? <FaFacebookF size={20} /> : title == "instagram" ? <FaInstagram size={20} /> : title == "linkedIn" ? <FaLinkedinIn size={20} /> : title == "Twitter" ? <FaTwitter size={20} /> : null}</div>;
+                                                        return <div className="SocialIcon">{title == "facebook" ? <a href="https://www.facebook.com/rzproducts/" style={{color:'#fff'}}><FaFacebookF size={20} /></a> : title == "instagram" ? <a href="https://instagram.com/rzproducts?utm_medium=copy_link" style={{color:'#fff'}}><FaInstagram size={20} /></a> : title == "linkedIn" ? <a href="https://www.linkedin.com/company/alhadaf-intl-co.-for-importing-&-industry-rzproducts-" style={{color:'#fff'}}><FaLinkedinIn size={20} /></a> :  null}</div>;
                                                     })}
                                                     {/* <div className="SocialIcon">
                                                         {" "}

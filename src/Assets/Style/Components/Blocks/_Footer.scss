@@ -5,5 +5,25 @@
       color: $secondary-color;
       padding: 10px 0px;
     }
+
+    .CoppyRightsLinksOuter{
+      text-align: end;
+
+      .CoppyRightsLinksFooter{
+        margin-top: 10px;
+      }
+
+      li{
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      a,a:hover {
+          color: $secondary-color;
+      }
+    }
+
+   
+    
   }
 }

@@ -89,13 +89,13 @@ class InternalLinks extends Component {
                                 <h4>Location</h4>
                                 <span></span>
                                 <h6 className="FirstHeader">
-                                    <a href="#">Byader</a>{" "}
+                                    <a target="_blank" href="https://maps.google.com/maps?ll=31.954441,35.838752&z=14&t=m&hl=en-US&gl=JO&mapclient=embed&daddr=RZ%20Showroom%20-%20bayader%20Amman@31.9544415,35.8387515">Byader</a>{" "}
                                 </h6>
                                 <h6>
-                                    <a href="#">Khalda</a>{" "}
+                                    <a target="_blank" href="https://maps.google.com/maps?ll=31.996825,35.847119&z=16&t=m&hl=en-US&gl=SA&mapclient=embed&daddr=RZ%20SHOWROOM-%20Khalda%20Wasfi%20At-Tall%20St.%20Amman%20Jordan@31.9968246,35.847119">Khalda</a>{" "}
                                 </h6>
                                 <h6>
-                                    <a href="#">Tabrbour</a>{" "}
+                                    <a target="_blank" href="https://maps.google.com/maps?ll=32.00113,35.942982&z=12&t=m&hl=en&gl=JO&mapclient=embed&daddr=RZ%20SHOWROOM%20-%20Tabarbour%20Sadr%20Al-Shahid%20St.%20Amman@32.0011304,35.9429821">Tabrbour</a>{" "}
                                 </h6>
                             </div>
                         </Col>
@@ -111,9 +111,7 @@ class InternalLinks extends Component {
                                 </div>
 
                                 <div className="header-icons-div">
-                                    {this.props.social.map(({ title }) => {
-                                        return <div className="SocialIcon">{title == "facebook" ? <FaFacebookF size={20} className="mx-2  header-icons" /> : title == "instagram" ? <FaInstagram size={20} className="mx-2  header-icons" /> : title == "linkedIn" ? <FaLinkedinIn size={20} className="mx-2  header-icons" /> : title == "Twitter" ? <FaTwitter size={20} className="mx-2  header-icons" /> : null}</div>;
-                                    })}
+                                   
 
                                     {/* {<FaLinkedinIn className="mx-2  header-icons" />}
                   {<FaTwitter className="mx-2  header-icons" />}
@@ -132,12 +130,7 @@ class InternalLinks extends Component {
                             <div>
                                 <img src="../../images/logo.png" alt="logo" />
                             </div>
-                            <div className="header-icons-div">
-                                {<FaLinkedinIn className="mx-2  header-icons" />}
-                                {<FaTwitter className="mx-2  header-icons" />}
-                                {<FaInstagram className="mx-2  header-icons" />}
-                                {<FaFacebookF className="mx-2  header-icons" />}
-                            </div>
+         
                         </div>
                     </div>
                 </Row>

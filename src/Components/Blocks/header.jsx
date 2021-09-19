@@ -64,9 +64,7 @@ class Header extends Component {
             });
         }
         if (window.location.pathname.toLowerCase() === "/career") {
-            this.setState({
-                activeHeader: 4,
-            });
+            window.href.location = "mailto:hr@rz.jo";
         }
         if (window.location.pathname.toLowerCase() === "/gallery") {
             this.setState({
@@ -124,7 +122,7 @@ class Header extends Component {
                                 </li>
                                 <li className={activeHeader == 4 ? "activeHeader" : ""}>
                                     <div className="li-same-tag"></div>
-                                    <a className="a-same-tag" href="#CompanyNews">
+                                    <a className="a-same-tag" href="mailto:hr@rz.jo">
                                         Career
                                     </a>
                                 </li>

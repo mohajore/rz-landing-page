@@ -19,7 +19,7 @@ function SustainablePackaging({ data, qa, qa_certificate }) {
 
                     {/* Sustainable Packaging Solutions Paragraph End */}
                     {/* EcoFriendly Products Title Start */}
-                    <div className="EcoFriendlyProductsTitle">
+                    <div className="EcoFriendlyProductsTitle" style={{marginTop:20}}>
                         <h6>{data[1].title}</h6>
                     </div>
                     {/* EcoFriendly Products Title End */}
@@ -34,20 +34,35 @@ function SustainablePackaging({ data, qa, qa_certificate }) {
                 {/* Sustainable Packaging Twologos Start */}
                 <div className="SustainablePackaginTwologos">
                     <div className="Twologos">
-                        <div className="Twologos1">
-                            <img src={apiService.imageLink + data[0].image} />
-                        </div>
-                        <div className="Twologos1">
-                            <img src={apiService.imageLink + data[1].image} />
-                        </div>
+                        {
+                            data[0].image ?
+                                <div className="Twologos1">
+                                    <img src={apiService.imageLink + data[0].image} />
+                                </div>
+                                :
+                                null
+                        }
+                        {
+                            data[1].image ?
+                                <div className="Twologos1">
+                                    <img src={apiService.imageLink + data[1].image} />
+                                </div>
+                                :
+                                null
+                        }
+
                     </div>
                 </div>
                 {/* Sustainable Packaging Twologos End */}
                 <div className="SustainablePackaging-text-container">
                     {/*Quality Assurance Title Start */}
-                    <div>
+                    {
+                        /*
+                        <div>
                         <h6 className="QualityAssuranceTitle">{qa.title}</h6>
                     </div>
+                        */
+                    }
                     {/*Quality Assurance Title End */}
                     {/*Quality Assurance Paragraph Start */}
                     <div className="QualityAssuranceSection">
