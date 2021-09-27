@@ -20,7 +20,7 @@ function Welcome({ shop_link, data: { title, image, value, value2 } }) {
                                     {/* <h5>{value}</h5> */}
                                     <h5 dangerouslySetInnerHTML={{ __html: value }} />
                                 </div>
-                                <a href={shop_link} className="welcome-shop-now-btn-container" target="_blank">
+                                <a href="#" className="welcome-shop-now-btn-container" >
                                     <span className="BtnName">SHOP NOW </span>
                                     <span className="BtnIcon">
                                         {" "}

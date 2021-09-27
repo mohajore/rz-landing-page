@@ -139,7 +139,7 @@ class Header extends Component {
                                     </a>
                                 </li>
                                 <li className={activeHeader == 7 ? "activeHeader" : ""} className="shop-now">
-                                    <a className="a-shop-now-tag" href={this.state.shop_link} target="_blank">
+                                    <a className="a-shop-now-tag" href="#">
                                         SHOP NOW
                                     </a>
                                 </li>
